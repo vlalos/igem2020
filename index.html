@@ -1,9 +1,10 @@
-{{/html/IGEM_TopBar.html}}
-{/html/header.html}
 <html>
   <head>
     <title>IGEM Aachen 2020</title>
-    <link rel="stylesheet" href="/css/css2017.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/css2017.css">
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -11,14 +12,14 @@
     </script>
     <script>
       $(function(){
-        $("#header").load("header.html");
-        $("#footer").load("footer.html");
+        $("#header").load("html/header");
+        $("#top_bar").load("html/IGEM_TopBar.html")
       });
     </script>
   </head>
   <body>
     <div id="header"></div>
-    <h1>This page is currently under construction</h1>
-    <img src="https://2020.igem.org/wiki/images/4/4e/T--Aachen--logo.png">
+    <h1 style="position:relative; left: 50px; top:50px;">This page is currently under construction</h1>
+    <img style = "width:50%; position: relative; top:50px;" src="https://2020.igem.org/wiki/images/4/4e/T--Aachen--logo.png">
   </body>
 </html>
