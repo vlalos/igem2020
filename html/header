@@ -21,7 +21,8 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="http://2020.igem.org/Team:Aachen"><img src="https://2020.igem.org/wiki/images/4/4e/T--Aachen--logo.png" /></a>
+    <!-- link to the project logo: https://2020.igem.org/wiki/images/4/4e/T--Aachen--logo.png -->
+		<a class="navbar-brand" href="http://2020.igem.org/Team:Aachen"><img src="docs/testLogoNavi.png" /></a>
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
