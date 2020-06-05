@@ -1,6 +1,5 @@
 <html>
 <style>
-
 /*---------------------------------------- This is all Bootstrap stuff---------------------------------- */
 
 /*!
@@ -801,6 +800,43 @@ color: white !important;
   color: #feca40;
 }
 
+.scrollup {
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    background-color: #fff;
+    opacity: 0.75;
+    color: #4f70de;
+    text-align:center;
+    font-size: 25px;
+    font-weight: bolder;
+
+    .show {
+    visibility: visible;
+    opacity: 1;
+    };
+    .hide {
+      visibility: hidden;
+      opacity: 0;
+    };
+  }
+  .scrollup, .scrollup:visited, .scrollup:hover, .scrollup:focus, .scrolluo:active {
+    text-decoration: none;
+  }
+  .scrollup:hover{
+    opacity:1;
+    background-color: #4f70de;
+    color: #fff;
+  }
 /*----------------------- IGEM 2020 Code ----------------------- */
 
 </style>
