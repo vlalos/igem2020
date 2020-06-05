@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Project - IGEM Aachen 2020</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/css2020.css">
+
+    <!-- jquery and script for loading the header -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <script>
+      $(function(){
+        $("#header").load("../html/header");
+        $("#inwork").load("../html/inwork.html")
+        $("#top_bar").load("../html/IGEM_TopBar.html")
+        $("#footer").load("../html/footer.html")
+      });
+    </script>
+  </head>
+  <body style="background-color:rgba(254, 202, 64, 0.75);">
+    <div id="header"></div>
+    <div id="inwork"></div>
+    <!-- Scroll-Up dingsbums -->
+    <div id="footer"></div>
+  </body>
+</html>
