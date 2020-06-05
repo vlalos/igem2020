@@ -27,49 +27,49 @@
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown">Project</a>
+					<a class="dropdown-toggle" id="myRed" data-toggle="dropdown">Project</a>
 					<ul class="dropdown-menu">
-						<li><a >Description</a></li>
-            <li><a >M.A.R.S. in the real world</a></li>
-            <li><a >Engineering Success</a></li>
-            <li><a >Proof of Concept</a></li>
-            <li><a >Hardware</a></li>
-            <li><a >Results</a></li>
-            <li><a >Outlook</a></li>
+						<li><a class="myRed">Description</a></li>
+            <li><a class="myRed">M.A.R.S. in the real world</a></li>
+            <li><a class="myRed">Engineering Success</a></li>
+            <li><a class="myRed">Proof of Concept</a></li>
+            <li><a class="myRed">Hardware</a></li>
+            <li><a class="myRed">Results</a></li>
+            <li><a class="myRed">Outlook</a></li>
 					</ul>
         </li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown">Lab</a>
+          <a class="dropdown-toggle" id="myGreen" data-toggle="dropdown">Lab</a>
 					<ul class="dropdown-menu">
-            <li><a >Workflow</a></li>
-            <li><a >Notebook</a></li>
-            <li><a >Protocols</a></li>
-            <li><a >Safety</a></li>
+            <li><a class="myGreen">Workflow</a></li>
+            <li><a class="myGreen">Notebook</a></li>
+            <li><a class="myGreen">Protocols</a></li>
+            <li><a class="myGreen">Safety</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown">Modeling</a>
+          <a class="dropdown-toggle" id="myYell" data-toggle="dropdown">Modeling</a>
 					<ul class="dropdown-menu">
-            <li><a >Model</a></li>
-            <li><a >Simulation</a></li>
+            <li><a class="myYell">Model</a></li>
+            <li><a class="myYell">Simulation</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown">From us for the world</a>
+          <a class="dropdown-toggle" id="myBlue" data-toggle="dropdown">From us for the world</a>
 					<ul class="dropdown-menu">
-            <li><a >Contribution</a></li>
-            <li><a >Human Practices</a></li>
-            <li><a >Collaborations</a></li>
-            <li><a >Partnership</a></li>
-            <li><a >Science Communication</a></li>
-            <li><a ></a></li>
+            <li><a class="myBlue">Contribution</a></li>
+            <li><a class="myBlue">Human Practices</a></li>
+            <li><a class="myBlue">Collaborations</a></li>
+            <li><a class="myBlue">Partnership</a></li>
+            <li><a class="myBlue">Science Communication</a></li>
+            <li><a class="myBlue"></a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown">People</a>
+          <a class="dropdown-toggle" id="myRed" data-toggle="dropdown">People</a>
           <ul class="dropdown-menu">
-            <li><a >The Team</a></li>
-            <li><a >Attributions</a></li>
+            <li><a class="myRed">The Team</a></li>
+            <li><a class="myRed">Attributions</a></li>
           </ul>
 				</li>
 			</ul>
