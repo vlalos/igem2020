@@ -1,5 +1,5 @@
 <html>
-    <head>
+  <head>
 
         <meta charset="utf-8">
 
@@ -9,76 +9,105 @@
 
         <title>iGEM Team Aachen 2020</title>
 
-    </head>
+  </head>
 
-    <body>
+  <body>
 
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-	<div class="container">
-		<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-    <!-- link to the project logo: https://2020.igem.org/wiki/images/4/4e/T--Aachen--logo.png -->
-		<a class="navbar-brand" href="index.html"><img src="../docs/LogoNavi.png" /></a>
-		</div>
-		<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-nav">
-				<li class="dropdown">
-					<a class="dropdown-toggle" id="myRed" data-toggle="dropdown" href="project.html">Project</a>
-					<ul class="dropdown-menu">
-						<li><a class="myRed" href="project_description.html">Description</a></li>
-            <li><a class="myRed" href="project_mars.html">M.A.R.S. in the real world</a></li>
-            <li><a class="myRed" href="project_engineer.html">Engineering Success</a></li>
-            <li><a class="myRed" href="project_proof.html">Proof of Concept</a></li>
-            <li><a class="myRed" href="project_hardware.html">Hardware</a></li>
-            <li><a class="myRed" href="project_results.html">Results</a></li>
-            <li><a class="myRed" href="project_outlook.html">Outlook</a></li>
-					</ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" id="myGreen" data-toggle="dropdown" href="lab.html">Lab</a>
-					<ul class="dropdown-menu">
-            <li><a class="myGreen" href="lab_workflow.html">Workflow</a></li>
-            <li><a class="myGreen" href="lab_notebook.html">Notebook</a></li>
-            <li><a class="myGreen" href="lab_protocols.html">Protocols</a></li>
-            <li><a class="myGreen" href="lab_safety.html">Safety</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" id="myYell" data-toggle="dropdown" href="modeling.html">Modeling</a>
-					<ul class="dropdown-menu">
-            <li><a class="myYell" href="modeling_model.html">Model</a></li>
-            <li><a class="myYell" href="modeling_simulation.html">Simulation</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" id="myBlue" data-toggle="dropdown" href="publicity.html">From us for the world</a>
-					<ul class="dropdown-menu">
-            <li><a class="myBlue" href="publicity_contribution.html">Contribution</a></li>
-            <li><a class="myBlue" href="publicity_hp.html">Human Practices</a></li>
-            <li><a class="myBlue" href="publicity_collab.html">Collaborations</a></li>
-            <li><a class="myBlue" href="publicity_partners.html">Partnership</a></li>
-            <li><a class="myBlue" href="publicity_sciencecomm.html">Science Communication</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" id="myRed" data-toggle="dropdown" href="people.html">People</a>
-          <ul class="dropdown-menu">
-            <li><a class="myRed" href="people_team.html">Team</a></li>
-            <li><a class="myRed" href="people_attributions.html">Attributions</a></li>
-          </ul>
-				</li>
-			</ul>
-		</div>
-	</div>
-	</nav>
-</body>
-<script type="text/javascript">
-$('.active').removeClass('active');
-var url = window.location.href;
-$('a[href="' + url + '"]').parent().addClass('active');
-</script>
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="js-top">
+	    <div class="container">
+    		<div class="navbar-header">
+    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    			<span class="icon-bar"></span>
+    			<span class="icon-bar"></span>
+    			<span class="icon-bar"></span>
+    		</button>
+        <!-- link to the project logo: https://2020.igem.org/wiki/images/4/4e/T--Aachen--logo.png -->
+    		<a class="navbar-brand" href="index.html"><img src="../docs/LogoNavi.png" /></a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="myNavbar">
+    			<ul class="nav navbar-nav">
+    				<li class="dropdown">
+    					<a class="dropdown-toggle" id="myRed" data-toggle="dropdown" href="project.html">Project</a>
+    					<ul class="dropdown-menu">
+    						<li><a class="myRed" href="project_description.html">Description</a></li>
+                <li><a class="myRed" href="project_mars.html">M.A.R.S. in the real world</a></li>
+                <li><a class="myRed" href="project_engineer.html">Engineering Success</a></li>
+                <li><a class="myRed" href="project_proof.html">Proof of Concept</a></li>
+                <li><a class="myRed" href="project_hardware.html">Hardware</a></li>
+                <li><a class="myRed" href="project_results.html">Results</a></li>
+                <li><a class="myRed" href="project_outlook.html">Outlook</a></li>
+    					</ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" id="myGreen" data-toggle="dropdown" href="lab.html">Lab</a>
+    					<ul class="dropdown-menu">
+                <li><a class="myGreen" href="lab_workflow.html">Workflow</a></li>
+                <li><a class="myGreen" href="lab_notebook.html">Notebook</a></li>
+                <li><a class="myGreen" href="lab_protocols.html">Protocols</a></li>
+                <li><a class="myGreen" href="lab_safety.html">Safety</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" id="myYell" data-toggle="dropdown" href="modeling.html">Modeling</a>
+    					<ul class="dropdown-menu">
+                <li><a class="myYell" href="modeling_model.html">Model</a></li>
+                <li><a class="myYell" href="modeling_simulation.html">Simulation</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" id="myBlue" data-toggle="dropdown" href="publicity.html">From us for the world</a>
+    					<ul class="dropdown-menu">
+                <li><a class="myBlue" href="publicity_contribution.html">Contribution</a></li>
+                <li><a class="myBlue" href="publicity_hp.html">Human Practices</a></li>
+                <li><a class="myBlue" href="publicity_collab.html">Collaborations</a></li>
+                <li><a class="myBlue" href="publicity_partners.html">Partnership</a></li>
+                <li><a class="myBlue" href="publicity_sciencecomm.html">Science Communication</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" id="myRed" data-toggle="dropdown" href="people.html">People</a>
+              <ul class="dropdown-menu">
+                <li><a class="myRed" href="people_team.html">Team</a></li>
+                <li><a class="myRed" href="people_attributions.html">Attributions</a></li>
+              </ul>
+    				</li>
+    			</ul>
+    		</div>
+    	</div>
+  	</nav>
+  </body>
+  <script>
+    // Set a variable for our button element.
+    const scrollToTopButton = document.getElementById('js-down');
+    const scrollFunc = () => {
+      // Get the current scroll value
+      let y = window.scrollY;
+
+      // If the scroll value is greater than the window height, add a class to the scroll-to-top button to show it!
+      if (y > window.innerHeight/2) {
+        scrollToTopButton.className = "scrollup show";
+      } else {
+        scrollToTopButton.className = "scrollup hide";
+      }
+    };
+    window.addEventListener("scroll", scrollFunc);
+    const scrollToTop = () => {
+      const c = document.documentElement.scrollTop || document.body.scrollTop;
+      if (c > 0) {
+        window.requestAnimationFrame(scrollToTop);
+        // Increase the '10' value to get a smoother/slower scroll!
+        window.scrollTo(0, c - c / 10);
+      }
+    };
+    // When the button is clicked, run our ScrolltoTop function above!
+    scrollToTopButton.onclick = function(e) {
+      e.preventDefault();
+      scrollToTop();
+    }
+  </script>
+  <script type="text/javascript">
+  $('.active').removeClass('active');
+  var url = window.location.href;
+  $('a[href="' + url + '"]').parent().addClass('active');
+  </script>
 </html>
