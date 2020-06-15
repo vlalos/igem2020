@@ -1,18 +1,18 @@
 .das-team{
     text-align: center;
-    position: relative;
+    position: center;
     margin-left: 5px;
     margin-right: 5px;
 }
 .das-team .pic{
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
-    border: 8px solid #4d6fde;
+    border: 10px solid #4d6fde;
     margin: 0 auto;
     overflow: hidden;
 }
-.das-team img{
+.das-team .round-team{
     width: 100%;
     height: auto;
 }
@@ -80,94 +80,11 @@
 
 /*-----------------------*/
 
-.our-team{
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-}
-.our-team img{
-    width: 100%;
-    height: auto;
-}
-.our-team .team-content{
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, #4d6fde 0%, #feca40 100%);
-    padding-top: 35%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(100%);
-    transition: all 0.3s cubic-bezier(0.52, 1.64, 0.37, 0.66) 0s;
-}
-.our-team:hover .team-content{ transform: translateY(0); }
-.our-team .title{
-    display: block;
-    font-size: 22px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    color: #fff;
-    text-transform: uppercase;
-    margin: 0 0 10px 0;
-}
-.our-team .post{
-    display: block;
-    font-size: 17px;
-    color: #fff;
-}
-.our-team .social{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-.our-team .social li{
-    display: inline-block;
-    margin-top: 30px;
-}
-.our-team .social li a{
-    display: block;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    border-radius: 50%;
-    background: #fff;
-    font-size: 20px;
-    color: #4c5462;
-    margin-right: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    transition: all 0.5s ease 0s;
-}
-.our-team .social li a:hover{
-    background: linear-gradient(to right, #4d6fde 0%, #feca40 100%);
-    color: #fff;
-}
-@media only screen and (max-width: 990px){
-    .our-team{ margin-bottom: 30px; }
-}
-
-.name, .subgroup {
-  color: #4d6fde;
-  font-family: Helvetica;
-}
-
-.name {
-  font-weight: 800;
-  font-size: 22px;
-}
-
-.subgroup {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-/*-----------------------*/
-
 .round-team{
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 100%;
     position: relative;
-    margin-left: 25px;
-    margin-right: 25px;
+    bottom: 5px;
 }
 .round-team img{
     width: 100%;
@@ -206,7 +123,7 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-.round-team .description{
+.round-team .infos{
     font-size: 14px;
     color: #ddd;
 }

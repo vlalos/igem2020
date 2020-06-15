@@ -385,9 +385,11 @@ li.dropdown:hover > .dropdown-menu {
   text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
   font-size: 125%;
 }
+
 .navbar-brand{
   margin-top: 5px;
   padding: 0px;
+
 }
 .navbar-brand>img{
 	padding: 5px 10px 5px 5px;
@@ -736,6 +738,10 @@ p{
 	background-color: #2bd792;
 	color:white;
 }
+.background-yellow{
+  background-color: #feca40;
+  color: white
+}
 .background-green a{
 	color:white;
 	color: #aa0044;
@@ -783,7 +789,7 @@ padding-bottom: 30px;
 
 /*----------------------- IGEM 2020 Code ----------------------- */
 body {
-  background-color: #feca40;
+  background-color: rgba(140, 255, 150, 1);
 }
 
 #myRed:hover, .myRed:hover {
