@@ -1,11 +1,8 @@
-.demo{
-  background: rgba(254, 202, 64, 0.75);
-  margin-top: 20px;
-
-}
 .das-team{
     text-align: center;
     position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .das-team .pic{
     width: 200px;
@@ -95,7 +92,7 @@
 .our-team .team-content{
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #7851a9 0%, #ffd700 100%);
+    background: linear-gradient(to right, #4d6fde 0%, #feca40 100%);
     padding-top: 35%;
     position: absolute;
     top: 0;
@@ -141,9 +138,110 @@
     transition: all 0.5s ease 0s;
 }
 .our-team .social li a:hover{
-    background: linear-gradient(to right, #7851a9 0%, #ffd700 100%);
+    background: linear-gradient(to right, #4d6fde 0%, #feca40 100%);
     color: #fff;
 }
 @media only screen and (max-width: 990px){
     .our-team{ margin-bottom: 30px; }
+}
+
+.name, .subgroup {
+  color: #4d6fde;
+  font-family: Helvetica;
+}
+
+.name {
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.subgroup {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*-----------------------*/
+
+.round-team{
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.round-team img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    right: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+.round-team:hover img{
+    right: 60%;
+}
+.round-team .team-content{
+    width: 80%;
+    height: 100%;
+    background: #4d6fde;
+    padding: 20% 30px 0;
+    position: absolute;
+    top: 0;
+    right: -80%;
+    transition: all 0.4s ease-in-out 0s;
+}
+.round-team:hover .team-content{
+    right: 0;
+}
+.round-team .title{
+    font-size: 22px;
+    color: #fff;
+    margin: 0 0 10px 0;
+    font-weight: 800;
+}
+.round-team .post{
+    display: block;
+    font-size: 12px;
+    font-weight: 900;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.round-team .description{
+    font-size: 14px;
+    color: #ddd;
+}
+.round-team .social{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.round-team .social li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.round-team .social li:last-child{
+    margin-right: 0;
+}
+.round-team .social li a{
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #999;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0s;
+}
+.round-team .social li a:hover{ color: #fff; }
+.round-team .social li a.fa-facebook:hover{ background: #3b5a9b; }
+.round-team .social li a.fa-twitter:hover{ background: #2baae1; }
+.round-team .social li a.fa-google-plus:hover{ background: #f63d26; }
+.round-team .social li a.fa-youtube:hover{ background: #c3181e; }
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 50px; }
+}
+@media only screen and (max-width: 360px){
+    .team-content{ padding: 15% 15px 0; }
+    .round-team .social li{ margin-right: 0; }
 }

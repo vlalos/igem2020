@@ -761,7 +761,6 @@ padding-bottom: 30px;
   color: white !important;
 }
 .background-red p, .background-red h3, .background-green p, .background-green h3{
-color: white !important;
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
@@ -783,6 +782,10 @@ color: white !important;
 /*# sourceMappingURL=bootstrap-theme.css.map */
 
 /*----------------------- IGEM 2020 Code ----------------------- */
+body {
+  background-color: #feca40;
+}
+
 #myRed:hover, .myRed:hover {
   box-shadow: inset 0px -5px 0px 0px #fe336d;
   color: #fe336d;
