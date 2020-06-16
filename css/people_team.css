@@ -127,8 +127,27 @@
     font-size: 14px;
     color: #ddd;
 }
+.round-team .subgroup{
+	list-style-type: none;
+	text-align: center; 
+	padding: 0;
+	padding-top: 10%;
+	margin: 0;
+}
+.round-team .subgroup li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.round-team .subgroup li img{
+	display: block;
+	width: 36px;
+    height: 36px;
+    position: relative;
+    text-align: center;
+    transition: all 0.4s ease-in-out 0s;
+}
 .round-team .social{
-    padding: 0;
+	padding: 0;
     margin: 0;
     list-style: none;
 }
