@@ -333,6 +333,7 @@ fieldset[disabled] .btn-danger.active {
 li.dropdown:hover > .dropdown-menu {
     display: block;
 }
+
 .dropdown-menu {
 	border-radius: 0;
 	border: none;
@@ -408,6 +409,11 @@ li.dropdown:hover > .dropdown-menu {
   border: 0px;
   margin-bottom: 0px;
 }
+
+.generic_border {
+  background: linear-gradient(to right, #bcbcbc 25%,#ffcd02 25%, #ffcd02 50%, #e84f47 50%, #e84f47 75%, #65c1ac 75%);
+}
+
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .active > a {
   background-color: #aa0044 !important;
@@ -789,7 +795,7 @@ padding-bottom: 30px;
 
 /*----------------------- IGEM 2020 Code ----------------------- */
 body {
-  background-color: rgba(140, 255, 150, 1);
+  background-color: #fff;
 }
 
 #myRed:hover, .myRed:hover {

@@ -1,3 +1,28 @@
+/* text fields */
+
+.abs_head {
+    align-content: flex-start;
+    text-align: left;
+    font-weight: 800;
+    font-size: 24px;
+    font-family: Helvetica, Arial;
+}
+
+/* rows delimeters */
+
+.container-fluid {
+  background:linear-gradient(to right,#fe336d 0, #fe336d 25%, #2bd792 25%, #2bd792 50%, #4f70de 50%, #4f70de 75%, #feca40 75%, #feca40 100%)  bottom;
+  background-repeat: no-repeat;
+  background-size:100% 4px;
+  width:100%;
+}
+
+.team_head {
+  text-align: center;
+  font-weight: 800;
+  font-size: 24px;
+  font-family: Helvetica, Arial;
+}
 .das-team{
     text-align: center;
     position: center;
@@ -129,7 +154,7 @@
 }
 .round-team .subgroup{
 	list-style-type: none;
-	text-align: center; 
+	text-align: center;
 	padding: 0;
 	padding-top: 10%;
 	margin: 0;
