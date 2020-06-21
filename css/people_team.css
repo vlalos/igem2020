@@ -5,25 +5,74 @@
     text-align: left;
     font-weight: 800;
     font-size: 24px;
-    font-family: Helvetica, Arial;
+    font-family: Arial;
 }
 
-/* rows delimeters */
+.subtitle {
+  text-align: left;
+  font-weight: 800;
+  font-size: 24px;
+  font-family: Arial;
+}
 
-.container-fluid {
-  background:linear-gradient(to right,#fe336d 0, #fe336d 25%, #2bd792 25%, #2bd792 50%, #4f70de 50%, #4f70de 75%, #feca40 75%, #feca40 100%)  bottom;
-  background-repeat: no-repeat;
-  background-size:100% 4px;
+/* subgroups */
+
+.icons {
   width:100%;
 }
 
-.team_head {
-  text-align: center;
-  font-weight: 800;
-  font-size: 24px;
-  font-family: Helvetica, Arial;
+.subgroup_name {
+  font-size: 18px;
+  color: #444;
+  text-align: left;
 }
 
+/* colors  */
+/* red */
+.color-red .team-content, .color-red .pic .round-team .team-content
+{
+  background-color: #fe336d;
+}
+
+.color-red .pic, .color-red .description{
+  border: 10px solid #fe336d;
+}
+
+/* green */
+.color-green .team-content, .color-green .pic .round-team .team-content
+{
+  background-color: #2bd792;
+}
+
+.color-green .pic, .color-green .description{
+  border: 10px solid #2bd792;
+}
+
+/* blue */
+.color-blue .team-content, .color-blue .pic .round-team .team-content
+{
+  background-color: #4f70de;
+}
+
+.color-blue .pic, .color-blue .description{
+  border: 10px solid #4f70de;
+}
+
+/* yellow */
+.color-yellow .team-content, .color-yellow .pic .round-team .team-content
+{
+  background-color: #feca40;
+}
+
+.color-yellow .pic, .color-yellow .description{
+  border: 10px solid #feca40;
+}
+
+.color-yellow .pic .round-team .team-content .infos,
+.color-green .pic .round-team .team-content .infos{
+  color: #444;
+}
+/* Static stuff */
 .das-team{
     text-align: center;
     position: center;
@@ -31,11 +80,11 @@
     margin-right: 5px;
 }
 .das-team .pic{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    border: 10px solid #4d6fde;
     margin: 0 auto;
+    padding: 0;
     overflow: hidden;
 }
 .das-team .round-team{
@@ -68,7 +117,6 @@
 .das-team:hover .social li a:hover{ background: #7a4b94; }
 .das-team .team-content{
     padding: 15px 15px 20px;
-    background: #4d6fde;
     border-radius: 40px 10px;
     margin-top: -20px;
     color: #fff;
@@ -87,7 +135,7 @@
 .das-team .description{
     padding: 20px;
     background: #fff;
-    border-radius: 20px;
+    border-radius: 40px 10px;
     font-size: 16px;
     color: #666;
     line-height: 30px;
@@ -109,14 +157,14 @@
 .round-team{
     overflow: hidden;
     border-radius: 100%;
-    position: relative;
+    position:relative;
     bottom: 5px;
 }
 .round-team img{
     width: 100%;
-    height: 343px;
     position: relative;
     right: 0;
+    top: 0;
     transition: all 0.4s ease-in-out 0s;
 }
 .round-team:hover img{

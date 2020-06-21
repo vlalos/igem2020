@@ -798,6 +798,13 @@ body {
   background-color: #fff;
 }
 
+.container-fluid {
+  background:linear-gradient(to right,#fe336d 0, #fe336d 25%, #2bd792 25%, #2bd792 50%, #4f70de 50%, #4f70de 75%, #feca40 75%, #feca40 100%)  bottom;
+  background-repeat: no-repeat;
+  background-size:100% 4px;
+  width:100%;
+}
+
 #myRed:hover, .myRed:hover {
   box-shadow: inset 0px -5px 0px 0px #fe336d;
   color: #fe336d;
