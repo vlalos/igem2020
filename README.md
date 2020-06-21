@@ -10,7 +10,8 @@ Used: Bootstrap v3.3.7;
 
 color palette:
 
-Radical Red      #fe336d;
-Caribbean Green  #2bd792;
-Royal Blue Light #4f70de;
-Sunglow          #feca40;
+Radical Red      #fe336d
+Caribbean Green  #2bd792
+Royal Blue Light #4f70de
+Sunglow          #feca40
+Onyx             #444
