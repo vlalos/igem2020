@@ -19,11 +19,12 @@
 
 .icons {
   width:100%;
+  filter: invert(100%);
 }
 
 .subgroup_name {
   font-size: 18px;
-  color: #444;
+  color: #eaeaea;
   text-align: left;
 }
 

@@ -393,7 +393,7 @@ li.dropdown:hover > .dropdown-menu {
 
 }
 .navbar-brand>img{
-	padding: 5px 10px 5px 5px;
+	padding: 1px 5px 10px 5px;
 	height: 100%;
 	width: auto;
 }
@@ -404,7 +404,7 @@ li.dropdown:hover > .dropdown-menu {
 }
 .navbar-inverse {
   margin-top:10px;
-  background-color: #ffffff;
+  background-image: url("../docs/space.jpg");
   border-radius: 0px;
   border: 0px;
   margin-bottom: 0px;
@@ -427,7 +427,7 @@ li.dropdown:hover > .dropdown-menu {
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav > li > a {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
-  color: #000000;
+  color: #fff;
 
 }
 .navbar-static-top,
@@ -795,7 +795,8 @@ padding-bottom: 30px;
 
 /*----------------------- IGEM 2020 Code ----------------------- */
 body {
-  background-color: #fff;
+  background-color:#fff;
+  background-image: url("../docs/space.jpg");
 }
 
 .container-fluid {
