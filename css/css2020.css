@@ -794,6 +794,7 @@ padding-bottom: 30px;
 /*# sourceMappingURL=bootstrap-theme.css.map */
 
 /*----------------------- IGEM 2020 Code ----------------------- */
+/* base */
 body {
   background-color:#fff;
   background-image: url("../docs/space.jpg");
@@ -806,6 +807,13 @@ body {
   width:100%;
 }
 
+/* headings and universal texts */
+h1 {
+  text-align:left;
+  font-size: 32px;
+  color: #eaeaea;
+}
+/* colors header */
 #myRed:hover, .myRed:hover {
   box-shadow: inset 0px -5px 0px 0px #fe336d;
   color: #fe336d;
