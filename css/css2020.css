@@ -823,6 +823,30 @@ body {
   color: #feca40;
 }
 
+.attributions{
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.attributions .description{
+  visibility: hidden;
+   width: 250px;
+   background-color: white;
+   color: #333;
+   text-align: center;
+   padding: 5px 0;
+   border-radius: 6px;
+   top: 100%;
+   left: 50%;
+   margin-left: -60px;
+   position: absolute;
+   z-index: 1; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+.attributions:hover .description {
+  visibility: visible;
+}
 .scrollup {
     width: 35px;
     height: 35px;
