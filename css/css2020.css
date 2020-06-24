@@ -838,6 +838,21 @@ h1 {
   color: #fff;
   margin-bottom: 20px;
 }
+.attributions .title{
+  visibility: hidden;
+   width: 250px;
+   font-size: 14px;
+   background-color: #feca40;
+   color: #333;
+   text-align: center;
+   padding: 5px 0;
+   border-radius: 6px;
+   bottom: 100%;
+   left: 25%;
+   margin-left: -60px;
+   position: absolute;
+   z-index: 125;
+}
 .attributions .description{
   visibility: hidden;
    width: 250px;
@@ -851,11 +866,15 @@ h1 {
    left: 50%;
    margin-left: -60px;
    position: absolute;
-   z-index: 1; /* Use half of the width (120/2 = 60), to center the tooltip */
+   z-index: 125;
 }
-.attributions:hover .description {
+.attributions:hover .title{
   visibility: visible;
 }
+.attributions:hover .description{
+  visibility: visible;
+}
+
 .scrollup {
     width: 35px;
     height: 35px;
