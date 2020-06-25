@@ -329,7 +329,6 @@ fieldset[disabled] .btn-danger.active {
 li.dropdown:hover > .dropdown-menu {
     display: block;
 }
-
 .dropdown-menu {
 	border-radius: 0;
 	border: none;
