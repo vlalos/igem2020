@@ -73,7 +73,9 @@
 .color-green .pic .round-team .team-content .infos{
   color: #444;
 }
+/* --------------------------- */
 /* Static stuff */
+/* --------------------------- */
 .das-team{
     text-align: center;
     position: center;
@@ -135,12 +137,12 @@
 }
 .das-team .description{
     padding: 20px;
-    background: #fff;
     border-radius: 40px 10px;
     font-size: 16px;
-    color: #666;
     line-height: 30px;
     margin-bottom: 0;
+    color: #eaeaea;
+    background: rgba(17, 14, 33, 0.5);
 }
 @media only screen and (max-width: 990px){
     .das-team{ margin-bottom: 30px; }
