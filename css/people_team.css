@@ -177,7 +177,7 @@
     width: 80%;
     height: 370px;
     background: #4d6fde;
-    padding: 20% 30px 0;
+    padding: 18% 30px 0;
     position: absolute;
     top: 0;
     right: -80%;
@@ -189,7 +189,7 @@
 .round-team .title{
     font-size: 22px;
     color: #fff;
-    margin: 0 0 10px 0;
+    margin: 0 0 0 0;
     font-weight: 800;
 }
 .round-team .post{
