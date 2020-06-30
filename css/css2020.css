@@ -142,4 +142,16 @@ h2 {
     background-color: #4f70de;
     color: #fff;
   }
+
+  /* footer navi */
+  .foot-navi {
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+  .myRed, .myGreen, .myBlue, .myYell {
+    color: #eaeaea;
+    font-size: 18px;
+    padding-right: 25px;
+  }
 /*----------------------- IGEM 2020 Code ----------------------- */
