@@ -134,6 +134,7 @@
     font-size: 14px;
     font-weight: 900;
     text-transform: uppercase;
+    color: #444;
 }
 .das-team .description{
     padding: 20px;
@@ -179,6 +180,7 @@
     background: #4d6fde;
     padding: 18% 30px 0;
     position: absolute;
+    text-align: left;
     top: 0;
     right: -80%;
     transition: all 0.4s ease-in-out 0s;
