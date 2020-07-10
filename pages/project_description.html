@@ -1,27 +1,123 @@
 <html>
   <head>
-    <title>Description - IGEM Aachen 2020</title>
+    <title>Project Description - IGEM Aachen 2020</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
     <!-- CSS -->
+    <link rel="stylesheet" href="../css/people_team.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/css2020.css">
 
     <!-- jquery and script for loading the header -->
     <script
-      src="../javascript/jquery.js"
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
       type="text/javascript">
     </script>
     <script>
       $(function(){
-        $("#header").load("https://raw.githubusercontent.com/vlalos/igem2020/1.0.0/html/header.html");
-        $("#inwork").load("https://raw.githubusercontent.com/vlalos/igem2020/1.0.0/html/inwork.html")
+        $("#header").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/header.html");
+        $("#inwork").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/inwork.html")
         $("#top_bar").load("../html/IGEM_TopBar.html")
-        $("#footer").load("https://raw.githubusercontent.com/vlalos/igem2020/1.0.0/html/footer.html")
+        $("#footer").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/footer.html")
       });
     </script>
   </head>
-  <body style="background-color:rgba(254, 202, 64, 0.75);">
+  <body>
     <div id="header"></div>
-    <div id="inwork"></div>
+    <div class="container" style="width: 100%;">
+      <div class="container-fluid" style="margin-top:20px;">
+        <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <h1>Project Description and Motivation</h1>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+        <div class=row>
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <h3 style="color:#eaeaea">The goal of our project is the creation of M.A.R.S. which is short for "<span style="color: #feca40">Magnetic ATP Recycling System</span>".<br>
+              It is a bioreactor capable of cyclic ATP regeneration by use of light.</h3>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class=row>
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+            <h3 style="color:#fe336d">"So, you want to create ATP. But what is ATP and why is it so important?"</h3>
+          </div>
+        </div>
+        <div class="row" style="margin-top:20px; padding-top: 0; padding-bottom: 20px;">
+            <div class="col-md-2"></div>
+            <div class="col-md-9">
+              <div class=textframe_red>A lot of chemical reactions would not be
+                possible without enzymes catalyzing them. However, also those enzymes
+                often do not work without the help of certain molecules known as cofactors.
+                The cofactor which is most frequently needed is Adenosintriphosphate (ATP).
+                It carries a high amount of chemical energy directly usable for biochemical
+                reactions inside the cell. This is the reason for ATP to often be referred to
+                as the energy currency of cells. It is a necessary component of all life.</div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class=row>
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+            <h3 style="color:#2bd792">"Great! Then let's create as much ATP as possible! Or is there a problem?</h3>
+          </div>
+        </div>
+        <div class="row" style="margin-top:20px; padding-top: 0; padding-bottom: 20px;">
+            <div class="col-md-2"></div>
+            <div class="col-md-9">
+              <div class=textframe_green>Yes, basically the more ATP the better! But the energy carried by an
+                ATP molecule must be invested during its creation from
+                Adenosindiphosphate (ADP) and Phosphate. In living organisms this creation
+                takes place in the course of cell respiration which is a very complex process
+                that cannot be emulated artificially. Thus, ATP needed
+                in industrial processes and science has to be created differently. Currently used
+                methods consume a lot of resources and the chemical synthesis causes
+                avoidable pollution. So, industrial production of ATP is expensive and environmentally harmful so far. </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class=row>
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+            <h3 style="color:#4f70de">"And what can be done to improve the current situation?"</h3>
+          </div>
+        </div>
+        <div class="row" style="margin-top:20px; padding-top: 0; padding-bottom: 20px;">
+            <div class="col-md-2"></div>
+            <div class="col-md-9">
+              <div class=textframe_blue>This is the point where our project M.A.R.S. enters the stage. We want
+                to improve the current situation by developing a bioreactor capable of cyclic ATP creation.
+                The energy needed for this is taken from sunlight and all resources involved are reused in the
+                next cycle so that only the basic components of ATP, ADP and Phosphate, need to be provided again.
+                This makes ATP production with M.A.R.S. environmentally friendly and much cheaper than previous methods. </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class=row>
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+            <h3 style="color:#feca40">"How do you want to achieve your goal?"</h3>
+          </div>
+        </div>
+        <div class="row" style="margin-top:20px; padding-top: 0; padding-bottom: 20px;">
+            <div class="col-md-2"></div>
+            <div class="col-md-9">
+              <div class=textframe_yellow>We use a previously found approach for ATP regeneration where Liposomes are
+                equipped with Bacteriorhodopsin and ATP-Synthase. Together those membrane proteins are able to store the
+                energy of sunlight as chemical energy in the form of ATP. In M.A.R.S. this ATP regeneration step is followed
+                by magnetic immobilization of the chassis carrying Bacteriorhodopsin and ATP-Synthase. Those chassis are Liposomes
+                in the original approach. However, in M.A.R.S. we use Polymersomes. Immobilizing them after the ATP regeneration step
+                enables harvesting the ATP while the chassis remain functioning. As the immobilization is induced by a magnetic field
+                it can be reversed by turning off this field. So, turning off the magnetic field enables another cycle of ATP regeneration.</div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+      </div>
+    </div>
+    <!-- div id="inwork"></div -->
     <!-- Scroll-Up dingsbums -->
     <div id="footer"></div>
   </body>
