@@ -60,7 +60,7 @@ h2 {
   visibility: hidden;
    width: 250px;
    font-size: 14px;
-   background-color: #e48768;
+   background-color: rgba(228, 135, 104, 0.70);
    color: #333;
    text-align: center;
    padding: 5px 0;
@@ -75,12 +75,12 @@ h2 {
   visibility: hidden;
    width: 250px;
    font-size: 14px;
-   background-color: #e48768;
+   background-color: rgba(228, 135, 104, 0.70);
    color: #333;
    text-align: center;
    padding: 5px 0;
    border-radius: 6px;
-   top: 100%;
+   top: 80%;
    left: 50%;
    margin-left: -60px;
    position: absolute;
