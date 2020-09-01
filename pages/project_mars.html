@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Project Description - IGEM Aachen 2020</title>
+    <title>Project Implementation - IGEM Aachen 2020</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
     <!-- CSS -->
     <link rel="stylesheet" href="../css/people_team.css">
@@ -13,12 +13,16 @@
       type="text/javascript">
     </script>
     <script>
-    function changeImage() {
+    function changeLightState() {
       var image = document.getElementById("Lightbulb");
       if (image.src.match("bulbon")) {
         image.src = "../docs/pic_bulboff.gif";
+        document.getElementById("arrow").style.visibility = "hidden";
+        document.getElementById("bact").style.visibility = "hidden";
       } else {
         image.src = "../docs/pic_bulbon.gif";
+        document.getElementById("arrow").style.visibility = "visible";
+        document.getElementById("bact").style.visibility = "visible";
       }
     }
     </script>
@@ -48,8 +52,9 @@
         <div class=row>
           <div class="col-md-1"></div>
           <div class="col-md-9">
-            <img id="Lightbulb" onclick="changeImage()" src="../docs/pic_bulboff.gif" width="60" height="108">
-            <span style="color: #feca40; font-size: 80px"> &#8669; </span>
+            <img id="Lightbulb" onclick="changeLightState()" src="../docs/pic_bulboff.gif" width="60" height="108">
+            <span id="arrow" style="color: #FFD700; font-size: 80px; visibility: hidden; position: relative; top:20px; left:30px"> &#8669; </span>
+            <div class=textframe_red id="bact" style="width:180px; text-align: center; visibility: hidden; position: relative; left:200px; top:-70px">Bacteriorhodopsin</div>
           </div>
         </div>
       </div>
