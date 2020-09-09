@@ -220,14 +220,16 @@ h2 {
 
 .lightcone{
   border-bottom: 100px solid rgba(255,255,0,.4);
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-radius:15px;
   height: 0;
   width: 100px;
+  z-index: -1;
 }
 
 .application_blue {
-  padding: 15px 15px 20px;
+  padding: 15px 15px 10px;
   border-radius: 10px;
   margin-top: -20px;
   border: 4px solid #4f70de;
@@ -237,22 +239,20 @@ h2 {
 }
 .application_blue .description{
    visibility: hidden;
-   width: 100%;
+   width: 150%;
    font-size: 14px;
-   background-color: rgba(79, 112, 222, 0.70);
+   background-color: rgba(255,255,255,0.5);
    color: #000000;
    text-align: justify;
-   padding: 0;
+   padding: 10px;
+   border: 4px solid #4f70de;
    border-radius: 6px;
    top: 108%;
-   left: 25%;
+   left: 0;
    right: 25%;
    margin-left: -50px;;
    position: absolute;
    z-index: 125;
-}
-.application_blue:hover .description{
-  visibility: visible;
 }
 
 

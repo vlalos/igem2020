@@ -19,24 +19,44 @@
         image.src = "../docs/pic_bulboff.gif";
         document.getElementById("light").style.visibility = "hidden";
         document.getElementById("ATPreg").style.visibility = "hidden";
+        document.getElementById("ATP arrow").style.visibility = "hidden";
         document.getElementById("enzymesys").style.visibility = "hidden";
         document.getElementById("free").style.visibility = "hidden";
         document.getElementById("imm").style.visibility = "hidden";
+        document.getElementById("food arrow").style.visibility = "hidden";
         document.getElementById("food").style.visibility = "hidden";
+        document.getElementById("fine arrow").style.visibility = "hidden";
         document.getElementById("fine").style.visibility = "hidden";
+        document.getElementById("med arrow").style.visibility = "hidden";
         document.getElementById("med").style.visibility = "hidden";
+        document.getElementById("bulk arrow").style.visibility = "hidden";
         document.getElementById("bulk").style.visibility = "hidden";
       } else {
         image.src = "../docs/pic_bulbon.gif";
         document.getElementById("light").style.visibility = "visible";
         setTimeout(() => {document.getElementById("ATPreg").style.visibility = "visible"; }, 500);
+        setTimeout(() => {document.getElementById("ATP arrow").style.visibility = "visible"; }, 1000);
         setTimeout(() => {document.getElementById("enzymesys").style.visibility = "visible";
                           document.getElementById("free").style.visibility = "visible";
-                          document.getElementById("imm").style.visibility = "visible";}, 1000);
+                          document.getElementById("imm").style.visibility = "visible";}, 1500);
         setTimeout(() => {document.getElementById("food").style.visibility = "visible";
-                          document.getElementById("fine").style.visibility = "visible";
-                          document.getElementById("med").style.visibility = "visible";
-                          document.getElementById("bulk").style.visibility = "visible";}, 1500);
+                          document.getElementById("food arrow").style.visibility = "visible";}, 2000);
+        setTimeout(() => {document.getElementById("fine").style.visibility = "visible";
+                          document.getElementById("fine arrow").style.visibility = "visible";}, 2500);
+        setTimeout(() => {document.getElementById("med").style.visibility = "visible";
+                          document.getElementById("med arrow").style.visibility = "visible";}, 3000);
+        setTimeout(() => {document.getElementById("bulk").style.visibility = "visible";
+                          document.getElementById("bulk arrow").style.visibility = "visible";}, 3500);
+      }
+    }
+    </script>
+    <script>
+    function changeTextState(id) {
+      var cur_el = document.getElementById(id);
+      if (cur_el.style.visibility.match("hidden")){
+        cur_el.style.visibility = "visible";
+      } else {
+        cur_el.style.visibility = "hidden";
       }
     }
     </script>
@@ -68,30 +88,48 @@
         <div class=row>
           <div class="col-md-1"></div>
           <div class="col-md-9">
-            <div class="lightcone" id ="light" style="visibility: hidden; position: relative; left:550px; top:0px"></div>
+            <div class="lightcone" id ="light" style="visibility: hidden; position: relative; left:550px; top:-30px"></div>
           </div>
         </div>
         <div class=row>
           <div class="col-md-1"></div>
           <div class="col-md-9">
-            <div class=textframe_red id="mars" style="width:600px; height: 500px; font-size: 30px; text-align: center; position: relative; left:300px; top:-40px">M.A.R.S.</div>
-            <div class=textframe_green id="ATPreg" style="width:200px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:500px; top:-400px">ATP-Regeneration</div>
-            <div class=textframe_yellow id="enzymesys" style="width:500px; height: 150px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:350px; top:-300px">Enzymesystems</div>
-            <div class=textframe_yellow id="free" style="width:200px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:370px; top:-370px">free</div>
-            <div class=textframe_yellow id="imm" style="width:200px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:620px; top:-420px">immobilized</div>
-            <div class=application_blue id="food" style="width:200px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:0px; top:-480px">Food production
-              <span class="description">Food is very important for living things.</span>
+            <div class=textframe_red id="mars" style="width:600px; height: 600px; font-size: 30px; text-align: center; position: relative; left:300px; top:-40px">M.A.R.S.</div>
+            <div class=textframe_green id="ATPreg" style="width:200px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:500px; top:-530px">ATP-Regeneration</div>
+            <div id="ATP arrow" style="width:200px; text-align: center; visibility: hidden; position: relative; left:500px; top:-530px">
+              <span style="color: #eaeaea; font-size: 130px; padding: 0; margin: 0;">&#8595;</span>
             </div>
-            <div class=application_blue id="fine" style="width:200px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:300px; top:-280px">Fine Chemicals
-              <span class="description">Fine chemicals are important too.</span>
+            <div class=textframe_yellow id="enzymesys" style="width:500px; height: 150px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:350px; top:-480px">Enzymesystems</div>
+            <div class=textframe_yellow id="free" style="width:200px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:370px; top:-550px">free</div>
+            <div class=textframe_yellow id="imm" style="width:200px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:620px; top:-600px">immobilized</div>
+            <div id="food arrow" style="width:200px; color:#eaeaea; font-size: 100px; text-align: center; visibility: hidden; position: relative; left:180px; top:-740px">&#8592;</div>
+            <div class=application_blue id="food" style="width:200px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:0px; top:-820px">Food production
+              <button onclick="changeTextState('food_descr')" style="text-align: center; border: None; background: transparent; transform: rotate(90deg); font-size: 20px">&#10148;</button>
+              <span id="food_descr" class="description" style="visibility: hidden;">Food is very important for living things. Here comes more text describing all the good things MARS enables in this
+              fascinating application area. We put so much work in this project so it is good to see that it is worth it. Get energized and support future iGEM teams so that they get the opportunity to create
+              the future of humanity with the help of synthetic biology!</span>
             </div>
-            <div class=application_blue id="med" style="width:200px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:700px; top:-330px">Medicine
-              <span class="description">Medical drugs are especially important for ill people.</span>
+            <div id="fine arrow" style="width:200px; color:#eaeaea; font-size: 100px; text-align: center; visibility: hidden; position: relative; left:360px; top:-820px;">&#8595;</div>
+            <div class=application_blue id="fine" style="width:200px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:300px; top:-780px">Fine Chemicals
+              <button onclick="changeTextState('fine_descr')" style="text-align: center; border: None; background: transparent; transform: rotate(90deg); font-size: 20px">&#10148;</button>
+              <span id="fine_descr" class="description" style="visibility: hidden;">Fine chemicals are important too. Here comes more text describing all the good things MARS enables in this
+              fascinating application area. We put so much work in this project so it is good to see that it is worth it. Get energized and support future iGEM teams so that they get the opportunity to create
+              the future of humanity with the help of synthetic biology!</span>
             </div>
-            <div class=application_blue id="bulk" style="width:200px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:1000px; top:-630px">Bulk Chemicals
-              <span class="description">Bulk chemicals are also important.</span>
+            <div id="med arrow" style="width:200px; color:#eaeaea; font-size: 100px; text-align: center; visibility: hidden; position: relative; left:630px; top:-1030px">&#8595;</div>
+            <div class=application_blue id="med" style="width:200px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:700px; top:-990px">Medicine <br>
+              <button onclick="changeTextState('med_descr')" style="text-align: center; border: None; background: transparent; transform: rotate(90deg); font-size: 20px">&#10148;</button>
+              <span id="med_descr" class="description" style="visibility: hidden;">Medical drugs are especially important for ill people. Here comes more text describing all the good things MARS enables in this
+              fascinating application area. We put so much work in this project so it is good to see that it is worth it. Get energized and support future iGEM teams so that they get the opportunity to create
+              the future of humanity with the help of synthetic biology!</span>
             </div>
-
+            <div id="bulk arrow" style="width:200px; color:#eaeaea; font-size: 100px; text-align: center; visibility: hidden; position: relative; left:820px; top:-1380px">&#8594;</div>
+            <div class=application_blue id="bulk" style="width:200px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:1000px; top:-1460px">Bulk Chemicals
+              <button onclick="changeTextState('bulk_descr')" style="text-align: center; border: None; background: transparent; transform: rotate(90deg); font-size: 20px">&#10148;</button>
+              <span id="bulk_descr" class="description" style="visibility: hidden;">Bulk chemicals are also important. Here comes more text describing all the good things MARS enables in this
+              fascinating application area. We put so much work in this project so it is good to see that it is worth it. Get energized and support future iGEM teams so that they get the opportunity to create
+              the future of humanity with the help of synthetic biology!</span>
+            </div>
           </div>
         </div>
       </div>
