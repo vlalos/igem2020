@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>People - IGEM Aachen 2020</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/css2020.css">
+
+    <!-- jquery and script for loading the header -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      type="text/javascript">
+    </script>
+    <script>
+      $(function(){
+        $("#header").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/header.html");
+        $("#top_bar").load("../html/IGEM_TopBar.html")
+        $("#inwork").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/inwork.html")
+        $("#footer").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/footer.html")
+      });
+    </script>
+  </head>
+  <body>
+    <div id="top_bar"></div>
+    <div id="header"></div>
+    <div id="inwork"></div>
+    <!-- Scroll-Up dingsbums -->
+    <div id="footer"></div>
+  </body>
+</html>
