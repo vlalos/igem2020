@@ -34,18 +34,22 @@ h2 {
 #myRed:hover, .myRed:hover {
   box-shadow: inset 0px -5px 0px 0px #fe336d;
   color: #fe336d;
+  text-decoration: none;
 }
 #myGreen:hover, .myGreen:hover {
   box-shadow: inset 0px -5px 0px 0px #2bd792;
   color: #2bd792;
+  text-decoration: none;
 }
 #myBlue:hover, .myBlue:hover {
   box-shadow: inset 0px -5px 0px 0px #4f70de;
   color: #4f70de;
+  text-decoration: none;
 }
 #myYell:hover, .myYell:hover {
   box-shadow: inset 0px -5px 0px 0px #feca40;
   color: #feca40;
+  text-decoration: none;
 }
 
 /* attributions seite */
@@ -307,5 +311,6 @@ h2 {
     color: #eaeaea;
     font-size: 18px;
     padding-right: 25px;
+    text-decoration: none;
   }
 /*----------------------- IGEM 2020 Code ----------------------- */
