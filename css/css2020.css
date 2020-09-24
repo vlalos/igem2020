@@ -142,6 +142,16 @@ h2 {
   background: rgba(17, 14, 33, 0.5);
 }
 
+.textframe_grey {
+  padding: 15px 15px 20px;
+  border-radius: 40px 10px;
+  margin-top: -20px;
+  border: 4px solid #707070;
+  color: #eaeaea;
+  font-size: 16px;
+  background: rgba(17, 14, 33, 0.5);
+}
+
 .speechbubble_left {
   position: relative;
 	text-align: center;
@@ -292,7 +302,7 @@ h2 {
       opacity: 0;
     };
   }
-.scrollup, .scrollup:visited, .scrollup:hover, .scrollup:focus, .scrolluo:active {
+.scrollup, .scrollup:visited, .scrollup:hover, .scrollup:focus, .scrollup	:active {
     text-decoration: none;
   }
 .scrollup:hover{
@@ -310,7 +320,6 @@ h2 {
   .myRed, .myGreen, .myBlue, .myYell {
     color: #eaeaea;
     font-size: 18px;
-    padding-right: 25px;
     text-decoration: none;
   }
 
