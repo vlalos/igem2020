@@ -60,6 +60,7 @@ h2 {
   font-weight: 500;
   color: #fff;
   margin-bottom: 20px;
+  background: rgba(17, 14, 33, 0.5);
 }
 .attributions .title{
   visibility: hidden;
