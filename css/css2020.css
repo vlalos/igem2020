@@ -274,6 +274,32 @@ h2 {
    z-index: 125;
 }
 
+/* Science Communication*/
+.pillar_roof{
+  position: relative;
+  padding: 15px 15px 20px;
+  margin-top: -20px;
+  border-radius: 40px;
+  border: 4px solid #707070;
+  color: #eaeaea;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  background: rgba(17, 14, 33, 0.5);
+ }
+
+ .pillar{
+   position: relative;
+   padding: 15px 15px 20px;
+   width:350px;
+   transform: rotate(-90deg);
+   margin-top: -20px;
+   border: 4px solid #707070;
+   color: #eaeaea;
+   font-size: 24px;
+   text-align: center;
+   background: rgba(17, 14, 33, 0.5);
+  }
 
 /* scrollup */
 .scrollup {
