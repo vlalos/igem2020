@@ -460,6 +460,9 @@ a:active {
 .modal-content {
   width: 50%; /* Could be more or less, depending on screen size */
   position: center;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 20%;
 	text-align: center;
 	background-color: rgba(17, 14, 33, 0.5);
   color: #eaeaea;
@@ -471,7 +474,7 @@ a:active {
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: #eaeaea;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -479,7 +482,7 @@ a:active {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #2bd792;
   text-decoration: none;
   cursor: pointer;
 }
