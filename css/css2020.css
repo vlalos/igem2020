@@ -30,27 +30,60 @@ h2 {
   font-size: 32px;
   color: #eaeaea;
 }
+
+
+/* links */
+a:link {
+  text-decoration: none !important;
+}
+
+a:visited {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+a:active {
+  text-decoration: none !important;
+}
+
 /* colors header */
-#myRed:hover, .myRed:hover {
+#myRed_menu:hover, .myRed_menu:hover {
   box-shadow: inset 0px -5px 0px 0px #fe336d;
-  color: #fe336d;
-  text-decoration: none;
+  color: #fe336d !important;
+}
+#myGreen_menu:hover, .myGreen_menu:hover {
+  box-shadow: inset 0px -5px 0px 0px #2bd792;
+  color: #2bd792 !important;
+}
+#myBlue_menu:hover, .myBlue_menu:hover {
+  box-shadow: inset 0px -5px 0px 0px #4f70de;
+  color: #4f70de !important;
+}
+#myYell_menu:hover, .myYell_menu:hover {
+  box-shadow: inset 0px -5px 0px 0px #feca40;
+  color: #feca40 !important;
+}
+
+#myRed:hover, .myRed:hover {
+  font-weight: 900;
+  color: #fe336d !important;
 }
 #myGreen:hover, .myGreen:hover {
-  box-shadow: inset 0px -5px 0px 0px #2bd792;
-  color: #2bd792;
-  text-decoration: none;
+  font-weight: 900;
+  color: #2bd792 !important;
 }
 #myBlue:hover, .myBlue:hover {
-  box-shadow: inset 0px -5px 0px 0px #4f70de;
-  color: #4f70de;
-  text-decoration: none;
+  font-weight: 900;
+  color: #4f70de !important;
 }
 #myYell:hover, .myYell:hover {
-  box-shadow: inset 0px -5px 0px 0px #feca40;
-  color: #feca40;
-  text-decoration: none;
+  color: #feca40 !important;
+  font-weight: 900;
 }
+
 
 /* attributions seite */
 .attributions{
