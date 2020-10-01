@@ -52,35 +52,35 @@ a:active {
 /* colors header */
 #myRed_menu:hover, .myRed_menu:hover {
   box-shadow: inset 0px -5px 0px 0px #fe336d;
-  color: #fe336d !important;
+  color: #fe336d;
 }
 #myGreen_menu:hover, .myGreen_menu:hover {
   box-shadow: inset 0px -5px 0px 0px #2bd792;
-  color: #2bd792 !important;
+  color: #2bd792;
 }
 #myBlue_menu:hover, .myBlue_menu:hover {
   box-shadow: inset 0px -5px 0px 0px #4f70de;
-  color: #4f70de !important;
+  color: #4f70de;
 }
 #myYell_menu:hover, .myYell_menu:hover {
   box-shadow: inset 0px -5px 0px 0px #feca40;
-  color: #feca40 !important;
+  color: #feca40;
 }
 
 #myRed:hover, .myRed:hover {
   font-weight: 900;
-  color: #fe336d !important;
+  color: #fe336d;
 }
 #myGreen:hover, .myGreen:hover {
   font-weight: 900;
-  color: #2bd792 !important;
+  color: #2bd792;
 }
 #myBlue:hover, .myBlue:hover {
   font-weight: 900;
-  color: #4f70de !important;
+  color: #4f70de;
 }
 #myYell:hover, .myYell:hover {
-  color: #feca40 !important;
+  color: #feca40;
   font-weight: 900;
 }
 
