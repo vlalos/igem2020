@@ -138,6 +138,7 @@ a:active {
 
 /* modelling seite */
 .textframe_blue {
+  text-align: justify;
   padding: 15px 15px 20px;
   border-radius: 40px 10px;
   margin-top: -20px;
@@ -149,6 +150,7 @@ a:active {
 
 /* Project Description */
 .textframe_yellow {
+  text-align: justify;
   padding: 15px 15px 20px;
   border-radius: 40px 10px;
   margin-top: -20px;
@@ -159,6 +161,7 @@ a:active {
 }
 
 .textframe_red {
+  text-align: justify;
   padding: 15px 15px 20px;
   border-radius: 40px 10px;
   margin-top: -20px;
@@ -169,6 +172,7 @@ a:active {
 }
 
 .textframe_green {
+  text-align: justify;
   padding: 15px 15px 20px;
   border-radius: 40px 10px;
   margin-top: -20px;
@@ -179,6 +183,7 @@ a:active {
 }
 
 .textframe_grey {
+  text-align: justify;
   padding: 15px 15px 20px;
   border-radius: 40px 10px;
   margin-top: -20px;
