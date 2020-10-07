@@ -24,19 +24,52 @@
     <div id="header"></div>
     <div class="container" style="width: 100%;">
       <div class="container-fluid" style="margin-top:20px;">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
+        <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
+          <div class="col-md-1"></div>
+          <div class="col-md-9">
+            <h1>Modelling</h1>
+            <h3 style="color:#eaeaea">Apart from effective lab work our team worked on digital simulations of the ATP regenaration processes</h3>
+            <span style="color: #eaeaea; font-size: 20px; margin-top:20px; padding-top: 60px;"><i>Click on the button to switch between the mathematical model and computer simulation</i></span>
+          </div>
+          <div class="col-md-2">
+            <img src="../docs/planet3.gif" alt="mars gif" style="width:90%; transform: rotate(70deg);">
+          </div>
+        </div>
+        <div class="col-md-1">
+          <button type="button" name="button" id="simSwitcher" style="margin-top: 20px;">Model/Simulation</button>
+        </div>
+        <div class="col-md-10" id="model">
           <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
               <h1>Here will be the mathematical model</h1>
               <img src="../docs/misc/filler.png" alt="" style="width: 50%; margin-bottom: 5%" class="imgframe_red">
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-10" style="text-align: center; display:none;" id="simulation">
           <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
             <h1>Here will be the simulation from Matze</h1>
-            <img src="../docs/misc/filler.png" alt="" style="width: 50%; margin-bottom: 5%" class="imgframe_red">
+            <iframe style="margin: 20px;"width="560" height="315" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
+        <script type="text/javascript">
+
+          var button = document.getElementById("simSwitcher");
+
+          var model = document.getElementById("model");
+
+          var sims = document.getElementById("simulation");
+
+          button.onclick = function() {
+            if (model.style.display == "none") {
+              model.style.display = "block";
+              sims.style.display = "none";
+            } else {
+              model.style.display = "none";
+              sims.style.display = "block";
+            }
+          }
+
+
+        </script>
         <div class="col-md-1"></div>
       </div>
     </div>
