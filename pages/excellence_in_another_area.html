@@ -3,6 +3,7 @@
     <title>IGEM Aachen 2020 - iGEM and beyond</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
     <!-- CSS -->
+    <link rel="stylesheet" href="../css/people_team.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/css2020.css">
 
@@ -15,7 +16,6 @@
       $(function(){
         $("#header").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/header.html");
         $("#top_bar").load("../html/IGEM_TopBar.html")
-        $("#inwork").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/inwork.html")
         $("#footer").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/footer.html")
       });
     </script>
@@ -23,8 +23,74 @@
   <body>
     <div id="top_bar"></div>
     <div id="header"></div>
-    <div id="inwork"></div>
-    <!-- Scroll-Up dingsbums -->
+    <div class="container" style="width:100%;">
+      <div class="container-fluid" style="margin-top:20px;">
+        <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
+          <div class="col-md-1"></div>
+          <div class="col-md-9">
+            <h1>Excellence in Another Area</h1>
+            <h3 style="color:#eaeaea">We had two subprojects which were not specifically connected to M.A.R.S.but which show that excellence in other areas.
+              The <a class="myRed" style="font-size: 24px" href="#hackathon"><b>Hackathon</b></a> and the <a class="myRed" style="font-size: 24px" href="#Bioaccelerator"><b>Bioaccelerator</b></a>.</h3>
+          </div>
+          <div class="col-md-2">
+            <img src="../docs/planet3.gif" alt="mars gif" style="width:80%; transform: rotate(-20deg);">
+          </div>
+        </div>
+        <div class="row">
+          <div class="abs_head" id="hackathon" style="color: #fe336d; padding-top: 100px; border-top: 4px solid #fe336d ; padding-left: 150px;">
+            Covid-19 testing device Hackathon with MSP iGEM</div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-6">
+            <div class="textframe_red">For our third meet-up with the Team of MSP we organized a “Covid-19 Hackathon”. In the face of the current pandemic, Covid-19 left no part of all our lives untouched.
+            The same is true for the iGEM competition. We felt the urge to direct some of our collective abilities and ideas towards solutions for the current...
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <img class="imgframe_red "src="../docs/misc/filler.png" alt="" style="width: 50%;">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <img class="imgframe_red "src="../docs/misc/filler.png" alt="" style="width: 50%;">
+          </div>
+          <div class="col-md-6">
+            <div class="textframe_red">
+              Over the course of 9 hours we worked on developing sophisticated point-of-care microfluidic quick tests for the SARS-CoV-2. First, we had some introductory lectures on
+              the necessary topics and backgrounds, held by some team members. We started with recapitulating the biology and genomics of the SARS-CoV-2 and looked at existing methods
+              used in testing, from PCR to ELISA approaches. It was very important for us to focus on the feasibility and the point-of-care aspect of our concepts, to achieve quick
+              reliable test results just from the concentration found in the spit of an infected person. Our goal was to reduce the necessary lab equipment and trained professionals
+              needed to perform the tests, to broaden application and simplifying the whole process. We learned to work with the free to use CAD software “Fusion360” to be able to create
+              our microchip concepts in form of a 3D Modell. In combination with a lecture on the differential calculus and programming of electrical heating and pumping systems with
+              “Arduino-gadgets” we were equipped perfectly to start the brainstorming and development phase of our Hackathon. We worked in groups of three, where each team had students
+              of different fields to enrich the creation process. After 9 long hours we had 5 completed concepts of novel detection mechanisms for the coronavirus that could work in a
+              point-of-care matter. Two systems used microchips in combination with different measurement techniques for the virus’s RNA. One team developed a high-sensitivity ELISA
+              approach to detect the viruses spike-proteins inside of a microchip. Another team used a completely different approach, incorporating a Sandwich-ELISA onto the surface
+              of a wearable face mask. The fifth concept, created by a team with two physicists used an adsorbent capture technique inside a microchip to then detect the amount of bound
+              virus particles by surface plasmon resonance.
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+          <div class="abs_head" id="Bioaccelerator" style="color: #2bd792; padding-top: 100px; border-top: 4px solid #2bd792 ; padding-left: 150px;">
+            Bioaccelerator </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-6">
+            <div class="textframe_green">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac eros lacus. Sed commodo fringilla pharetra. Proin sodales risus et nunc volutpat.</div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+             <img class="imgframe_green" src="../docs/misc/filler.png" alt="" style="width: 50%;">
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="footer"></div>
   </body>
 </html>
