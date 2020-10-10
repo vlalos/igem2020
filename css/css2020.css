@@ -421,7 +421,7 @@ a:active {
     text-align:center;
     font-size: 25px;
     font-weight: bolder;
-  }
+  
 
     .show {
     visibility: visible;
@@ -463,7 +463,7 @@ a:active {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
   }
-  
+
   .scontainerRed:hover > .myRed {
     color: #fe336d;
   }
