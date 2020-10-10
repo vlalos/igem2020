@@ -1,126 +1,197 @@
 <html>
-  <head>
-    <title>Notebook - IGEM Aachen 2020</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
-    <!-- CSS -->
-    <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/css2020.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- jquery and script for loading the header -->
-    <script>
-      $(function(){
-        $("#header").load("https://raw.githubusercontent.com/vlalos/igem2020/lab_notebook_carousel/html/header.html");
-        $("#inwork").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/inwork.html")
-        $("#top_bar").load("../html/IGEM_TopBar.html")
-        $("#footer").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/footer.html")
-      });
-    </script>
-  </head>
-  <body style="background-color:rgba(254, 202, 64, 0.75);">
-    <div id="header"></div>
-    <div class="container" style="width:100%;">
-      <div class="container-fluid" style="margin-top:20px;">
-        <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
-          <div class="col-md-1"></div>
-          <div class="col-md-9">
-            <h1>Our Lab Notebook</h1><br>
-          </div>
-          <div class="col-md-2">
-            <img src="../docs/planet3.gif" alt="mars gif" style="width:90%; transform: rotate(-20deg);">
-          </div>
+<head>
+  <title>Notebook - IGEM Aachen 2020</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+  <!-- CSS -->
+  <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/css2020.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- jquery and script for loading the header -->
+  <script>
+    $(function() {
+      $("#header").load("https://raw.githubusercontent.com/vlalos/igem2020/lab_notebook_carousel/html/header.html");
+      $("#inwork").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/inwork.html")
+      $("#top_bar").load("../html/IGEM_TopBar.html")
+      $("#footer").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/footer.html")
+    });
+  </script>
+</head>
+
+<body style="background-color:rgba(254, 202, 64, 0.75);">
+  <div id="header"></div>
+  <div class="container" style="width:100%;">
+    <div class="container-fluid" style="margin-top:20px;">
+      <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
+        <div class="col-md-1"></div>
+        <div class="col-md-9">
+          <h1>Our Lab Notebook</h1><br>
         </div>
+        <div class="col-md-2">
+          <img src="../docs/planet3.gif" alt="mars gif" style="width:90%; transform: rotate(-20deg);">
+        </div>
+      </div>
 
-        <div class="row">
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
-              <li data-target="#myCarousel" data-slide-to="4"></li>
-            </ol>
+      <div class="row">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators carousel-indicators-numbers">
+            <li data-target="#myCarousel" data-slide-to="0" class="active">1</li>
+            <li data-target="#myCarousel" data-slide-to="1">2</li>
+            <li data-target="#myCarousel" data-slide-to="2">3</li>
+            <li data-target="#myCarousel" data-slide-to="3">4</li>
+            <li data-target="#myCarousel" data-slide-to="4">5</li>
+          </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <!-- 0 -->
-              <div class="item active">
-                <img src="../docs/misc/planet-orig.gif" id="myBtn" alt="Los Angeles" style="width:30%; margin-left: auto; margin-right: auto;">
-                <!-- <button id="myBtn">Open Modal</button> -->
-
-                <div id="myModal" class="modal">
-
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
-                  </div>
-
-                </div>
-
-                <script type="text/javascript">
-                // Get the modal
-                  var modal = document.getElementById("myModal");
-
-                  // Get the button that opens the modal
-                  var btn = document.getElementById("myBtn");
-
-                  // Get the <span> element that closes the modal
-                  var span = document.getElementsByClassName("close")[0];
-
-                  // When the user clicks on the button, open the modal
-                  btn.onclick = function() {
-                  modal.style.display = "block";
-                  }
-
-                  // When the user clicks on <span> (x), close the modal
-                  span.onclick = function() {
-                  modal.style.display = "none";
-                  }
-
-                  // When the user clicks anywhere outside of the modal, close it
-                  window.onclick = function(event) {
-                  if (event.target == modal) {
-                    modal.style.display = "none";
-                  }
-                  }
-                </script>
-
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <!-- 0 -->
+            <div class="item active" data-toggle="modal" data-target="#modal_zero">
+              <img src="../docs/misc/planet-orig.gif" alt="Los Angeles" style="width:30%; margin-left: auto; margin-right: auto;">
+              <div class="centered">
+                June
               </div>
-              <!-- 1 -->
-              <div class="item">
-                <img src="../docs/misc/planet-red.gif" alt="Chicago" style="width:30%; margin-left: auto; margin-right: auto;">
-              </div>
-              <!-- 2 -->
-              <div class="item">
-                <img src="../docs/misc/planet-green.gif" alt="New York" style="width:30%; margin-left: auto; margin-right: auto;">
-              </div>
-              <!-- 3 -->
-              <div class="item">
-                <img src="../docs/misc/planet-blue.gif" alt="New York" style="width:30%; margin-left: auto; margin-right: auto;">
-              </div>
-              <!-- 4 -->
-              <div class="item">
-                <img src="../docs/misc/planet-yellow.gif" alt="New York" style="width:30%; margin-left: auto; margin-right: auto;">
+
+
+            </div>
+            <!-- 1 -->
+            <div class="item" data-toggle="modal" data-target="#modal_one">
+              <img src="../docs/misc/planet-red.gif" alt="Chicago" style="width:30%; margin-left: auto; margin-right: auto;">
+              <div class="centered">
+                July
               </div>
             </div>
+            <!-- 2 -->
+            <div class="item" data-toggle="modal" data-target="#modal_two">
+              <img src="../docs/misc/planet-green.gif" alt="New York" style="width:30%; margin-left: auto; margin-right: auto;">
+              <div class="centered" style="color: #444;">
+                August
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="item" data-toggle="modal" data-target="#modal_three">
+              <img src="../docs/misc/planet-blue.gif" alt="New York" style="width:30%; margin-left: auto; margin-right: auto;">
+              <div class="centered">
+                September
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="item" data-toggle="modal" data-target="#modal_four">
+              <img src="../docs/misc/planet-yellow.gif" alt="New York" style="width:30%; margin-left: auto; margin-right: auto;">
+              <div class="centered" style="color: #444;">
+                October
+              </div>
+            </div>
+          </div>
 
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <img src="../docs/misc/spaceship_left.png" alt="" style="width: 50%; margin-top: 50%;">
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <img src="../docs/misc/spaceship_right.png" alt="" style="width: 50%; margin-top: 50%;">
-              <span class="sr-only">Next</span>
-            </a>
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <img src="../docs/misc/spaceship_left.png" alt="" style="width: 50%; margin-top: 50%;">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <img src="../docs/misc/spaceship_right.png" alt="" style="width: 50%; margin-top: 50%;">
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Modal 0 -->
+      <div class="modal fade" id="modal_zero" role="dialog" data-backdrop="false">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal 0</h4>
+            </div>
+            <div class="modal-body">
+              <p>This is a small modal.</p>
+            </div>
+            <div class="modal-footer">
+
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Modal 1 -->
+      <div class="modal fade" id="modal_one" role="dialog" data-backdrop="false">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal 1</h4>
+            </div>
+            <div class="modal-body">
+              <p>This is a small modal.</p>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 2 -->
+      <div class="modal fade" id="modal_two" role="dialog" data-backdrop="false">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal 2</h4>
+            </div>
+            <div class="modal-body">
+              <p>This is a small modal.</p>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 3 -->
+      <div class="modal fade" id="modal_three" role="dialog" data-backdrop="false">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal 3</h4>
+            </div>
+            <div class="modal-body">
+              <p>This is a small modal.</p>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 4 -->
+      <div class="modal fade" id="modal_four" role="dialog" data-backdrop="false">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal 4</h4>
+            </div>
+            <div class="modal-body">
+              <p>This is a small modal.</p>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div id="footer"></div>
-  </body>
+  </div>
+  <div id="footer"></div>
+</body>
+
 </html>
