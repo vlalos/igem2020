@@ -421,6 +421,7 @@ a:active {
     text-align:center;
     font-size: 25px;
     font-weight: bolder;
+  }
 
     .show {
     visibility: visible;
@@ -461,6 +462,18 @@ a:active {
   .spaceship:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
+  }
+  
+  .scontainerRed:hover > .myRed {
+    color: #fe336d;
+  }
+
+  .scontainerGreen:hover > .myGreen {
+    color: #2bd792;
+  }
+
+  .scontainerYell:hover > .myYell {
+    color: #feca40;
   }
 
   @keyframes shake {
