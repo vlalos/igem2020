@@ -1,139 +1,140 @@
 <html>
-  <head>
-    <title>From Us For The World - IGEM Aachen 2020</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/css2020.css">
 
-    <!-- jquery and script for loading the header -->
-    <script
-      src="https://code.jquery.com/jquery-1.12.4.min.js"
-      type="text/javascript">
-    </script>
-    <script>
-      $(function(){
-        $("#header").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/header.html");
-        $("#top_bar").load("../html/IGEM_TopBar.html")
-        $("#inwork").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/inwork.html")
-        $("#footer").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/footer.html")
-      });
-    </script>
-  </head>
-  <body style="background-color:rgba(254, 202, 64, 0.75);">
-    <div id="header"></div>
-    <div class="container" style="width:100%;">
-      <div class="container-fluid" style="margin-top:20px;">
-        <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
-          <div class="col-md-1"></div>
-          <div class="col-md-9">
-            <h1>From Us For The World</h1>
-            <h3 style="color:#eaeaea">Our project got on a journey to different countries and cities, introducing and exchanging new ideas throughout the world.</h3>
-            <span style="color: #eaeaea; font-size: 20px; margin-top:20px; padding-top: 60px;"><i>Hover over a spaceship to relive this trip with us.</i></span>
-          </div>
-          <div class="col-md-2">
-            <img src="../docs/planet3.gif" alt="mars gif" style="width:90%; transform: rotate(40deg);">
-          </div>
+<head>
+  <title>From Us For The World - IGEM Aachen 2020</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/css2020.css">
+
+  <!-- jquery and script for loading the header -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript">
+  </script>
+  <script>
+    $(function() {
+      $("#header").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/header.html");
+      $("#top_bar").load("../html/IGEM_TopBar.html")
+      $("#inwork").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/inwork.html")
+      $("#footer").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/footer.html")
+    });
+  </script>
+</head>
+
+<body style="background-color:rgba(254, 202, 64, 0.75);">
+  <div id="header"></div>
+  <div class="container" style="width:100%;">
+    <div class="container-fluid" style="margin-top:20px;">
+      <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
+        <div class="col-md-1"></div>
+        <div class="col-md-9">
+          <h1>From Us For The World</h1>
+          <h3 style="color:#eaeaea">Our project got on a journey to different countries and cities, introducing and exchanging new ideas throughout the world.</h3>
+          <span style="color: #eaeaea; font-size: 20px; margin-top:20px; padding-top: 60px;"><i>Hover over a spaceship to relive this trip with us.</i></span>
         </div>
-        <div class="row">
-          <div class="col-4 col-sm-4">
-              <div class="row">
-                <img id="myBtn" src="../docs/misc/spaceship_fr.png" alt="" class="spaceship" style="margin-left: 65%; margin-top:0%;">
+        <div class="col-md-2">
+          <img src="../docs/planet3.gif" alt="mars gif" style="width:90%; transform: rotate(40deg);">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 col-sm-4">
+          <div class="row">
+            <img id="myBtn" src="../docs/misc/spaceship_fr.png" alt="" class="spaceship" style="margin-left: 65%; margin-top:0%;">
 
-                <div id="myModal" class="modal">
+            <div id="myModal" class="modal">
 
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div class="container" style=" margin-left: 0;">
-                      <div class="row">
-                        <h3 style="margin-left: 10%; text-align: left;">Hey! Where do you want me to take you to?</h3>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-4">
-                          Read about our communication with <br>
-                          <a href="publicity_collab.html #Nantes" style="font-size: 14px;">iGEM Team Nantes <br>
-                          <img src="../docs/misc/filler.png" alt="" class="imgframe_green" style="margin-top: 10%; width:30%"> </a> </a>
-                        </div>
-                        <div class="col-md-4">
-                          Check out our science communication projects for
-                          <a href="publicity_sciencecomm.html #newcomers">Scientific newcomers <br>
-                          <img src="../docs/misc/filler.png" alt="" class="imgframe_green" style="margin-top: 10%; width:30%"> </a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <img src="../docs/misc/marsian.png" alt="" style="margin-left: 100%;">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="container" style=" margin-left: 0;">
+                  <div class="row">
+                    <h3 style="margin-left: 10%; text-align: left;">Hey! Where do you want me to take you to?</h3>
                   </div>
-
+                  <div class="row">
+                    <div class="col-md-4">
+                      Read about our communication with <br>
+                      <a href="publicity_collab.html #Nantes" style="font-size: 14px;">iGEM Team Nantes <br>
+                        <img src="../docs/misc/filler.png" alt="" class="imgframe_green" style="margin-top: 10%; width:30%"> </a> </a>
+                    </div>
+                    <div class="col-md-4">
+                      Check out our science communication projects for
+                      <a href="publicity_sciencecomm.html #newcomers">Scientific newcomers <br>
+                        <img src="../docs/misc/filler.png" alt="" class="imgframe_green" style="margin-top: 10%; width:30%"> </a>
+                    </div>
+                  </div>
                 </div>
 
-                <script type="text/javascript">
-                // Get the modal
-                  var modal = document.getElementById("myModal");
-
-                  // Get the button that opens the modal
-                  var btn = document.getElementById("myBtn");
-
-                  // Get the <span> element that closes the modal
-                  var span = document.getElementsByClassName("close")[0];
-
-                  // When the user clicks on the button, open the modal
-                  btn.onclick = function() {
-                  modal.style.display = "block";
-                  }
-
-                  // When the user clicks on <span> (x), close the modal
-                  span.onclick = function() {
-                  modal.style.display = "none";
-                  }
-
-                  // When the user clicks anywhere outside of the modal, close it
-                  window.onclick = function(event) {
-                  if (event.target == modal) {
-                    modal.style.display = "none";
-                  }
-                  }
-                </script>
+                <img src="../docs/misc/marsian.png" alt="" style="margin-left: 100%;">
               </div>
-              <div class="row">
-                <a href="publicity_sciencecomm.html #CH">
-                  <img src="../docs/misc/spaceship_ch.png" alt="" class="spaceship" style="margin-left: 50%; margin-top:0%;">
-                </a>
-              </div>
-              <div class="row">
-                <a href="publicity_sciencecomm.html #CR">
-                  <img src="../docs/misc/spaceship_cr.png" alt="" class="spaceship" style="margin-left: 80%; margin-top:0%;">
-                </a>
-              </div>
-          </div>
-          <div class="col-4 col-sm-4">
-            <img src="../docs/planet1.gif" alt="destination gif" style="width: 100%;">
-            <div id="centered">
-              M.A.R.S.
+
             </div>
+
+            <script type="text/javascript">
+              // Get the modal
+              var modal = document.getElementById("myModal");
+
+              // Get the button that opens the modal
+              var btn = document.getElementById("myBtn");
+
+              // Get the <span> element that closes the modal
+              var span = document.getElementsByClassName("close")[0];
+
+              // When the user clicks on the button, open the modal
+              btn.onclick = function() {
+                modal.style.display = "block";
+              }
+
+              // When the user clicks on <span> (x), close the modal
+              span.onclick = function() {
+                modal.style.display = "none";
+              }
+
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                if (event.target == modal) {
+                  modal.style.display = "none";
+                }
+              }
+            </script>
           </div>
-          <div class="col-4 col-sm-4">
-              <div class="row">
-                <a href="publicity_sciencecomm.html #UZ">
-                  <img src="../docs/misc/spaceship_uz.png" alt="" class="spaceship" style="margin-left: 0%;">
-                </a>
-              </div>
-              <div class="row">
-                <a href="publicity_collab.html #MSP">
-                  <img src="../docs/misc/spaceship_ne.png" alt="" class="spaceship" style="margin-left: 10%; width:45%;">
-                </a>
-              </div>
-              <div class="row">
-                <a href="publicity_collab.html #GER">
-                  <img src="../docs/misc/spaceship_ge.png" alt="" class="spaceship" style="margin-left: -10%;">
-                </a>
-              </div>
+          <div class="row">
+            <a href="publicity_sciencecomm.html #CH">
+              <img src="../docs/misc/spaceship_ch.png" alt="" class="spaceship" style="margin-left: 50%; margin-top:0%;">
+            </a>
+          </div>
+          <div class="row">
+            <a href="publicity_sciencecomm.html #CR">
+              <img src="../docs/misc/spaceship_cr.png" alt="" class="spaceship" style="margin-left: 80%; margin-top:0%;">
+            </a>
+          </div>
+        </div>
+        <div class="col-4 col-sm-4">
+          <img src="../docs/misc/planet-orig.gif" alt="destination gif" style="width: 100%;">
+          <div class="centered">
+            M.A.R.S.
+          </div>
+        </div>
+        <div class="col-4 col-sm-4">
+          <div class="row">
+            <a href="publicity_sciencecomm.html #UZ">
+              <img src="../docs/misc/spaceship_uz.png" alt="" class="spaceship" style="margin-left: 0%;">
+            </a>
+          </div>
+          <div class="row">
+            <a href="publicity_collab.html #MSP">
+              <img src="../docs/misc/spaceship_ne.png" alt="" class="spaceship" style="margin-left: 10%; width:45%;">
+            </a>
+          </div>
+          <div class="row">
+            <a href="publicity_collab.html #GER">
+              <img src="../docs/misc/spaceship_ge.png" alt="" class="spaceship" style="margin-left: -10%;">
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Scroll-Up dingsbums -->
-    <div id="footer"></div>
-  </body>
+  </div>
+  <!-- Scroll-Up dingsbums -->
+  <div id="footer"></div>
+</body>
+
 </html>
