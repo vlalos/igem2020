@@ -434,6 +434,7 @@ a:active {
   .myRed, .myGreen, .myBlue, .myYell {
     color: #eaeaea;
     font-size: 18px;
+    font-weight: 700;
     text-decoration: none;
   }
 
