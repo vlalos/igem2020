@@ -23,6 +23,7 @@ h1 {
   text-align:left;
   font-size: 36px;
   color: #eaeaea;
+  margin-top: 50px;
 }
 
 h2 {
@@ -471,7 +472,7 @@ a:active {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #eaeaea;
-  font-size: 200%;
+  font-size: 300%;
   font-weight: bolder;
   text-align: center;
 }
@@ -479,6 +480,99 @@ a:active {
 
 
 /* Lab Notebook */
+.planet :hover {
+  cursor: pointer !important;
+}
+
+.zeilen {
+  font-size: 32px;
+  font-weight: bolder;
+  text-align: left;
+  color: #eaeaea;
+}
+
+.month {
+  color: #eaeaea;
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.week {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.week-blue {
+  color: #4f70de;
+}
+
+.week-red {
+  color: #fe336d;
+}
+
+.week-yellow {
+  color: #feca40;
+}
+
+.week-green {
+  color: #2bd792;
+}
+
+.column_red {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+  border-left: solid #fe336d 3px !important;
+}
+.column_green {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+  border-left: solid #2bd792 3px !important;
+}
+.column_blue {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+  border-left: solid #4f70de 3px !important;
+}
+
+.column_yellow {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+  border-left: solid #feca40 3px !important;
+}
+
+.experiment_list {
+  margin: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  list-style: none;
+}
+
+.experiment_list  li {
+  text-align: justify;
+}
+
+.experiment_list  li::before {
+  content: "\2022";
+  font-size: 24px;
+  font-weight: 900;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.column_blue .experiment_list  li::before {
+  color: #4f70de;
+}
+
+.notebook_img {
+  transition: transform .2s;
+  margin: 0;
+}
+
+.notebook_img:hover {
+  transform: scale(5);
+}
 
 /* The Modal (background) */
 .modal {
@@ -499,7 +593,7 @@ a:active {
   width: 100%; /* Could be more or less, depending on screen size */
   margin-left: auto;
   margin-right:auto;
-  margin-top: 30%;
+  margin-top: 50px;
 	text-align: center;
 	background-color: rgba(17, 14, 33, 0.1);
   color: #eaeaea;
@@ -510,12 +604,13 @@ a:active {
 }
 
 .modal-dialog {
-  width: 80%;
+  width: 95%;
 }
 
 .modal-body {
   position: relative;
   overflow: auto;
+  border: none;
 }
 /* The Close Button */
 .close {
