@@ -1,13 +1,5 @@
 /* text fields */
 
-.abs_head {
-    align-content: flex-start;
-    text-align: left;
-    font-weight: 800;
-    font-size: 24px;
-    font-family: Arial;
-}
-
 .subtitle {
   text-align: left;
   font-weight: 800;

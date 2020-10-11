@@ -1,125 +1,276 @@
 <html>
-  <head>
-    <title>Simulation - IGEM Aachen 2020</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/css2020.css">
 
-    <!-- jquery and script for loading the header -->
-    <script
-      src="../javascript/jquery.js"
-      type="text/javascript">
-    </script>
-    <script>
-      $(function(){
-        $("#header").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/header.html");
-        $("#inwork").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/inwork.html")
-        $("#top_bar").load("../html/IGEM_TopBar.html")
-        $("#footer").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/footer.html")
-      });
-    </script>
-  </head>
-  <body>
-    <div id="header"></div>
-    <div class="container" style="width: 100%;">
-      <div class="container-fluid" style="margin-top:20px;">
-        <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
-          <div class="col-md-1"></div>
-          <div class="col-md-9">
-            <h1>Modelling</h1>
-            <h3 style="color:#eaeaea">Apart from effective lab work our team worked on digital simulations of the ATP regenaration processes</h3>
-            <span style="color: #eaeaea; font-size: 20px; margin-top:20px; padding-top: 60px;"><i>Click on the button to switch between the mathematical model and computer simulation</i></span>
-          </div>
-          <div class="col-md-2">
-            <img src="../docs/planet3.gif" alt="mars gif" style="width:90%; transform: rotate(70deg);">
-          </div>
-        </div>
-        <div class="col-md-1">
-          <button type="button" name="button" id="simSwitcher" style="margin-top: 20px;">Model/Simulation</button>
-        </div>
-        <div class="col-md-10" id="model">
-          <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
-              <h1>Here will be the mathematical model</h1>
-              <img src="../docs/misc/filler.png" alt="" style="width: 50%; margin-bottom: 5%" class="imgframe_red">
+<head>
+  <title>Simulation - IGEM Aachen 2020</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/css2020.css">
+
+  <!-- jquery and script for loading the header -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $("#header").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/header.html");
+      $("#inwork").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/inwork.html")
+      $("#top_bar").load("../html/IGEM_TopBar.html")
+      $("#footer").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/footer.html")
+    });
+  </script>
+  <style media="screen">
+    .row {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header"></div>
+  <div class="container" style="width: 100%;">
+    <div class="container-fluid" style="margin-top:20px;">
+      <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
+        <div class="col-md-1"></div>
+        <div class="col-md-9">
+          <h1>Modelling</h1>
+          <h3 style="color:#eaeaea">Apart from effective lab work our team worked on digital simulations of the ATP regenaration processes</h3>
+          <span style="color: #eaeaea; font-size: 20px; margin-top:20px; padding-top: 60px;"><i>Click on the button to switch between the mathematical model and computer simulation</i></span>
+          <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+            <label class="onoffswitch-label" for="myonoffswitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+            </label>
           </div>
         </div>
-        <div class="col-md-10" style="text-align: center; display:none;" id="simulation">
-          <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
-            <h1>Here will be the simulation from Matze</h1>
-            <h1 style="text-align:center; color: #4f70de;">10h of music for the Wiki Marathon</h1>
-            <iframe style="margin: 20px;"width="560" height="315" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="col-md-2">
+          <img src="../docs/planet3.gif" alt="mars gif" style="width:90%; transform: rotate(70deg);">
+        </div>
+      </div>
+      <div class="row">
+        <div class="container" id="model" style="width:100%;">
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="abs_head" style="color: #fe336d; margin-top: 20px;">
+                Model (SimBio)</div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="textframe_red">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+              <div class="textframe_green">
+
+
+                <ul>
+                  <li>Irgendeine List</li>
+                  <li>Noch ein Eintrag</li>
+                  <li>Weiter testen</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="row">
+                <div class="imgframe_green">
+
+
+                  <img src="../docs/misc/filler.png" style="width: 50%;" alt="">
+                </div>
+              </div>
+              <div class="row">
+                <div class="textframe_green">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+              <div class="textframe_red">
+
+
+                PARAMETER PLOT
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="textframe_red">
+
+
+                TEXT PROOF
+              </div>
+            </div>
+            <div class="col-md-1"></div>
           </div>
         </div>
-        <script type="text/javascript">
+        <div class="container" id="simulation" style="display:none; width:100%;">
+          <div class="container-fluid" style="width:100%;">
 
-          var button = document.getElementById("simSwitcher");
 
-          var model = document.getElementById("model");
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="abs_head" style="color: #4f70de; margin-top: 20px;">
+                Molecular Dynamics Simulation</div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-7">
+              <div class="textframe_blue">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              </div>
+            </div>
+            <div class="col-md-3" style="background: white; border-radius: 40px 10px;">
+              <img src="../docs/logos/ChimeraLogo.png" alt="" style="margin-top: 10px; width: 30%">
+              <img src="../docs/logos/GROMACS_logo.png" alt="" style="margin-left: 10%; width: 40%">
+              <img src="../docs/logos/cytoscapeLogo.png" alt="" style="margin:0; width: 40%">
+              <img src="../docs/logos/vmd-logo.svg" alt="" style="margin-left: 5%; width: 30%">
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+              <div class="row">
+                <div class="textframe_yellow">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                  et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </div>
+              </div>
+              <div class="row">
+                <div class="textframe_yellow">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                  et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="row">
+                <div class="col-md-6">
+                  <span style="font-size: 48px; color: #feca40; text-align: center;">ATP</span>
+                </div>
+                <div class="col-md-6">
+                  <span style="font-size: 48px; color: #feca40; text-align: center;">BR</span>
+                </div>
+              </div>
+              <div class="row">
+                <span style="font-size: 48px; color: #feca40; text-align: center;">ATP and BR</span>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2 movie">
+              <iframe style="margin: 20px; width:100%;" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-2 movie">
+              <iframe style="margin: 20px; width:100%;" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-2 movie">
+              <iframe style="margin: 20px; width:100%;" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-2 movie">
+              <iframe style="margin: 20px; width:100%;" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-2 movie">
+              <iframe style="margin: 20px; width:100%;" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        var button = document.getElementById("myonoffswitch");
 
-          var sims = document.getElementById("simulation");
+        var model = document.getElementById("model");
 
-          button.onclick = function() {
-            if (model.style.display == "none") {
-              model.style.display = "block";
-              sims.style.display = "none";
-            } else {
-              model.style.display = "none";
-              sims.style.display = "block";
-            }
+        var sims = document.getElementById("simulation");
+
+        button.onclick = function() {
+          if (model.style.display == "none") {
+            model.style.display = "block";
+            sims.style.display = "none";
+          } else {
+            model.style.display = "none";
+            sims.style.display = "block";
           }
-
-
-        </script>
+        }
+      </script>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+  <div class="container" style="width: 100%;">
+    <div class="container-fluid" style="margin-top:20px;">
+      <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
+        <div class="col-md-1"></div>
+        <div class="col-md-5 col-sm-6">
+          <div class="textframe_blue">
+            <p>
+              Recent developments have hit hard on various people, organisations and projects. Scientists and Universities
+              all around the world are subject to said same struggle. Though many questions remain unanswered and problems unsolved,
+              it is astounding how quick several rising stars have brought hope to students and staff alike. In times of contact
+              restriction our view for the technological augmentations of our professional as well as private lifes has yet been widened.
+              Especially, various "Group Meeting Services" hardly want to be missed in the future.</p>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-6">
+          <div class="textframe_blue">
+            <p>For the synthetic biology and information science community, one of these technological rising stars has been a tool of
+              widespread use for long but was also reserved to highly trained experts, due to its complexity.</p>
+          </div>
+        </div>
         <div class="col-md-1"></div>
       </div>
-    </div>
-    <div class="container" style="width: 100%;">
-      <div class="container-fluid" style="margin-top:20px;">
-        <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
-          <div class="col-md-1"></div>
-          <div class="col-md-5 col-sm-6">
-            <div class="textframe_blue">
-              <p>
-            Recent developments have hit hard on various people, organisations and projects. Scientists and Universities
-            all around the world are subject to said same struggle. Though many questions remain unanswered and problems unsolved,
-            it is astounding how quick several rising stars have brought hope to students and staff alike. In times of contact
-            restriction our view for the technological augmentations of our professional as well as private lifes has yet been widened.
-            Especially, various "Group Meeting Services" hardly want to be missed in the future.</p></div>
-          </div>
-          <div class="col-md-5 col-sm-6">
-            <div class="textframe_blue">
-            <p>For the synthetic biology and information science community, one of these technological rising stars has been a tool of
-            widespread use for long but was also reserved to highly trained experts, due to its complexity.</p></div>
-          </div>
-          <div class="col-md-1"></div>
+      <div class="row" style="padding-top: 20px; padding-bottom: 0;">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <h1>Molecular Dynamics Simulation</h1> <br>
         </div>
-        <div class="row" style="padding-top: 20px; padding-bottom: 0;">
-          <div class="col-md-1"></div>
-          <div class="col-md-5">
-            <h1>Molecular Dynamics Simulation</h1>
-          </div>
-          <div class="col-md-6"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-1"></div>
-          <div class="col-md-10">
-            <div class="textframe_blue">
+        <div class="col-md-6"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="textframe_blue">
             <p>We are proud to say, that iGEM Aachen has taken on the challenge!</p>
             <p>Harnessing the power of various software like <span style="color: #fe336d">CytoScape</span>,
               <span style="color: #2bd792">Chimera</span>, <span style="color: #4f70de">Gromacs</span> and
               <span style="color: #feca40">VMD</span>, we are able to do work fromeverywhere and assist our laboratory team by
-              making up for the time they had to hold back!</p>
+              making up for the time they had to hold back!
+            </p>
             <p>Thanks to the months of ongoing training, trial and sweat and tears and error, of our Simulation Subgroup,
               we are in for mastering the molecular dynamics and using its potential to promote and further our research.</p>
             <p><span style="color: #fe336d">M.A.R.S</span> by <span style="color: #2bd792">iGEM Aachen</span> is coming up in big leaps.</p>
-            <p>We are proud to share results and experience with you soon! Stay tuned!</p></div>
+            <p>We are proud to share results and experience with you soon! Stay tuned!</p>
           </div>
-          <div class="col-md-1"></div>
         </div>
+        <div class="col-md-1"></div>
       </div>
     </div>
-    <!-- Scroll-Up dingsbums -->
-    <div id="footer"></div>
-  </body>
+  </div>
+  <!-- Scroll-Up dingsbums -->
+  <div id="footer"></div>
+</body>
+
 </html>
