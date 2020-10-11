@@ -143,7 +143,24 @@ a:active {
   visibility: visible;
 }
 
-/* modelling seite */
+/* modelling page */
+.movie {
+  transition: transform .2s;
+  margin: 0;
+}
+
+.movie:hover {
+  transform: scale(2);
+}
+
+.abs_head {
+    align-content: flex-start;
+    text-align: left;
+    font-weight: 800;
+    font-size: 24px;
+    font-family: Arial;
+}
+
 .textframe_blue {
   text-align: justify;
   padding: 15px 15px 20px;
