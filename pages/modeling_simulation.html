@@ -3,14 +3,11 @@
     <title>Simulation - IGEM Aachen 2020</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/css2020.css">
 
     <!-- jquery and script for loading the header -->
-    <script
-      src="../javascript/jquery.js"
-      type="text/javascript">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(function(){
         $("#header").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/header.html");
@@ -30,20 +27,27 @@
             <h1>Modelling</h1>
             <h3 style="color:#eaeaea">Apart from effective lab work our team worked on digital simulations of the ATP regenaration processes</h3>
             <span style="color: #eaeaea; font-size: 20px; margin-top:20px; padding-top: 60px;"><i>Click on the button to switch between the mathematical model and computer simulation</i></span>
+            <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+                <label class="onoffswitch-label" for="myonoffswitch">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+            </div>
           </div>
           <div class="col-md-2">
             <img src="../docs/planet3.gif" alt="mars gif" style="width:90%; transform: rotate(70deg);">
           </div>
         </div>
-        <div class="col-md-1">
-          <button type="button" name="button" id="simSwitcher" style="margin-top: 20px;">Model/Simulation</button>
-        </div>
+        <div class="row">
+        <div class="col-md-1"></div>
         <div class="col-md-10" id="model">
           <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
               <h1>Here will be the mathematical model</h1>
               <img src="../docs/misc/filler.png" alt="" style="width: 50%; margin-bottom: 5%" class="imgframe_red">
           </div>
         </div>
+        <div class="col-md-1"></div>
         <div class="col-md-10" style="text-align: center; display:none;" id="simulation">
           <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
             <h1>Here will be the simulation from Matze</h1>
@@ -51,9 +55,10 @@
             <iframe style="margin: 20px;"width="560" height="315" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
+        </div>
         <script type="text/javascript">
 
-          var button = document.getElementById("simSwitcher");
+          var button = document.getElementById("myonoffswitch");
 
           var model = document.getElementById("model");
 
@@ -97,7 +102,7 @@
         <div class="row" style="padding-top: 20px; padding-bottom: 0;">
           <div class="col-md-1"></div>
           <div class="col-md-5">
-            <h1>Molecular Dynamics Simulation</h1>
+            <h1>Molecular Dynamics Simulation</h1> <br>
           </div>
           <div class="col-md-6"></div>
         </div>
