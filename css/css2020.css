@@ -638,6 +638,14 @@ a:active {
 }
 
 
+/* ------------------ Results page ----------------*/
+.result_point {
+  font-size: 32px;
+  font-weight: bold;
+  color: #eaeaea;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 /* ------------------------- Header --------------------------- */
 
