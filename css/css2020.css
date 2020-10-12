@@ -481,6 +481,10 @@ a:active {
     color: #2bd792;
   }
 
+  .scontainerBlue:hover > .myBlue {
+    color: #4f70de;
+  }
+
   .scontainerYell:hover > .myYell {
     color: #feca40;
   }
