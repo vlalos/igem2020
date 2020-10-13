@@ -1,14 +1,8 @@
-/*---------------------------------------- This is all Bootstrap stuff----------------------------------
------------------!!!!IMPORTANT!!!!!!----------------------------------
------------------Always include Bootstrap first---------------------
------------------------------------------------------*/
-
-
 /*----------------------- IGEM 2020 Code ----------------------- */
 /* base */
 body {
   background-color:#fff;
-  background-image: url("../docs/space.jpg");
+  background-image: url("https://2020.igem.org/wiki/images/d/d4/T--Aachen--space.jpg");
 }
 
 .container-fluid {
@@ -24,6 +18,7 @@ h1 {
   font-size: 36px;
   color: #eaeaea;
   margin-top: 50px;
+  border-bottom: none !important;
 }
 
 h2 {
@@ -522,7 +517,7 @@ a:active {
   }
 
   .myRed, .myGreen, .myBlue, .myYell {
-    color: #eaeaea;
+    color: #eaeaea !important;
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
@@ -540,19 +535,19 @@ a:active {
   }
 
   .scontainerRed:hover > .myRed {
-    color: #fe336d;
+    color: #fe336d !important;
   }
 
   .scontainerGreen:hover > .myGreen {
-    color: #2bd792;
+    color: #2bd792 !important;
   }
 
   .scontainerBlue:hover > .myBlue {
-    color: #4f70de;
+    color: #4f70de !important;
   }
 
   .scontainerYell:hover > .myYell {
-    color: #feca40;
+    color: #feca40 !important;
   }
 
   @keyframes shake {
@@ -904,3 +899,270 @@ li.dropdown:hover>.dropdown-menu {
 }
 
 /*----------------------- IGEM 2020 Code ----------------------- */
+
+
+/* text fields */
+
+.abs_head {
+    align-content: flex-start;
+    text-align: left;
+    margin-bottom: 40px;
+    font-weight: 800;
+    font-size: 24px;
+    font-family: Arial;
+}
+
+.subtitle {
+  text-align: left;
+  font-weight: 800;
+  font-size: 24px;
+  font-family: Arial;
+}
+
+/* subgroups */
+
+.icons {
+  width:100%;
+  filter: invert(100%);
+}
+
+.subgroup_name {
+  font-size: 18px;
+  color: #eaeaea;
+  text-align: left;
+}
+
+/* colors  */
+/* red */
+.color-red .team-content, .color-red .pic .round-team .team-content
+{
+  background-color: #fe336d;
+}
+
+.color-red .pic, .color-red .description{
+  border: 10px solid #fe336d;
+}
+
+/* green */
+.color-green .team-content, .color-green .pic .round-team .team-content
+{
+  background-color: #2bd792;
+}
+
+.color-green .pic, .color-green .description{
+  border: 10px solid #2bd792;
+}
+
+/* blue */
+.color-blue .team-content, .color-blue .pic .round-team .team-content
+{
+  background-color: #4f70de;
+}
+
+.color-blue .pic, .color-blue .description{
+  border: 10px solid #4f70de;
+}
+
+/* yellow */
+.color-yellow .team-content, .color-yellow .pic .round-team .team-content
+{
+  background-color: #feca40;
+}
+
+.color-yellow .pic, .color-yellow .description{
+  border: 10px solid #feca40;
+}
+
+.color-yellow .pic .round-team .team-content .infos,
+.color-green .pic .round-team .team-content .infos{
+  color: #444;
+}
+/* --------------------------- */
+/* Static stuff */
+/* --------------------------- */
+.das-team{
+    text-align: center;
+    position: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.das-team .pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+.das-team .round-team{
+    width: 100%;
+    height: auto;
+}
+.das-team .social{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    transition: all 0.3s ease-out 0s;
+}
+.das-team .social li a{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #f28a31;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+    transform: scale(0);
+    transition: all 0.2s ease 0s;
+}
+.das-team:hover .social li a{ transform: scale(1); }
+.das-team:hover .social li a:hover{ background: #7a4b94; }
+.das-team .team-content{
+    padding: 15px 15px 20px;
+    border-radius: 40px 10px;
+    margin-top: -20px;
+    color: #fff;
+}
+.das-team .title{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+.das-team .post{
+    display: block;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #444;
+}
+.das-team .description{
+    padding: 20px;
+    border-radius: 40px 10px;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 0;
+    text-align: justify;
+    color: #eaeaea;
+    background: rgba(17, 14, 33, 0.5);
+}
+@media only screen and (max-width: 990px){
+    .das-team{ margin-bottom: 30px; }
+}
+@media only screen and (max-width: 359px){
+    .das-team .pic{
+        width: 150px;
+        height: 150px;
+    }
+    .das-team .social{ top: 20px; }
+}
+
+/*-----------------------*/
+
+.round-team{
+    overflow: hidden;
+    border-radius: 100%;
+    position:relative;
+    bottom: 5px;
+    margin-bottom: 40px;
+}
+.round-team img{
+    width: 100%;
+    position: relative;
+    right: 0;
+    top: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+.round-team:hover img{
+    right: 60%;
+}
+.round-team .team-content{
+    width: 80%;
+    height: 370px;
+    background: #4d6fde;
+    padding: 18% 30px 0;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    right: -80%;
+    transition: all 0.4s ease-in-out 0s;
+}
+.round-team:hover .team-content{
+    right: 0;
+}
+.round-team .title{
+    font-size: 22px;
+    color: #fff;
+    margin: 0 0 0 0;
+    font-weight: 800;
+}
+.round-team .post{
+    display: block;
+    font-size: 12px;
+    font-weight: 900;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.round-team .infos{
+    font-size: 14px;
+    color: #ddd;
+}
+.round-team .subgroup{
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	padding-top: 10%;
+	margin: 0;
+}
+.round-team .subgroup li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.round-team .subgroup li img{
+	display: block;
+	width: 36px;
+    height: 36px;
+    position: relative;
+    text-align: center;
+    transition: all 0.4s ease-in-out 0s;
+}
+.round-team .social{
+	padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.round-team .social li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.round-team .social li:last-child{
+    margin-right: 0;
+}
+.round-team .social li a{
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #999;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0s;
+}
+.round-team .social li a:hover{ color: #fff; }
+.round-team .social li a.fa-facebook:hover{ background: #3b5a9b; }
+.round-team .social li a.fa-twitter:hover{ background: #2baae1; }
+.round-team .social li a.fa-google-plus:hover{ background: #f63d26; }
+.round-team .social li a.fa-youtube:hover{ background: #c3181e; }
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 50px; }
+}
+@media only screen and (max-width: 360px){
+    .team-content{ padding: 15% 15px 0; }
+    .round-team .social li{ margin-right: 0; }
+}
