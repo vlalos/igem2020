@@ -692,6 +692,15 @@ a:active {
   transform: scale(5);
 }
 
+.interactive_img {
+  transition: transform .2s;
+  margin: 0;
+}
+
+.interactive_img:hover {
+  transform: scale(2);
+}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
