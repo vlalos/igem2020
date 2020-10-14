@@ -694,7 +694,7 @@ a:active {
 
 .interactive_img {
   transition: transform .2s;
-  margin: 0;
+  margin: 20px 0;
 }
 
 .interactive_img:hover {
