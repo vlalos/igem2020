@@ -602,6 +602,12 @@ a:active {
   cursor: pointer !important;
 }
 
+.months_navi {
+  cursor: pointer;
+  text-align: center;
+  font-size: 24px !important;
+}
+
 .zeilen {
   font-size: 32px;
   font-weight: bolder;
