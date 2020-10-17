@@ -582,10 +582,10 @@ a:active {
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+   /* Gives that scrolling effect as the typing happens */
   /* letter-spacing: .15em; /* Adjust as needed */
   animation:
-    typing 3s steps(40, end),
+    typing 2s steps(40, end),
     blink-caret .75s step-end infinite;
   animation-fill-mode:forwards;
 }
@@ -593,7 +593,22 @@ a:active {
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100%; visibility: visible;}
+  to { width: 90%; visibility: visible;}
+}
+
+.pop-up {
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 /* Lab Notebook */
@@ -748,7 +763,7 @@ a:active {
 .close {
   color: #eaeaea;
   float: right;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
 }
 
