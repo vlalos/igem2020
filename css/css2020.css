@@ -489,17 +489,18 @@ a:active {
     text-align:center;
     font-size: 25px;
     font-weight: bolder;
-
-
-    .show {
-    visibility: visible;
-    opacity: 1;
-    };
-    .hide {
-      visibility: hidden;
-      opacity: 0;
-    };
   }
+
+  .show {
+  visibility: visible;
+  opacity: 1;
+  };
+
+  .hide {
+    visibility: hidden;
+    opacity: 0;
+  };
+
 .scrollup, .scrollup:visited, .scrollup:hover, .scrollup:focus, .scrollup	:active {
     text-decoration: none;
   }
@@ -609,6 +610,13 @@ a:active {
   100% {
     visibility: visible;
   }
+}
+
+.img_modal
+{
+    border-radius: 10% 20%;
+    margin: auto;
+    width: 50%;
 }
 
 /* Lab Notebook */
@@ -739,7 +747,6 @@ a:active {
 .modal-content {
   width: 100%; /* Could be more or less, depending on screen size */
   margin-left: auto;
-  margin-right:auto;
   margin-top: 50px;
 	text-align: center;
 	background-color: rgba(17, 14, 33, 0.1);
