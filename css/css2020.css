@@ -87,6 +87,10 @@ a:active {
   color: #feca40 !important;
 }
 
+.myOrig:hover {
+  color: #ed413b !important;
+}
+
 /* attributions seite */
 .attributions{
   display: block;
@@ -515,7 +519,7 @@ a:active {
     margin-left: 10%;
   }
 
-  .myRed, .myGreen, .myBlue, .myYell {
+  .myRed, .myGreen, .myBlue, .myYell, .myOrig {
     color: #eaeaea !important;
     font-size: 18px;
     font-weight: 700;
@@ -601,10 +605,15 @@ a:active {
   cursor: pointer !important;
 }
 
+.item {
+  cursor: pointer !important;
+}
+
 .months_navi {
   cursor: pointer;
   text-align: center;
   font-size: 24px !important;
+  margin-right: 20px;
 }
 
 .zeilen {
@@ -626,6 +635,10 @@ a:active {
   font-weight: bolder;
 }
 
+.week-orig {
+    color: #ed413b;
+}
+
 .week-blue {
   color: #4f70de;
 }
@@ -640,6 +653,12 @@ a:active {
 
 .week-green {
   color: #2bd792;
+}
+
+.column_orig {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+  border-left: solid #ed413b 3px !important;
 }
 
 .column_red {
