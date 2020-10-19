@@ -87,6 +87,10 @@ a:active {
   color: #feca40 !important;
 }
 
+.myOrig:hover {
+  color: #ed413b !important;
+}
+
 /* attributions seite */
 .attributions{
   display: block;
@@ -490,6 +494,7 @@ a:active {
     font-size: 25px;
     font-weight: bolder;
   }
+
 .scrollup, .scrollup:visited, .scrollup:hover, .scrollup:focus, .scrollup	:active {
     text-decoration: none;
   }
@@ -515,7 +520,7 @@ a:active {
     margin-left: 10%;
   }
 
-  .myRed, .myGreen, .myBlue, .myYell {
+  .myRed, .myGreen, .myBlue, .myYell, .myOrig {
     color: #eaeaea !important;
     font-size: 18px;
     font-weight: 700;
@@ -582,10 +587,10 @@ a:active {
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+   /* Gives that scrolling effect as the typing happens */
   /* letter-spacing: .15em; /* Adjust as needed */
   animation:
-    typing 3s steps(40, end),
+    typing 2s steps(40, end),
     blink-caret .75s step-end infinite;
   animation-fill-mode:forwards;
 }
@@ -593,7 +598,29 @@ a:active {
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100%; visibility: visible;}
+  to { width: 90%; visibility: visible;}
+}
+
+.pop-up {
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.img_modal
+{
+    border-radius: 10% 20%;
+    margin: auto;
+    width: 50%;
 }
 
 /* Lab Notebook */
@@ -601,10 +628,15 @@ a:active {
   cursor: pointer !important;
 }
 
+.item {
+  cursor: pointer !important;
+}
+
 .months_navi {
   cursor: pointer;
   text-align: center;
   font-size: 24px !important;
+  margin-right: 20px;
 }
 
 .zeilen {
@@ -626,6 +658,10 @@ a:active {
   font-weight: bolder;
 }
 
+.week-orig {
+    color: #ed413b;
+}
+
 .week-blue {
   color: #4f70de;
 }
@@ -640,6 +676,12 @@ a:active {
 
 .week-green {
   color: #2bd792;
+}
+
+.column_orig {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+  border-left: solid #ed413b 3px !important;
 }
 
 .column_red {
@@ -724,7 +766,6 @@ a:active {
 .modal-content {
   width: 100%; /* Could be more or less, depending on screen size */
   margin-left: auto;
-  margin-right:auto;
   margin-top: 50px;
 	text-align: center;
 	background-color: rgba(17, 14, 33, 0.1);
@@ -748,7 +789,7 @@ a:active {
 .close {
   color: #eaeaea;
   float: right;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
 }
 

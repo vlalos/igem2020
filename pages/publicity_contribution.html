@@ -13,6 +13,16 @@
       type="text/javascript">
     </script>
     <script>
+    function changeTextState(id) {
+      var cur_el = document.getElementById(id);
+      if (cur_el.style.visibility.match("hidden")){
+        cur_el.style.visibility = "visible";
+      } else {
+        cur_el.style.visibility = "hidden";
+      }
+    }
+    </script>
+    <script>
       $(function(){
         $("#header").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/header.html");
         $("#top_bar").load("../html/IGEM_TopBar.html")
@@ -50,7 +60,7 @@
             <br><br><br>
           </div>
           <div class="col-md-2">
-            <img src="../docs/planet3.gif" alt="mars gif" style="width:90%; transform: rotate(-20deg);">
+            <img src="https://2020.igem.org/wiki/images/2/23/T--Aachen--mars.gif" alt="mars gif" style="width:90%; transform: rotate(-20deg);">
           </div>
         </div>
         <div class="row" id="instructions" style="margin-top:20px; padding-top: 20px; padding-bottom: 0; border-top: 4px solid #4f70de ;">
@@ -67,14 +77,19 @@
         </div>
         <div class="row" id="cultures">
           <div class="abs_head" style="color: #feca40;  padding-left: 8.5%; padding-top:100px;">
-            Overnight Pre-cultures</div>
-          <p style="color: #eaeaea; font-size: 20px; margin-bottom: 40px; margin-top:-40px; padding-left: 8.5%;">work space: clean bench</p>
+            Overnight Pre-cultures
+            <button id="cultures_button" onclick="changeTextState('cultures_text')" style="padding-left: 20px; border: None; background: transparent; transform: rotate(90deg); font-size: 30px; color: #eaeaea;">&#10148;</button>
+          </div>
         </div>
-        <div class="row" style="margin-bottom: 60px">
+        <div class="row" id="cultures_text" style="margin-bottom: 60px; visibility: hidden;">
           <div class="col-md-1"></div>
           <div class="col-md-4">
-            <div class="abs_head" style="color: #feca40;"><i>Escherichia coli</i></div>
+            <div class="abs_head" style="color: #eaeaea;"><i>Escherichia coli</i></div>
             <div class="textframe_yellow">
+              <p>
+                <b>work space</b><br>
+                <span style="padding-left: 25%; font-size:16px;">clean bench</span>
+              </p>
               <p>
                 <b>Material</b><br>
                 <ul style="padding-left: 25%">
@@ -103,8 +118,12 @@
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-4">
-            <div class="abs_head" style="color: #feca40;"><i>Saccharomyces cerevisiae</i></div>
+            <div class="abs_head" style="color: #eaeaea;"><i>Saccharomyces cerevisiae</i></div>
             <div class="textframe_yellow">
+              <p>
+                <b>work space</b><br>
+                <span style="padding-left: 25%; font-size:16px;">clean bench</span>
+              </p>
               <p>
                 <b>Material</b><br>
                 <ul style="padding-left: 25%">
@@ -134,9 +153,11 @@
         </div>
         <div class="row" id="pipetting">
           <div class="abs_head" style="color: #feca40;  padding-left: 8.5%; padding-top:100px;">
-            Pipetting techniques</div>
+            Pipetting techniques
+            <button onclick="changeTextState('pipetting_intro')" style="padding-left: 20px; border: None; background: transparent; transform: rotate(90deg); font-size: 30px; color: #eaeaea;">&#10148;</button>
+          </div>
         </div>
-        <div class="row">
+        <div class="row" id="pipetting_intro" style="visibility: hidden;">
           <div class="col-md-1"></div>
           <div class="col-md-5">
             <div class="textframe_yellow">
@@ -157,6 +178,43 @@
                 </ul>
               </p>
             </div>
+            <h3 style="color: #eaeaea; padding-top: 50px;">Forward Pipetting</h3><br>
+            <img class="imgframe_yellow "src="https://2020.igem.org/wiki/images/2/28/T--Aachen--forw_pipetting.png" alt="forward pipetting" style="width: 80%;">
+            <table style="width:80%; float:left; color:#eaeaea; background: rgba(17, 14, 33, 0.5); text-align: center; vertical-align: text-top;">
+              <tr>
+                <td style="padding-top: 15px; width: 33%; font-weight:700;">1</td>
+                <td style="padding-top: 15px; width: 33%; font-weight:700;">2</td>
+                <td style="padding-top: 15px; width: 33%; font-weight:700;">3</td>
+              </tr>
+               <tr>
+                 <td style="padding: 15px; width: 33%;">Press button up to 1<sup>st</sup> stop. Immerse tip a few millimeters into liquid.</td>
+                 <td style="padding: 15px; width: 33%;">Release button slowly. Tip fills up.</td>
+                 <td style="padding: 15px; width: 33%;">Dispense liquid by pressing up to 1st stop. Then blow out rest by pressing up to 2<sup>nd</sup> stop.</td>
+               </tr>
+              </table>
+              <table style="width:80%; color:#eaeaea; border: 4px solid #feca40; background: rgba(17, 14, 33, 0.5);">
+                 <tr style="border: 4px solid #feca40;">
+                   <th style="border: 4px solid #feca40; padding: 15px">Starting position</th>
+                   <th style="border: 4px solid #feca40; padding: 15px; text-align: center;">1</th>
+                   <th style="border: 4px solid #feca40; padding: 15px; text-align: center;">2</th>
+                   <th style="border: 4px solid #feca40; padding: 15px; text-align: center;">3</th>
+                   <th style="border: 4px solid #feca40; padding: 15px; text-align: center;">4</th>
+                 </tr>
+                 <tr style="border: 4px solid #feca40;">
+                   <td style="border: 4px solid #feca40; padding: 15px">1<sup>st</sup> stop</td>
+                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5); text-align: center;">&#x2b07;</td>
+                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5); text-align: center;">&#x2B06;</td>
+                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5); text-align: center;">&#x2b07;</td>
+                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5); text-align: center;"></td>
+                 </tr>
+                 <tr style="border: 4px solid #feca40;">
+                   <td style="border: 4px solid #feca40; padding: 15px">2<sup>nd</sup> stop</td>
+                   <td style="border: 4px solid #feca40; padding: 15px"></td>
+                   <td style="border: 4px solid #feca40; padding: 15px"></td>
+                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5); text-align: center;">&#x2b07;</td>
+                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5) scaleY(3); text-align: center; position: relative; top: -60px">&#x2B06;</td>
+                 </tr>
+                </table>
           </div>
           <div class="col-md-4">
             <table style="width:100%; color:#eaeaea; border: 4px solid #feca40; background: rgba(17, 14, 33, 0.5);">
@@ -181,88 +239,51 @@
                  <td style="border: 4px solid #feca40; padding: 15px">suction of liquid using overstroke, subsequent delivery without overstroke<br>&rarr; rest of liquid remains in tip and is discarded!</td>
                </tr>
               </table>
+              <h3 style="color: #eaeaea; padding-top: 50px;">Reverse Pipetting</h3><br>
+              <img class="imgframe_yellow "src="https://2020.igem.org/wiki/images/7/75/T--Aachen--rev_pipetting.png" alt="reverse pipetting" style="width: 100%;">
+              <table style="width:100%; color:#eaeaea; background: rgba(17, 14, 33, 0.5); text-align: center; vertical-align: text-top;">
+                <tr>
+                  <td style="padding-top: 15px; width: 33%; font-weight:700;">1</td>
+                  <td style="padding-top: 15px; width: 33%; font-weight:700;">2</td>
+                  <td style="padding-top: 15px; width: 33%; font-weight:700;">3</td>
+                </tr>
+                 <tr>
+                   <td style="padding: 15px; width: 33%;">Press button up to 2<sup>nd</sup> stop. Immerse tip a few millimeters into liquid.</td>
+                   <td style="padding: 15px; width: 33%;">Release button slowly. Tip fills up.</td>
+                   <td style="padding: 15px; width: 33%;">Dispense liquid by pressing up to 1<sup>st</sup> stop. Rest of liquid remains in tip.</td>
+                 </tr>
+                </table>
+                <br><br>
+                <table style="width:100%; color:#eaeaea; border: 4px solid #feca40; background: rgba(17, 14, 33, 0.5);">
+                   <tr style="border: 4px solid #feca40;">
+                     <th style="border: 4px solid #feca40; padding: 15px">Starting position</th>
+                     <th style="border: 4px solid #feca40; padding: 15px; text-align: center;">1</th>
+                     <th style="border: 4px solid #feca40; padding: 15px; text-align: center;">2</th>
+                     <th style="border: 4px solid #feca40; padding: 15px; text-align: center;">3</th>
+                     <th style="border: 4px solid #feca40; padding: 15px; text-align: center;">4</th>
+                   </tr>
+                   <tr style="border: 4px solid #feca40;">
+                     <td style="border: 4px solid #feca40; padding: 15px">1<sup>st</sup> stop</td>
+                     <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5) scaleY(3); text-align: center; position: relative; top:30px">&#x2b07;</td>
+                     <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; text-align: center;"></td>
+                     <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5); text-align: center;">&#x2b07;</td>
+                     <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5); text-align: center;">&#x2B06;</td>
+                   </tr>
+                   <tr style="border: 4px solid #feca40;">
+                     <td style="border: 4px solid #feca40; padding: 15px">2<sup>nd</sup> stop</td>
+                     <td style="border: 4px solid #feca40; padding: 15px"></td>
+                     <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5) scaleY(3); text-align: center; position: relative; top: -60px">&#x2B06;</td>
+                     <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; text-align: center;"></td>
+                     <td style="border: 4px solid #feca40; padding: 15px"></td>
+                   </tr>
+                  </table>
           </div>
         </div>
-        <div class="row">
+        <div class="row" id="pipetting_text" style="visibility: hidden;">
+          <div class="col-md-1"></div>
           <div class="col-md-1"></div>
           <div class="col-md-4">
-            <h3 style="color: #eaeaea; padding-top: 50px;">Forward Pipetting</h3><br>
-            <img class="imgframe_yellow "src="../docs/contribution/forw_pipetting.png" alt="forward pipetting" style="width: 100%;">
-            <table style="width:100%; color:#eaeaea; background: rgba(17, 14, 33, 0.5); text-align: center; vertical-align: text-top;">
-              <tr>
-                <td style="padding-top: 15px; width: 33%; font-weight:700;">1</td>
-                <td style="padding-top: 15px; width: 33%; font-weight:700;">2</td>
-                <td style="padding-top: 15px; width: 33%; font-weight:700;">3</td>
-              </tr>
-               <tr>
-                 <td style="padding: 15px; width: 33%;">Press button up to 1<sup>st</sup> stop. Immerse tip a few millimeters into liquid.</td>
-                 <td style="padding: 15px; width: 33%;">Release button slowly. Tip fills up.</td>
-                 <td style="padding: 15px; width: 33%;">Dispense liquid by pressing up to 1st stop. Then blow out rest by pressing up to 2<sup>nd</sup> stop.</td>
-               </tr>
-              </table>
-              <table style="width:100%; color:#eaeaea; border: 4px solid #feca40; background: rgba(17, 14, 33, 0.5);">
-                 <tr style="border: 4px solid #feca40;">
-                   <th style="border: 4px solid #feca40; padding: 15px">Starting position</th>
-                   <th style="border: 4px solid #feca40; padding: 15px; text-align: center;">1</th>
-                   <th style="border: 4px solid #feca40; padding: 15px; text-align: center;">2</th>
-                   <th style="border: 4px solid #feca40; padding: 15px; text-align: center;">3</th>
-                   <th style="border: 4px solid #feca40; padding: 15px; text-align: center;">4</th>
-                 </tr>
-                 <tr style="border: 4px solid #feca40;">
-                   <td style="border: 4px solid #feca40; padding: 15px">1<sup>st</sup> stop</td>
-                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5); text-align: center;">&#x2b07;</td>
-                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5); text-align: center;">&#x2B06;</td>
-                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5); text-align: center;">&#x2b07;</td>
-                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5); text-align: center;"></td>
-                 </tr>
-                 <tr style="border: 4px solid #feca40;">
-                   <td style="border: 4px solid #feca40; padding: 15px">2<sup>nd</sup> stop</td>
-                   <td style="border: 4px solid #feca40; padding: 15px"></td>
-                   <td style="border: 4px solid #feca40; padding: 15px"></td>
-                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5); text-align: center;">&#x2b07;</td>
-                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5) scaleY(3); text-align: center; position: relative; top: -60px">&#x2B06;</td>
-                 </tr>
-                </table>
-              </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-4">
-            <h3 style="color: #eaeaea; padding-top: 50px;">Reverse Pipetting</h3><br>
-            <img class="imgframe_yellow "src="../docs/contribution/rev_pipetting.png" alt="reverse pipetting" style="width: 100%;">
-            <table style="width:100%; color:#eaeaea; background: rgba(17, 14, 33, 0.5); text-align: center; vertical-align: text-top;">
-              <tr>
-                <td style="padding-top: 15px; width: 33%; font-weight:700;">1</td>
-                <td style="padding-top: 15px; width: 33%; font-weight:700;">2</td>
-                <td style="padding-top: 15px; width: 33%; font-weight:700;">3</td>
-              </tr>
-               <tr>
-                 <td style="padding: 15px; width: 33%;">Press button up to 2<sup>nd</sup> stop. Immerse tip a few millimeters into liquid.</td>
-                 <td style="padding: 15px; width: 33%;">Release button slowly. Tip fills up.</td>
-                 <td style="padding: 15px; width: 33%;">Dispense liquid by pressing up to 1<sup>st</sup> stop. Rest of liquid remains in tip.</td>
-               </tr>
-              </table>
-              <table style="width:100%; color:#eaeaea; border: 4px solid #feca40; background: rgba(17, 14, 33, 0.5);">
-                 <tr style="border: 4px solid #feca40;">
-                   <th style="border: 4px solid #feca40; padding: 15px">Starting position</th>
-                   <th style="border: 4px solid #feca40; padding: 15px; text-align: center;">1</th>
-                   <th style="border: 4px solid #feca40; padding: 15px; text-align: center;">2</th>
-                   <th style="border: 4px solid #feca40; padding: 15px; text-align: center;">3</th>
-                   <th style="border: 4px solid #feca40; padding: 15px; text-align: center;">4</th>
-                 </tr>
-                 <tr style="border: 4px solid #feca40;">
-                   <td style="border: 4px solid #feca40; padding: 15px">1<sup>st</sup> stop</td>
-                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5) scaleY(3); text-align: center; position: relative; top:30px">&#x2b07;</td>
-                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; text-align: center;"></td>
-                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5); text-align: center;">&#x2b07;</td>
-                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5); text-align: center;">&#x2B06;</td>
-                 </tr>
-                 <tr style="border: 4px solid #feca40;">
-                   <td style="border: 4px solid #feca40; padding: 15px">2<sup>nd</sup> stop</td>
-                   <td style="border: 4px solid #feca40; padding: 15px"></td>
-                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; transform: scale(1.5) scaleY(3); text-align: center; position: relative; top: -60px">&#x2B06;</td>
-                   <td style="border: 4px solid #feca40; padding: 15px; font-size: 36px; text-align: center;"></td>
-                   <td style="border: 4px solid #feca40; padding: 15px"></td>
-                 </tr>
-                </table>
+
           </div>
         </div>
         <div class="row" id="parts" style="margin-top:20px; padding-top: 20px; padding-bottom: 0; border-top: 4px solid #feca40 ;">
