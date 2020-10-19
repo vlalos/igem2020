@@ -27,6 +27,12 @@ h2 {
   color: #eaeaea;
 }
 
+h3 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+
 .centerb {
   margin: auto;
   width: 80em;
@@ -678,6 +684,23 @@ a:active {
   color: #2bd792;
 }
 
+.week_img_orig {
+  border-left: solid #ed413b 3px !important;
+}
+.week_img_red {
+  border-left: solid #fe336d 3px !important;
+}
+
+.week_img_green {
+  border-left: solid #2bd792 3px !important;
+}
+.week_img_blue {
+  border-left: solid #4f70de 3px !important;
+}
+.week_img_yellow {
+  border-left: solid #feca40 3px !important;
+}
+
 .column_orig {
   margin-bottom: -99999px;
   padding-bottom: 99999px;
@@ -706,6 +729,36 @@ a:active {
   border-left: solid #feca40 3px !important;
 }
 
+.row_orig {
+  border-bottom: solid #ed413b 3px !important;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+.row_red {
+  border-bottom: solid #fe336d 3px !important;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+.row_green {
+  border-bottom: solid #2bd792 3px !important;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+.row_blue {
+  border-bottom: solid #4f70de 3px !important;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+.row_yellow {
+  border-bottom: solid #feca40 3px !important;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
 .experiment_list {
   margin: 5%;
   padding-left: 5%;
@@ -726,18 +779,46 @@ a:active {
   margin-left: -1em;
 }
 
+.column_orig .experiment_list  li::before {
+  color: #ed413b;
+}
 .column_blue .experiment_list  li::before {
   color: #4f70de;
 }
 
+.column_red .experiment_list  li::before {
+  color: #fe336d;
+}
+
+.column_green .experiment_list  li::before {
+  color: #2bd792;
+}
+
+.column_yellow .experiment_list  li::before {
+  color: #feca40;
+}
+
+.link_to_img {
+  font-size: 24px;
+  color: #eaeaea;
+}
+
+.link_to_img:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .notebook_img {
   transition: transform .2s;
-  margin: 0;
+  width: 100%;
+  position: relative;
 }
 
 .notebook_img:hover {
-  transform: scale(5);
+  transform: scale(2);
+  z-index: 9999;
 }
+
 
 .interactive_img {
   transition: transform .2s;
@@ -787,17 +868,32 @@ a:active {
 }
 /* The Close Button */
 .close {
-  color: #eaeaea;
+  color: #eaeaea !important;
   float: right;
   font-size: 40px;
   font-weight: bold;
+  opacity: 0.5;
+}
+
+.second_close {
+    border: 3px solid #eaeaea !important;
+    border-radius: 10%;
+    float: right;
+    margin-top: 20px;
+    opacity: 0.5;
+}
+
+.second_close:hover {
+  border: 3px solid #eaeaea !important;
+  opacity: 1;
 }
 
 .close:hover,
 .close:focus {
-  color: #2bd792;
+  /* color: #2bd792 !important; */
   text-decoration: none;
   cursor: pointer;
+  opacity: 1;
 }
 
 
