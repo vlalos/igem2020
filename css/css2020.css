@@ -730,14 +730,27 @@ a:active {
   color: #4f70de;
 }
 
+.link_to_img {
+  font-size: 24px;
+  color: #eaeaea;
+}
+
+.link_to_img:hover {
+  font-weight: bold;
+  color: #2bd792;
+}
+
 .notebook_img {
   transition: transform .2s;
   margin: 0;
+  width: 50%;
+  z-index: 1;
 }
 
 .notebook_img:hover {
-  transform: scale(5);
+  transform: scale(2);
 }
+
 
 .interactive_img {
   transition: transform .2s;
