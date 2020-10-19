@@ -1183,6 +1183,7 @@ li.dropdown:hover>.dropdown-menu {
     font-size: 30px;
     font-weight: bold;
     margin: 10px 0 5px 0;
+    text-align: center !important;
 }
 .das-team .post{
     display: block;
