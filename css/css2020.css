@@ -495,16 +495,6 @@ a:active {
     font-weight: bolder;
   }
 
-  .show {
-  visibility: visible;
-  opacity: 1;
-  };
-
-  .hide {
-    visibility: hidden;
-    opacity: 0;
-  };
-
 .scrollup, .scrollup:visited, .scrollup:hover, .scrollup:focus, .scrollup	:active {
     text-decoration: none;
   }
@@ -513,6 +503,16 @@ a:active {
     background-color: #4f70de;
     color: #fff;
   }
+
+  .show {
+    visibility: visible;
+    opacity: 1;
+  };
+
+  .hide {
+    visibility: hidden;
+    opacity: 0;
+  };
 
   /* footer navi */
   .foot-navi {
