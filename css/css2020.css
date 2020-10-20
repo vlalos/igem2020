@@ -105,6 +105,7 @@ a:active {
   background-image: url("../docs/misc/animATP.gif");
   background-repeat: no-repeat;
   background-position: bottom right;
+  background-size: auto 100%;
 }
 
 /* attributions seite */
@@ -985,6 +986,15 @@ li.dropdown:hover>.dropdown-menu {
   box-shadow: inset 0 3px 9px rgba(0, 0, 0, .075) !important;
 }
 
+.navbar-header {
+  position: absolute;
+  left: 10%;
+}
+
+.navbar-collapse {
+  position: absolute;
+  left: 15%;
+}
 /* --------------------lists and dropdows--------------- */
 .navbar-brand,
 .navbar-nav>li>a {
