@@ -97,6 +97,16 @@ a:active {
   color: #ed413b !important;
 }
 
+/* index page */
+
+.animRow {
+  margin-right: 0;
+  width: 100%;
+  background-image: url("../docs/misc/animATP.gif");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
 /* attributions seite */
 .attributions{
   display: block;
