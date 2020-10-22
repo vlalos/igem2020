@@ -1271,6 +1271,7 @@ li.dropdown:hover>.dropdown-menu {
     color: #fff;
     margin: 0 0 0 0;
     font-weight: 800;
+    text-align: left !important;
 }
 .round-team .post{
     display: block;
