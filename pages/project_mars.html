@@ -61,8 +61,14 @@
       var cur_el = document.getElementById(id);
       if (cur_el.style.visibility.match("hidden")){
         cur_el.style.visibility = "visible";
+        event.target.animate([{transform: "rotate(90deg)"}, {transform: "rotate(-90deg)"}], {duration: 100});
+        event.target.style.transform = "rotate(-90deg)";
+        event.target.style.outline = "none";
       } else {
         cur_el.style.visibility = "hidden";
+        event.target.animate([{transform: "rotate(-90deg)"}, {transform: "rotate(90deg)"}], {duration: 100});
+        event.target.style.transform = "rotate(90deg)";
+        event.target.style.outline = "none";
       }
     }
     </script>

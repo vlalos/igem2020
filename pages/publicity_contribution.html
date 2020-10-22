@@ -15,8 +15,14 @@
       var text = document.getElementById(id);
       if (text.style.display === "none") {
         text.style.display = "block";
+        event.target.animate([{transform: "rotate(90deg)"}, {transform: "rotate(-90deg)"}], {duration: 100});
+        event.target.style.transform = "rotate(-90deg)";
+        event.target.style.outline = "none";
       } else {
         text.style.display = "none";
+        event.target.animate([{transform: "rotate(-90deg)"}, {transform: "rotate(90deg)"}], {duration: 100});
+        event.target.style.transform = "rotate(90deg)";
+        event.target.style.outline = "none";
       }
     }
     </script>
