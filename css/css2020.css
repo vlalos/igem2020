@@ -47,6 +47,10 @@ img.center {
 
 
 /* links */
+a{
+  font-weight: 700;
+}
+
 a:link {
   text-decoration: none !important;
 }
