@@ -1,127 +1,166 @@
 <html>
-  <head>
-    <title>IGEM Aachen 2020</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/css2020.css">
 
-    <script src="../javascript/jquery.js"></script>
-    <script src="../javascript/bootstrap.min.js"></script>
-    <script>
-      $(function(){
-        $("#header").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/header.html");
-        $("#top_bar").load("../html/IGEM_TopBar.html")
-        $("#footer").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/footer.html")
-      });
-    </script>
-  </head>
-  <body>
-    <div id="top_bar"></div>
-    <div id="header"></div>
-    <div class="container" style="width:100%;">
-      <div class="container-fluid" style="margin-top:20px;">
-        <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;  border-bottom: 4px solid #2bd792;">
-          <div class="col-md-1"></div>
-          <div class="col-md-9">
-            <h1 style="color:#2bd792;">Experiments in the Lab</h1>
-            <h3 style="color:#eaeaea">Here's how the magic happened! In the <a href="#Schwanelab" class="myBlue" style="font-size: 24px">Schwaneberg Lab</a> and the
-              <a href="#FZJueLab" class="myYell" style="font-size: 24px">Forschungszentrum Jülich</a> as well as our
-              <a href="#protocols" class="myRed" style="font-size: 24px">Protocols</a>.
-            </h3><br><br>
-            <div class="textframe_green">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac eros lacus. Sed commodo fringilla pharetra. Proin sodales risus et nunc volutpat.
-            </div>
-          </div>
-          <div class="col-md-2">
-            <img src="../docs/planet3.gif" alt="mars gif" style="width:90%; transform: rotate(-20deg);">
-          </div>
-        </div>
-        <div class="row" style="width:100%;">
-          <div class="col-md-2"></div>
-          <div class="col-md-2 topic" style="color: #fe336d;">
-            Topic 1
-          </div>
-          <div class="col-md-2 topic" style="color: #2bd792;">
-            Topic 2
-          </div>
-          <div class="col-md-2 topic" style="color: #4f70de;">
-            Topic 3
-          </div>
-          <div class="col-md-2 topic" style="color: #feca40;">
-            Topic 4
-          </div>
-          <div class="col-md-2"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-2">
-            <img src="../docs/protocols/RU.png"  id="button_red" class="protocol_button" alt="">
-          </div>
-          <div class="col-md-2">
-            <img src="../docs/protocols/GU.png" id="button_green" class="protocol_button" alt="">
-          </div>
-          <div class="col-md-2" >
-            <img src="../docs/protocols/BU.png" id="button_blue" class="protocol_button" alt="">
-          </div>
-          <div class="col-md-2">
-            <img src="../docs/protocols/YU.png"  id="button_yellow" class="protocol_button" alt="">
-          </div>
-          <div class="col-md-2"></div>
-        </div>
+<head>
+  <title>IGEM Aachen 2020</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/css2020.css">
 
-        <div class="row">
-          <div class="abs_head" id="SchwaneLab" style="color: #4f70de; padding-top: 100px; padding-left:8.5%;">
-            Schwaneberg Lab</div>
-        </div>
-        <div class="row">
-          <div class="col-md-1"></div>
-          <div class="col-md-9">
-            <div class="textframe_blue">
-              Our experiments in the laboratory of Prof. Dr. Schwaneberg can be divided into 4 different categories. The binding tests of our anchor peptides on various surfaces to construct and
-              express an optimal binding complex, the liposome formation and the protein expression and lastly the protein integration of our needed proteins. Concerning the binding tests, we used
-              different antimicrobial peptides and tested their binding abilities on our polystyrene coated magnetic particles to determine the best one, which we would then use as the magnet-binding-domain
-              in our binding complex. To evaluate the binding abilities of the different binding domains, we first expressed different anchorpeptides with a GFP lable. We then checked the remaining
-              fluorescence under a confocal microscope after several washing steps. To determine the chassis-binding-domain we proceeded analogously. After finding the best binding peptides, we
-              expressed a biadhesive binding complex using both domains and a stiff linker domain to connect our ATP-Chassis to our magnetic particles. Concerning the expression of the bakteriorhodopsin
-              we faced major difficulties and were forced to buy this protein. For more information about the problems and already tried conditions you can have a look at the <a href="lab_notebook.html" class="myGreen" style="font-size:16px">Lab Notebook</a>.
-              For the purification of the ATP synthase we first purified mitochondria from yeast. According to the paper “...” (LINK?) we designed a plasmid with the sequence of the first 60 amino
-              acids of an ATP synthase inhibitor protein (LINK PARTS PAGE). With this protein an affinity purification of the ATP synthase from the isolated mitochondria can be performed.<br><br>
-              For the lipid formation we used the film rehydration technique to rehydrate a dried lipid film and create small unilaminar vesicles. (Link to protocol) To make them uniform in size we
-              performed a microextrusion which was necessary to form giant unilaminar vesicles out of the small unilaminar vesicles. This was achieved by creating a oil-surfactant mix where an
-              aquaeous solution, which contains the lipid batch, is added. (Link paper Maxplanck) The spontaneous formation of surfactant-stabilized water-in-oil droplets with a spherical supported lipid
-              bilayer at their periphery is then induced by manual shaking and the average diameter is determined by the shaking duration and intensity. A small amount of atto-labled lipids where included
-              in the lipid batch to confirm the liposom formation using fluorescence microscopy. To finally integrate our chosen proteins, we started with integrating bacteriorhodopsin into the
-              giant unilaminar vesicles. Therefore, we first solubilised the purple membrane. After that we destabilised our liposomes with Triton-X 100 and added our bacteriorhodopsin to the solution
-              and incubated the mixture to perform the integration. For detergence removal we used biobeads and performed multiple washing steps. To confirm the integration noch unklar ob kryo EM klappt
-              und ob Pyranine pH assay klappt. This destabilisation method was also used to integrate the ATP synthase and therefore create our final chassis.
-            </div>
+  <script src="../javascript/jquery.js"></script>
+  <script src="../javascript/bootstrap.min.js"></script>
+  <script>
+    $(function() {
+      $("#header").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/header.html");
+      $("#top_bar").load("../html/IGEM_TopBar.html")
+      $("#footer").load("https://raw.githubusercontent.com/vlalos/igem2020/1.2.0/html/footer.html")
+    });
+  </script>
+  <script type="text/javascript">
+    function toggle_protocols(id_sender, id_target, src_off, src_on) {
+      var target = document.getElementById(id_target);
+      var sender = document.getElementById(id_sender);
+
+      var protocol_containers = document.getElementsByClassName("protocols_container");
+
+      for (var i = 0; i < protocol_containers.length; i++) {
+        protocol_containers[i].style.display = "none";
+      };
+
+      if (sender.src.match(src_off))
+      {
+        sender.src = src_on;
+        sender.className = "protocol_button button_on";
+        target.style.display = "block";
+
+
+      } else
+      {
+        sender.src = src_off;
+        sender.className = "protocol_button";
+        target.style.display = "none";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="top_bar"></div>
+  <div id="header"></div>
+  <div class="container" style="width:100%;">
+    <div class="container-fluid" style="margin-top:20px;">
+      <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;  border-bottom: 4px solid #2bd792;">
+        <div class="col-md-1"></div>
+        <div class="col-md-9">
+          <h1 style="color:#2bd792;">Experiments in the Lab</h1>
+          <h3 style="color:#eaeaea">Here's how the magic happened! In the <a href="#Schwanelab" class="myBlue" style="font-size: 24px">Schwaneberg Lab</a> and the
+            <a href="#FZJueLab" class="myYell" style="font-size: 24px">FZ Jülich</a> as well as our
+            <a href="#protocols" class="myRed" style="font-size: 24px">Protocols</a>.
+          </h3><br><br>
+          <div class="textframe_green">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac eros lacus. Sed commodo fringilla pharetra. Proin sodales risus et nunc volutpat.
           </div>
-          <div class="col-md-1"></div>
         </div>
-        <div class="row">
-          <div class="abs_head" id="FZJueLab" style="color: #feca40; padding-top: 100px; border-top: 4px solid #4f70de; padding-left: 8.5%;">
-           Forschugszentrum Jülich</div>
-        </div>
-        <div class="row">
-          <div class="col-md-1"></div>
-          <div class="col-md-8">
-            <div class="textframe_yellow">
-              In the Forschugszentrum Jülich we performed multiple tests on a carboxylate reductase from the organism Nocardia otitidiscaviarum. This enzyme is capable of converting 3-hydroxybenzoic acid to
-              3-hydroxybenzaldehyde. Therefore, we prepared triplets of reactions vials where we added the carboxylate reductase, 3-hydroxybenzoic acid as the substrate, ATP, NADH, Polyphosphate the needed
-              Enzyme to perform the conventional ATP regeneration and a 4x concentrated MOPS buffer containing Glucose and MgCl2.   After getting comfortable with the procedures, we showed using negative
-              controls without ATP, that the Lack of ATP leads to no product conversion at all, which means that ATP is crucial for that enzyme. Another negative control without the enzymes, which normally
-              perform the ATP regeneration showed a little bit of conversion at the begin of the Reaction but stops as soon as all the ATP is used up. To get more insight on the functioning of that enzyme
-              we also monitored the product conversion of a whole cell approach where the carboxylate reductase is expressed in E.coli tuner cells, which tolerate the aldehyde product. Using these different
-              attempts, we could collect valuable data which helps us to compare our System to the ATP regeneration approaches above. Therefore, our last testing study focused on using our ATP-Chassis
-              as the needed cofactor regeneration system.
-            </div>
-          </div>
-          <div class="col-md-1"></div>
+        <div class="col-md-2">
+          <img src="../docs/planet3.gif" alt="mars gif" style="width:90%; transform: rotate(-20deg);">
         </div>
       </div>
+      <div class="row" style="width:100%;">
+        <div class="col-md-2"></div>
+        <div class="col-md-2 topic" style="color: #fe336d;">
+          Topic 1
+        </div>
+        <div class="col-md-2 topic" style="color: #2bd792;">
+          Topic 2
+        </div>
+        <div class="col-md-2 topic" style="color: #4f70de;">
+          Topic 3
+        </div>
+        <div class="col-md-2 topic" style="color: #feca40;">
+          Topic 4
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+          <img src="../docs/protocols/RU.png" onclick="toggle_protocols('button_red', 'protocols_container_red', '../docs/protocols/RU.png', '../docs/protocols/RD.png')"  id="button_red" class="protocol_button" alt="">
+        </div>
+        <div class="col-md-2">
+          <img src="../docs/protocols/GU.png" onclick="toggle_protocols('button_green', '', '../docs/protocols/GU.png', '../docs/protocols/GD.png')" id="button_green" class="protocol_button" alt="">
+        </div>
+        <div class="col-md-2">
+          <img src="../docs/protocols/BU.png" onclick="toggle_protocols('button_blue', '', '../docs/protocols/BU.png', '../docs/protocols/BD.png')" id="button_blue" class="protocol_button" alt="">
+        </div>
+        <div class="col-md-2">
+          <img src="../docs/protocols/YU.png" onclick="toggle_protocols('button_yellow', '', '../docs/protocols/YU.png', '../docs/protocols/YD.png')" id="button_yellow" class="protocol_button" alt="">
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="container protocols_container" id="protocols_container_red">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <img src="../docs/misc/filler.png" alt="" style="width: 100%" class="imgframe_red">
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="abs_head" id="SchwaneLab" style="color: #4f70de; padding-top: 100px; padding-left:8.5%;">
+          Schwaneberg Lab</div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-9">
+          <div class="textframe_blue">
+            Our experiments in the laboratory of Prof. Dr. Schwaneberg can be divided into 4 different categories. The binding tests of our anchor peptides on various surfaces to construct and
+            express an optimal binding complex, the liposome formation and the protein expression and lastly the protein integration of our needed proteins. Concerning the binding tests, we used
+            different antimicrobial peptides and tested their binding abilities on our polystyrene coated magnetic particles to determine the best one, which we would then use as the magnet-binding-domain
+            in our binding complex. To evaluate the binding abilities of the different binding domains, we first expressed different anchorpeptides with a GFP lable. We then checked the remaining
+            fluorescence under a confocal microscope after several washing steps. To determine the chassis-binding-domain we proceeded analogously. After finding the best binding peptides, we
+            expressed a biadhesive binding complex using both domains and a stiff linker domain to connect our ATP-Chassis to our magnetic particles. Concerning the expression of the bakteriorhodopsin
+            we faced major difficulties and were forced to buy this protein. For more information about the problems and already tried conditions you can have a look at the <a href="lab_notebook.html" class="myGreen" style="font-size:16px">Lab
+              Notebook</a>.
+            For the purification of the ATP synthase we first purified mitochondria from yeast. According to the paper “...” (LINK?) we designed a plasmid with the sequence of the first 60 amino
+            acids of an ATP synthase inhibitor protein (LINK PARTS PAGE). With this protein an affinity purification of the ATP synthase from the isolated mitochondria can be performed.<br><br>
+            For the lipid formation we used the film rehydration technique to rehydrate a dried lipid film and create small unilaminar vesicles. (Link to protocol) To make them uniform in size we
+            performed a microextrusion which was necessary to form giant unilaminar vesicles out of the small unilaminar vesicles. This was achieved by creating a oil-surfactant mix where an
+            aquaeous solution, which contains the lipid batch, is added. (Link paper Maxplanck) The spontaneous formation of surfactant-stabilized water-in-oil droplets with a spherical supported lipid
+            bilayer at their periphery is then induced by manual shaking and the average diameter is determined by the shaking duration and intensity. A small amount of atto-labled lipids where included
+            in the lipid batch to confirm the liposom formation using fluorescence microscopy. To finally integrate our chosen proteins, we started with integrating bacteriorhodopsin into the
+            giant unilaminar vesicles. Therefore, we first solubilised the purple membrane. After that we destabilised our liposomes with Triton-X 100 and added our bacteriorhodopsin to the solution
+            and incubated the mixture to perform the integration. For detergence removal we used biobeads and performed multiple washing steps. To confirm the integration noch unklar ob kryo EM klappt
+            und ob Pyranine pH assay klappt. This destabilisation method was also used to integrate the ATP synthase and therefore create our final chassis.
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row">
+        <div class="abs_head" id="FZJueLab" style="color: #feca40; padding-top: 100px; border-top: 4px solid #4f70de; padding-left: 8.5%;">
+          Forschugszentrum Jülich</div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-8">
+          <div class="textframe_yellow">
+            In the Forschugszentrum Jülich we performed multiple tests on a carboxylate reductase from the organism Nocardia otitidiscaviarum. This enzyme is capable of converting 3-hydroxybenzoic acid to
+            3-hydroxybenzaldehyde. Therefore, we prepared triplets of reactions vials where we added the carboxylate reductase, 3-hydroxybenzoic acid as the substrate, ATP, NADH, Polyphosphate the needed
+            Enzyme to perform the conventional ATP regeneration and a 4x concentrated MOPS buffer containing Glucose and MgCl2. After getting comfortable with the procedures, we showed using negative
+            controls without ATP, that the Lack of ATP leads to no product conversion at all, which means that ATP is crucial for that enzyme. Another negative control without the enzymes, which normally
+            perform the ATP regeneration showed a little bit of conversion at the begin of the Reaction but stops as soon as all the ATP is used up. To get more insight on the functioning of that enzyme
+            we also monitored the product conversion of a whole cell approach where the carboxylate reductase is expressed in E.coli tuner cells, which tolerate the aldehyde product. Using these different
+            attempts, we could collect valuable data which helps us to compare our System to the ATP regeneration approaches above. Therefore, our last testing study focused on using our ATP-Chassis
+            as the needed cofactor regeneration system.
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
     </div>
-    <!-- Scroll-Up dingsbums -->
-    <div id="footer"></div>
-  </body>
+  </div>
+  <!-- Scroll-Up dingsbums -->
+  <div id="footer"></div>
+</body>
+
 </html>
