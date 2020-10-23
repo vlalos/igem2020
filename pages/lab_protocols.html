@@ -17,30 +17,45 @@
     });
   </script>
   <script type="text/javascript">
-    function toggle_protocols(id_sender, id_target, src_off, src_on) {
-      var target = document.getElementById(id_target);
-      var sender = document.getElementById(id_sender);
+  function toggle_protocols(id_sender, id_target, src_off, src_on) {
+    var target = document.getElementById(id_target);
+    var sender = document.getElementById(id_sender);
 
-      var protocol_containers = document.getElementsByClassName("protocols_container");
+    var protocols_containers = document.getElementsByClassName("protocols_container");
+    var b_red = document.getElementById("button_red");
+    var b_green = document.getElementById("button_green");
+    var b_blue = document.getElementById("button_blue");
+    var b_yellow = document.getElementById("button_yellow");
 
-      for (var i = 0; i < protocol_containers.length; i++) {
-        protocol_containers[i].style.display = "none";
-      };
+    for (var i = 0; i < protocols_containers.length; i++) {
+      protocols_containers[i].style.display = "none";
+    };
 
-      if (sender.src.match(src_off))
-      {
-        sender.src = src_on;
-        sender.className = "protocol_button button_on";
-        target.style.display = "block";
+    if (sender.src.match(src_off))
+    {
+      target.style.display = "block";
 
+      b_red.src = "../docs/protocols/RU.png";
+      b_green.src = "../docs/protocols/GU.png";
+      b_blue.src = "../docs/protocols/BU.png";
+      b_yellow.src = "../docs/protocols/YU.png";
 
-      } else
-      {
-        sender.src = src_off;
-        sender.className = "protocol_button";
-        target.style.display = "none";
-      }
+      b_red.style.opacity = 0.7;
+      b_green.style.opacity = 0.7;
+      b_blue.style.opacity = 0.7;
+      b_yellow.style.opacity = 0.7;
+
+      sender.src = src_on;
+
+      sender.style.opacity = 1;
+
+    } else
+    {
+      sender.src = src_off;
+      sender.style.opacity = 0.7;
+      target.style.display = "none";
     }
+  }
   </script>
 </head>
 
@@ -87,13 +102,13 @@
           <img src="../docs/protocols/RU.png" onclick="toggle_protocols('button_red', 'protocols_container_red', '../docs/protocols/RU.png', '../docs/protocols/RD.png')"  id="button_red" class="protocol_button" alt="">
         </div>
         <div class="col-md-2">
-          <img src="../docs/protocols/GU.png" onclick="toggle_protocols('button_green', '', '../docs/protocols/GU.png', '../docs/protocols/GD.png')" id="button_green" class="protocol_button" alt="">
+          <img src="../docs/protocols/GU.png" onclick="toggle_protocols('button_green', 'protocols_container_green', '../docs/protocols/GU.png', '../docs/protocols/GD.png')" id="button_green" class="protocol_button" alt="">
         </div>
         <div class="col-md-2">
-          <img src="../docs/protocols/BU.png" onclick="toggle_protocols('button_blue', '', '../docs/protocols/BU.png', '../docs/protocols/BD.png')" id="button_blue" class="protocol_button" alt="">
+          <img src="../docs/protocols/BU.png" onclick="toggle_protocols('button_blue', 'protocols_container_blue', '../docs/protocols/BU.png', '../docs/protocols/BD.png')" id="button_blue" class="protocol_button" alt="">
         </div>
         <div class="col-md-2">
-          <img src="../docs/protocols/YU.png" onclick="toggle_protocols('button_yellow', '', '../docs/protocols/YU.png', '../docs/protocols/YD.png')" id="button_yellow" class="protocol_button" alt="">
+          <img src="../docs/protocols/YU.png" onclick="toggle_protocols('button_yellow', 'protocols_container_yellow', '../docs/protocols/YU.png', '../docs/protocols/YD.png')" id="button_yellow" class="protocol_button" alt="">
         </div>
         <div class="col-md-2"></div>
       </div>
@@ -107,6 +122,37 @@
           <div class="col-md-2"></div>
         </div>
       </div>
+
+      <div class="container protocols_container" id="protocols_container_green">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <img src="../docs/misc/filler.png" alt="" style="width: 100%" class="imgframe_green">
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+
+      <div class="container protocols_container" id="protocols_container_blue">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <img src="../docs/misc/filler.png" alt="" style="width: 100%" class="imgframe_blue">
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+
+      <div class="container protocols_container" id="protocols_container_yellow">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <img src="../docs/misc/filler.png" alt="" style="width: 100%" class="imgframe_yellow">
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+
       <div class="row">
         <div class="abs_head" id="SchwaneLab" style="color: #4f70de; padding-top: 100px; padding-left:8.5%;">
           Schwaneberg Lab</div>

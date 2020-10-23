@@ -131,11 +131,19 @@ a:active {
   opacity: 1;
 }
 
-.button_on {
-  opacity: 1 !important;
+#protocols_container_red {
+    display: none;
 }
 
-#protocols_container_red {
+#protocols_container_green {
+    display: none;
+}
+
+#protocols_container_blue {
+    display: none;
+}
+
+#protocols_container_yellow {
     display: none;
 }
 
