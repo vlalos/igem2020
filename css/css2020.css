@@ -120,32 +120,28 @@ a:active {
 
 .protocol_button {
   width:80%;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   padding-top: 50px;
   padding: auto;
   margin: auto;
-
 }
 
 .protocol_button:hover{
   opacity: 1;
 }
 
-#protocols_container_red {
-    display: none;
+.protocols_container {
+  display: none;
+  margin-top: 80px;
 }
 
-#protocols_container_green {
-    display: none;
+.protocol {
+  font-size: 24px !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  color: #eaeaea !important ;
 }
 
-#protocols_container_blue {
-    display: none;
-}
-
-#protocols_container_yellow {
-    display: none;
-}
 
 /* attributions seite */
 .attributions{
