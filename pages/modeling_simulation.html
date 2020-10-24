@@ -162,112 +162,125 @@
             <div class="col-md-1"></div>
           </div>
         </div>
+
         <div class="container" id="simulation" style="display:none; width:100%;">
-          <div class="container-fluid" style="width:100%;">
 
 
-            <div class="row">
-              <div class="col-md-1"></div>
-              <div class="col-md-10">
-                <div class="abs_head" style="color: #4f70de; margin-top: 20px;">
-                  Molecular Dynamics Simulation</div>
-              </div>
-              <div class="col-md-1"></div>
-            </div>
-            <div class="row">
-              <div class="col-md-1"></div>
-              <div class="col-md-6">
-                <div class="textframe_blue">
-                  One of our main disciplines of simulation is molecular dynamics. We used a great variety of different programs and tools to achieve the best possible results for the simulations. Mainly, we used GROMACS, a command line-based program
-                  for (in our case) ubuntu subsystems, for simulation of our systems and to generate “.pdb” format files as well as molecular trajectories. These could be loaded into other programs. To visualize our simulations, we at first relied on
-                  a trajectory-based solution using VMD, later we transitioned to directly loading our results with UCSF Chimera. Chimera allows us to generate better pictures due to its shadow rendering and multisampling tools and allows us to
-                  generate scene-based movies of our resulting all-atom models. Cytoscape helped us to gain further inside into the structure of our proteins and lipid models and took on the role of helping us to understand the modeling processes in
-                  the beginning.
-                </div>
-              </div>
-              <div class="col-md-4" style="background: white; border-radius: 40px 10px;">
-                <img src="../docs/logos/ChimeraLogo.png" alt="" style="margin-top: 10px; width: 30%">
-                <img src="../docs/logos/GROMACS_logo.png" alt="" style="margin-left: 10%; width: 40%">
-                <img src="../docs/logos/cytoscapeLogo.png" alt="" style="margin:0; width: 40%">
-                <img src="../docs/logos/vmd-logo.svg" alt="" style="margin-left: 5%; width: 30%">
-              </div>
-              <div class="col-md-1"></div>
-            </div>
-            <div class="row">
-              <div class="col-md-1"></div>
-              <div class="col-md-4">
-                <div class="textframe_yellow">
-                  We first started out learning about the theoretical workflows and how to use the various described programs in March. We started by completing simple protein simulations in water for a few milliseconds and worked our way up to more
-                  complex models, as well as membrane integration. We want to acknowledge the freely available tutorials for the GROMACS software by Bevan & Brown Lab. <br> <br>
-                  From here on, we came a long way that was full of trial and error, but the further we got, the fewer errors we encountered. Finally, after months of training, we can make use of the endless possibilities and
-                  benefits the in-silico modeling software grants us. <br> <br>
-                  Our standard GROMACS workflow was integrating and simulating all-atom models from “.pdb” files found on the RCSB Protein Data Bank. For Solvent files we started with standard available water models which we
-                  later modified by editing the raw “.pdb” files, e.g. to add and remove ions or solvent molecules for simulation and representation. For our lipid membrane models we used available standard coarse-grain models and modified the lipids
-                  to our needs. More information about the phospholipid models can be found below. Please have a look at some simple models we generated of our two main proteins ATP Synthase and Bacteriorhodopsin. Visualization was achieved with
-                  different representations in Chimera.
 
-                </div>
-              </div>
-              <div class="col-md-3">
-                <img src="https://2020.igem.org/wiki/images/0/01/T--Aachen--modeling-atp.png" class="imgframe_yellow" style="width:100%;" alt="">
-              </div>
-              <div class="col-md-3">
-                <img src="https://2020.igem.org/wiki/images/a/ae/T--Aachen--modeling-br.png" class="imgframe_yellow" style="width:100%" alt="">
-              </div>
-              <div class="col-md-1"></div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="abs_head" style="color: #4f70de; margin-top: 20px;">
+                Molecular Dynamics Simulation</div>
             </div>
-            <div class="row">
-              <div class="col-md-1"></div>
-              <div class="col-md-10">
-                <div class="textframe_yellow container" style="width:100%">
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+              <div class="textframe_blue">
+                One of our main disciplines of simulation is molecular dynamics. We used a great variety of different programs and tools to achieve the best possible results for the simulations. Mainly, we used GROMACS, a command line-based program
+                for (in our case) ubuntu subsystems, for simulation of our systems and to generate “.pdb” format files as well as molecular trajectories. These could be loaded into other programs. To visualize our simulations, we at first relied on
+                a trajectory-based solution using VMD, later we transitioned to directly loading our results with UCSF Chimera. Chimera allows us to generate better pictures due to its shadow rendering and multisampling tools and allows us to
+                generate scene-based movies of our resulting all-atom models. Cytoscape helped us to gain further inside into the structure of our proteins and lipid models and took on the role of helping us to understand the modeling processes in
+                the beginning.
+              </div>
+            </div>
+            <div class="col-md-4" style="background: white; border-radius: 40px 10px;">
+              <img src="../docs/logos/ChimeraLogo.png" alt="" style="margin-top: 10px; width: 30%">
+              <img src="../docs/logos/GROMACS_logo.png" alt="" style="margin-left: 10%; width: 40%">
+              <img src="../docs/logos/cytoscapeLogo.png" alt="" style="margin:0; width: 40%">
+              <img src="../docs/logos/vmd-logo.svg" alt="" style="margin-left: 5%; width: 30%">
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+              <div class="textframe_yellow">
+                We first started out learning about the theoretical workflows and how to use the various described programs in March. We started by completing simple protein simulations in water for a few milliseconds and worked our way up to more
+                complex models, as well as membrane integration. We want to acknowledge the freely available tutorials for the GROMACS software by Bevan & Brown Lab. <br> <br>
+                From here on, we came a long way that was full of trial and error, but the further we got, the fewer errors we encountered. Finally, after months of training, we can make use of the endless possibilities and
+                benefits the in-silico modeling software grants us. <br> <br>
+                Our standard GROMACS workflow was integrating and simulating all-atom models from “.pdb” files found on the RCSB Protein Data Bank. For Solvent files we started with standard available water models which we
+                later modified by editing the raw “.pdb” files, e.g. to add and remove ions or solvent molecules for simulation and representation. For our lipid membrane models we used available standard coarse-grain models and modified the lipids
+                to our needs. More information about the phospholipid models can be found below. Please have a look at some simple models we generated of our two main proteins ATP Synthase and Bacteriorhodopsin. Visualization was achieved with
+                different representations in Chimera.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img src="https://2020.igem.org/wiki/images/0/01/T--Aachen--modeling-atp.png" class="imgframe_yellow" style="width:100%;" alt="">
+            </div>
+            <div class="col-md-3">
+              <img src="https://2020.igem.org/wiki/images/a/ae/T--Aachen--modeling-br.png" class="imgframe_yellow" style="width:100%" alt="">
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="textframe_yellow container" style="width:100%">
 
-                  How ever, we did not stop at visualizing our components by simulating preexisting models with light changes from the Protein Data Bank. When we first started the modeling process, we had a clear path in mind. We wanted to simulate our system from the bottom up, by first starting with simple models, which we could then integrate into lipid membranes ourselves, adding more and more complexity in every step. The path we envisioned, did not stay as clear at every stage of progress, the main reason for this was a combination of inexperience in the beginning and sensitivity of the used software. By tirelessly trying to find our own errors and misconceptions of the modeling process, we managed to stay on track, although it meant taking several interesting detours. <br><br>
-                  <img src="https://2020.igem.org/wiki/images/5/53/T--Aachen--modeling-both.png" alt="" id="atp_br" style="float:left; width:40%; margin-left: 0; shape-outside: circle(50%);">
-                  The lipids we simulated were generated by us individually to emulate the lipid batches of the wet lab team. We relied on preexisting coarse-grain models and used Lipid Wrapper to generate lipid models of arbitrary geometry. To achieve the best model possible, we decided to feed the better lipid models with slightly changed parameters back into the lipid wrapper python script. This worked surprisingly well, even though it is not part of the standard workflow. Here we present our two protagonists integrated in a self-generated lipid membrane as described. Visualization was once again achieved with Chimera, which also enabled us to change the dissection of the model in the side view, to enable a better look at ATP Synthase and Bacteriorhodopsin by fading half of the lipid membrane. <br> <br>
-                  To support our wet lab team in a less conceptual way, we also simulated the integration of Cecropin A, one of the most promising binding peptides for the lipid membrane. We could predict in silico, that integration into our lipid batch is possible, at least in principle. This could later be proven by our wet lab team, which actually showed the integration into our chassis in vitro.
-                </div>
+                How ever, we did not stop at visualizing our components by simulating preexisting models with light changes from the Protein Data Bank. When we first started the modeling process, we had a clear path in mind. We wanted to simulate our
+                system from the bottom up, by first starting with simple models, which we could then integrate into lipid membranes ourselves, adding more and more complexity in every step. The path we envisioned, did not stay as clear at every stage
+                of progress, the main reason for this was a combination of inexperience in the beginning and sensitivity of the used software. By tirelessly trying to find our own errors and misconceptions of the modeling process, we managed to stay
+                on track, although it meant taking several interesting detours. <br><br>
+                <img src="https://2020.igem.org/wiki/images/5/53/T--Aachen--modeling-both.png" alt="" id="atp_br" style="float:left; width:40%; margin-left: 0; shape-outside: circle(50%);">
+                The lipids we simulated were generated by us individually to emulate the lipid batches of the wet lab team. We relied on preexisting coarse-grain models and used Lipid Wrapper to generate lipid models of arbitrary geometry. To achieve
+                the best model possible, we decided to feed the better lipid models with slightly changed parameters back into the lipid wrapper python script. This worked surprisingly well, even though it is not part of the standard workflow. Here
+                we present our two protagonists integrated in a self-generated lipid membrane as described. Visualization was once again achieved with Chimera, which also enabled us to change the dissection of the model in the side view, to enable a
+                better look at ATP Synthase and Bacteriorhodopsin by fading half of the lipid membrane. <br> <br>
+                To support our wet lab team in a less conceptual way, we also simulated the integration of Cecropin A, one of the most promising binding peptides for the lipid membrane. We could predict in silico, that integration into our lipid
+                batch is possible, at least in principle. This could later be proven by our wet lab team, which actually showed the integration into our chassis in vitro.
               </div>
-              <div class="col-md-1"></div>
             </div>
-            <div class="row">
-              <div class="col-md-1"></div>
-              <div class="col-md-2 movie">
-                <iframe style="margin: 20px; width:100%;" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="col-md-2 movie">
-                <iframe style="margin: 20px; width:100%;" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="col-md-2 movie">
-                <iframe style="margin: 20px; width:100%;" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="col-md-2 movie">
-                <iframe style="margin: 20px; width:100%;" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="col-md-2 movie">
-                <iframe style="margin: 20px; width:100%;" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+              <img src="https://2020.igem.org/wiki/images/6/69/T--Aachen--modeling-membrane.png" class="imgframe_yellow" style="width: 100%;" alt="">
             </div>
+            <div class="col-md-5">
+              <div class="textframe_yellow">
+                Following the input of an expert of the Max-Planck Institute in the field of synthetic cells, our lab team decided to change the lipid batch for the generation of our liposomes. We showed that the change of the lipid batch results in
+                different hydrophobicity and ultimately electron density of the membrane of the liposomes, which assists the integration of Bacteriorhodopsin into the membrane. The more positive charges of the lipid membrane seem to benefit the
+                integration of the slightly negatively net-charged Bacteriorhodopsin. Molecular analysis of our generated models with Chimera showed fewer clashes and steric hindrances for the Bacteriorhodopsin in the new lipid batch. Although this
+                is not definitive proof for the expected effect, it assured us that there is a high possibility for observing better integration in the wet lab experiments.
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+              <div class="textframe_yellow">
+                As mentioned before, molecular dynamics is not only a beneficial process, which granted us a lot of insight into the workings of our project, it also serves as a tool for a beautiful and more exact representation of the components and
+                processes we use. Since synthetic biology happens at the very smallest scale, it is sometimes hard to grasp what is actually going on inside the system we use in the laboratory. On top of that, seeing the smallest parts and molecular
+                machines reminds us to admire the beautiful and intricate complexity of life. In our first molecular movie, we want to visualize the basic principle of our system and chassis, by showing Bacteriorhodopsin and ATP Synthase in action.
+                The movie is generated from our own models in Chimera. The flow of Protons and the light effect was added with movie editing software during the creation of our project presentation video. Enjoy and take a look, on what’s going on at
+                the surface of our chassis!
+              </div>
+            </div>
+            <div class="col-md-5">
+              <img src="../docs/misc/filler.png" class="imgframe_yellow" style="width:100%;" alt="">
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+              <img src="../docs/misc/filler.png" class="imgframe_yellow" style="width:100%;" alt="">
+            </div>
+            <div class="col-md-4">
+              <div class="textframe_yellow">
+                In our second movie we visualize the linker protein complex, which couples our chassis to the magnetic particles. Watch how we will bring M.A.R.S. closer to completion.
+              </div>
+            </div>
+            <div class="col-md-1"></div>
           </div>
         </div>
       </div>
-      <script type="text/javascript">
-        var button = document.getElementById("myonoffswitch");
-
-        var model = document.getElementById("model");
-
-        var sims = document.getElementById("simulation");
-
-        button.onclick = function() {
-          if (model.style.display == "none") {
-            model.style.display = "block";
-            sims.style.display = "none";
-          } else {
-            model.style.display = "none";
-            sims.style.display = "block";
-          }
-        }
-      </script>
       <div class="col-md-1"></div>
     </div>
   </div>
@@ -286,6 +299,23 @@
   </div>
   <!-- Scroll-Up dingsbums -->
   <div id="footer"></div>
+  <script type="text/javascript">
+    var button = document.getElementById("myonoffswitch");
+
+    var model = document.getElementById("model");
+
+    var sims = document.getElementById("simulation");
+
+    button.onclick = function() {
+      if (model.style.display == "none") {
+        model.style.display = "block";
+        sims.style.display = "none";
+      } else {
+        model.style.display = "none";
+        sims.style.display = "block";
+      }
+    }
+  </script>
 </body>
 
 </html>
