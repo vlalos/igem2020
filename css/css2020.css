@@ -67,18 +67,22 @@ a:active {
 #myRed_menu:hover, .myRed_menu:hover {
   box-shadow: inset 0px -5px 0px 0px #fe336d !important;
   color: #fe336d !important;
+  font-weight: 700;
 }
 #myGreen_menu:hover, .myGreen_menu:hover {
   box-shadow: inset 0px -5px 0px 0px #2bd792 !important;
   color: #2bd792 !important;
+  font-weight: 700;
 }
 #myBlue_menu:hover, .myBlue_menu:hover {
   box-shadow: inset 0px -5px 0px 0px #4f70de !important;
   color: #4f70de !important;
+  font-weight: 700;
 }
 #myYell_menu:hover, .myYell_menu:hover {
   box-shadow: inset 0px -5px 0px 0px #feca40 !important;
   color: #feca40 !important;
+  font-weight: 700;
 }
 
 #myRed:hover, .myRed:hover {
@@ -347,7 +351,7 @@ a:active {
 
 .speechbubble_left {
   position: relative;
-	text-align: center;
+	text-align: justify;
 	margin-top: -20px;
 	background-color: rgba(17, 14, 33, 0.5);
   color: #eaeaea;
@@ -387,7 +391,7 @@ a:active {
 
 .speechbubble_right {
   position: relative;
-	text-align: center;
+	text-align: justify;
 	margin-top: -20px;
 	background-color: rgba(17, 14, 33, 0.5);
   color: #eaeaea;
@@ -576,6 +580,13 @@ a:active {
     color: #eaeaea !important;
     font-size: 18px;
     font-weight: 700;
+    text-decoration: none;
+  }
+
+.myRed_menu, .myGreen_menu, .myBlue_menu, .myYell_menu {
+    color: #eaeaea !important;
+    font-size: 18px;
+    font-weight: 700 !important;
     text-decoration: none;
   }
 
