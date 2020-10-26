@@ -1,4 +1,5 @@
 <html>
+
 <head>
   <title>Modeling - IGEM Aachen 2020</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
@@ -35,13 +36,15 @@
             M.A.R.S. - The digital edition
           </h3><br><br>
           <div class="textframe_green">
-            To support the work of our wet lab team, we relied heavily on the use of modeling techniques for our complex system. Especially in these times of limited laboratory access, we could greatly profit from the created models and molecular dynamics simulation of components, experiments or the whole processes and stoichiometry of M.A.R.S.. On top of that we also used the results of our molecular dynamics simulation to generate visualizing movies of the parts of M.A.R.S..
-            <br>  We can divide our modeling efforts into two main categories:
-            <ul>
-              <li>Magnetic ATP Recycling System</li>
-              <li>Molecular Dynamics Simulation</li>
+            To support the work of our wet lab team, we relied heavily on the use of modeling techniques for our complex system. Especially in these times of limited laboratory access, we could greatly profit from the created models and molecular
+            dynamics simulation of components, experiments or the whole processes and stoichiometry of M.A.R.S. On top of that we also used the results of our molecular dynamics simulation to generate visualizing movies of the parts of M.A.R.S.
+            <br> We can divide our modeling efforts into two main categories:
+            <ul style="font-style: italic;">
+              <li>Mathematical modeling</li>
+              <li>Molecular dynamics simulation</li>
             </ul>
-            Learn about the basic principles we followed, the details of our simulations as well as our workflows. Especially you will see, how the deep interplay of wet lab experiments, theoretical background knowledge and modeling really improved our project.
+            Learn about the basic principles we followed, the details of our simulations as well as our workflows. Especially you will see, how the deep interplay of wet lab experiments, theoretical background knowledge and modeling really improved
+            our project.
 
           </div>
           <span style="color: #eaeaea; font-size: 20px; margin-top:20px; padding-top: 60px;"><i>Flip the switch to find out more about both approaches. </i> <br> </span>
@@ -71,39 +74,14 @@
             <div class="col-md-1"></div>
             <div class="col-md-10">
               <div class="textframe_red">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-                et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-              </div>
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-          <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-3">
-              <div class="textframe_green">
-
-
-                <ul>
-                  <li>Irgendeine List</li>
-                  <li>Noch ein Eintrag</li>
-                  <li>Weiter testen</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-7">
-              <div class="row">
-                <div class="imgframe_green">
-
-
-                  <img src="../docs/misc/filler.png" style="width: 50%;" alt="">
-                </div>
-              </div>
-              <div class="row">
-                <div class="textframe_green">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-                  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                </div>
+                To make quantitative predictions of how our system will perform in different setups and environments we created a mathematical model of M.A.R.S. in MatLab using the SimBiology toolbox and following the basic principles of
+                computational systems biotechnology. The model is used to show and quantify the ATP-Recycling ability of our system and is furthermore used to establish a connection to a first real-world industrial application our system could be
+                used for. This was also tested by the wet lab team at the FZ Jülich. On top of that our model predicted the optimal set of parameters and conditions for operation in vitro, upon which the wet lab team created further experiments.
+                Reaction rates for ATP-Synthase and Bacteriorhodopsin were taken from the BioNumbers library. For evaluation of the reaction system at FZ Jülich we approximated the kinetic parameters for the CAR enzyme from values found in scientific
+                literature
+                <a style="color:#FFFFFF !important" href="#ref"><b>[1]</b></a>.
+                The model can be split into four main parts, which we will introduce below. Here are the most important Pools, Parameters, Functions and Equations. The flow and directionality of reactions, which connect the pools, are shown in the
+                graphical representation of the model.
               </div>
             </div>
             <div class="col-md-1"></div>
@@ -111,26 +89,129 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-4">
-              <div class="textframe_red">
+              <div class="textframe_green">
 
-
-                PARAMETER PLOT
+                <span style="font-size: 24px;">Pools:</span>
+                <ul id="pools">
+                  <li>TRIS H+ & TRIS
+                    <ul class="unterlist">
+                      <li>The protonated and deprotonated molecules of our buffers</li>
+                    </ul>
+                  </li>
+                  <li>Proton OUT
+                    <ul class="unterlist">
+                      <li>The proton concentration in the reactor liquid</li>
+                    </ul>
+                  </li>
+                  <li>Proton IN
+                    <ul class="unterlist">
+                      <li>The proton concentration inside a single chassis</li>
+                    </ul>
+                  </li>
+                  <li>ADP & Pi
+                    <ul class="unterlist">
+                      <li>The concentrations of ADP and phosphate in the reactor liquid</li>
+                    </ul>
+                  </li>
+                  <li>ATP
+                    <ul class="unterlist">
+                      <li>The concentration of ATP produced inside the reactor liquid</li>
+                    </ul>
+                  </li>
+                  <li>3-OH Benzoic acid
+                    <ul class="unterlist">
+                      <li>The substrate of the reaction cascade at FZ Jülich</li>
+                    </ul>
+                  </li>
+                  <li>3-OH Benzaldehyde
+                    <ul class="unterlist">
+                      <li>The substrate of the reaction cascade at FZ Jülich</li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="textframe_red">
-
-
-                TEXT PROOF
+              <div class="row">
+                <div class="col-md-12">
+                  <img src="https://2020.igem.org/wiki/images/3/36/T--Aachen--MMOverview.jpg" class="imgframe_green" style="width: 100%;" alt="">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <img src="https://2020.igem.org/wiki/images/e/e6/T--Aachen--equations.png" class="imgframe_green" style="width: 100%; margin-top: 20px;" alt="">
+                </div>
               </div>
             </div>
             <div class="col-md-1"></div>
           </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="textframe_green">
+                <span style="font-size: 24px;">Parameters & Functions:</span> <br>
+                <span style="margin-left: 20px; margin-top: 20px !important;">Our Model runs on 32 main parameters, of which the most important ones are the geometric values for our chassis and the reactor. We model shake flasks with 150 ml filling
+                  volume, for the chassis we calculate a density factor based on the average vesicle diameter and the diameter of the two integrated proteins. We infer that half of the surface of each chassis is covered by proteins. The volume of the
+                  spherical chassis is a simple function of the average diameter. Other than the chassis diameter, the total number of chassis in the system is a degree of freedom for the model.</span> <br> <br>
+                <span style="font-size: 24px; margin-top:20px;">Reactions:</span> <br>
+                <span style="margin-left: 20px; margin-top: 20px !important;">We created differential equations for each reaction in the system. The proteins are modeled with a Michaelis-Menten (BR) and a Ping-Pong-Bi-Bi kinetic approach, while the
+                  buffer equilibrium is modeled by mass action laws.</span> <br> <br>
+                <span style="margin-left: 20px; margin-top: 20px !important;"> With our mathematical model, we could simulate thousands of different parameter-sets and combinations. Please take a look at some examples of our analysis. If you would like more insight into our modelling approach, feel free to download our MatLab project.</span>
+                <a href="https://2020.igem.org/wiki/images/6/67/T--Aachen--modelzip.zip"><button class="btn" id="download_button">Download</button></a>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="container textframe_red" style="width:100%;">
+                We created a complete model of M.A.R.S. directly <img src="https://2020.igem.org/wiki/images/1/19/T--Aachen--MM1.png" class="imgframe_red interactive_img" style="width:30%; float: right; margin-left: 20px;" alt=""> <img src="https://2020.igem.org/wiki/images/a/ac/T--Aachen--MM2.png" class="imgframe_red interactive_img" style="width:30%; float: right; margin-left: 20px;"  alt="">implemented into a CAR enzyme cascade. M.A.R.S. is directly providing and recycling the ATP needed for the production of the important pharmaceutical precursor 3-OH Benzaldehyde. In our first two exemplary graphs, we demonstrate the steady state equilibrium of our system for the given reaction. With a 10 mM substrate concentration, the system reaches equilibrium after 2 hours. From this point on, ATP is completely recycled by our system until all of the substrate has been converted to 3-OH benzaldehyde. With an enzyme concentration of 100 µg/mL the substrate is completely converted after 4.8 hours. All relative pools are equivalent to the proof of concept experiments at FZ Jülich to ensure comparabilty. It is important to say, that all simulated processes start unequilibrated with no ATP in the system. While in the laboratory experiments ATP is initially supplied. This lowers the product conversion rate of the simulated process during the onset stage of the process.
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+              <img src="https://2020.igem.org/wiki/images/5/58/T--Aachen--MM3.png" class="imgframe_red" style="width: 100%;" alt="">
+            </div>
+            <div class="col-md-5">
+              <div class="textframe_red">
+                We conducted variant analysis for our mathematical model, to identify the optimal set of parameters and conditions for the set-up of M.A.R.S. in the context of a real industrial application. Our three most valuable insights from the variant analysis simulations are discussed below.
+                <br> <br>
+                <span style="margin-left: 20px;">We ran a parameter analysis on the impact of the CAR concertation on the steady state and product conversion of our system. The higher the CAR concentration, the lower will be the equilibrium concentration of ATP in the system, since more enzymes require a higher ADP-ATP recycling Flux. Analyzing the product conversion showed us, that the CAR concentration has a logarithmic correlation to the product conversion rate. When trying to implement M.A.R.S. in a real industrial process, this effect is outstandingly important. The higher the initial CAR concentration, the lower the difference to the prior effect of CAR concentration change. In a process optimization context, this allows us to choose a concentration of enzymes, that is both high enough to have a relevant effect on the product conversion rate and yet low enough to be a worthy investment for the process.
+                <br> <br></span>
+                <span style="margin-left: 20px;">On the basis of this analysis, we can determine the sweet spot of enzyme concentration which minimizes to overall production cost with respect to expanses generated by the running process (time-factor) as well as costs produced by the preparation or procurement of expansive enzymes.
+                  </span>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="container textframe_red" style="width:100%;">
+                <img src="https://2020.igem.org/wiki/images/8/82/T--Aachen--MM4.png" class="imgframe_red interactive_img" style="width:30%; float: left; margin-right: 20px;" alt=""> <img src="https://2020.igem.org/wiki/images/a/a0/T--Aachen--MM5.png" class="imgframe_red interactive_img" style="width:30%; float: left; margin-right: 20px;"  alt="">Another parameter analysis was conducted for the mean diameter of the chassis (shown in micrometers). We found an exponential correlation between the equilibrium concentration of ATP and the product conversion rate. Our findings are presented in a linear as well as a semi-log fashion, for better visualization. The higher the mean diameter of the chassis, the exceedingly higher the product conversion rate. This led us to choose the highest achievable diameter for our chassis. The mean diameter is determined by the exact methodology of liposome formation and is limited by their stability. In our system, the liposomes need to be as big as possible while being able to tolerate the shear stress in the bioreactor. Taking all necessary effects as well as calculations of the energy dissipation rate for our shaking system into account, we opted for a mean diameter of 10 micrometers.
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+              <div class="textframe_red">
+                We performed a cartesian double parameter analysis with the SimBiology Model Analyzer, to gain insight into the interplay of initial ADP, Pi and substrate concentrations of the process. The shown effects have important implications for the implementation of our system. We demonstrate, that neither ADP, Pi nor initial substrate concentration has an influence on the product conversion rate for this process. This shows, that the only limiting factor of the process set-up is the ATP equilibrium concentration. Effects on the product conversion rate can therefore only be expected, if the ATP equilibrium concentration is altered as well or if the substrate supply is severely limited. Furthermore, we can infer a characteristic for every possible M.A.R.S. process application, that is unique to each process. The minimal ATP equilibrium concentration (1.1 mM in this set-up) is equivalent to the minimal ADP and Pi supply needed to achieve the maximal product conversion rate for the given set-up. This characteristic number could possibly quantify the efficiency of every M.A.R.S. implementation. This is supported by the fact that the ATP recycling flux is only determined by the parameters of M.A.R.S. itself as well as the parameters of the ATP-dependent enzymes. This means, that the only necessary prerequisite is the consistent constitution of the chassis itself to justify the relevance of the minimal ADP and Pi supply.
+              </div>
+            </div>
+            <div class="col-md-5">
+              <img src="https://2020.igem.org/wiki/images/f/fa/T--Aachen--MM6.png" class="imgframe_red" style="width: 100%;" alt="">
+            </div>
+            <div class="col-md-1"></div>
+          </div>
         </div>
+
         <div class="container" id="simulation" style="display:none; width:100%;">
-          <div class="container-fluid" style="width:100%;">
-
-
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
@@ -141,14 +222,16 @@
           </div>
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-7">
+            <div class="col-md-6">
               <div class="textframe_blue">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-                et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                One of our main disciplines of simulation is molecular dynamics. We used a great variety of different programs and tools to achieve the best possible results for the simulations. Mainly, we used GROMACS, a command line-based program
+                for (in our case) ubuntu subsystems, for simulation of our systems and to generate “.pdb” format files as well as molecular trajectories. These could be loaded into other programs. To visualize our simulations, we at first relied on
+                a trajectory-based solution using VMD, later we transitioned to directly loading our results with UCSF Chimera. Chimera allows us to generate better pictures due to its shadow rendering and multisampling tools and allows us to
+                generate scene-based movies of our resulting all-atom models. Cytoscape helped us to gain further inside into the structure of our proteins and lipid models and took on the role of helping us to understand the modeling processes in
+                the beginning.
               </div>
             </div>
-            <div class="col-md-3" style="background: white; border-radius: 40px 10px;">
+            <div class="col-md-4" style="background: white; border-radius: 40px 10px;">
               <img src="../docs/logos/ChimeraLogo.png" alt="" style="margin-top: 10px; width: 30%">
               <img src="../docs/logos/GROMACS_logo.png" alt="" style="margin-left: 10%; width: 40%">
               <img src="../docs/logos/cytoscapeLogo.png" alt="" style="margin:0; width: 40%">
@@ -158,130 +241,137 @@
           </div>
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-5">
-              <div class="row">
-                <div class="textframe_yellow">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-                  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-                  et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                </div>
-              </div>
-              <div class="row">
-                <div class="textframe_yellow">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-                  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-                  et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                </div>
+            <div class="col-md-4">
+              <div class="textframe_yellow">
+                We first started out learning about the theoretical workflows and how to use the various described programs in March. We started by completing simple protein simulations in water for a few milliseconds and worked our way up to more
+                complex models, as well as membrane integration. We want to acknowledge the freely available tutorials for the GROMACS software by Bevan & Brown Lab. <br> <br>
+                From here on, we came a long way that was full of trial and error, but the further we got, the fewer errors we encountered. Finally, after months of training, we can make use of the endless possibilities and
+                benefits the in-silico modeling software grants us. <br> <br>
+                Our standard GROMACS workflow was integrating and simulating all-atom models from “.pdb” files found on the RCSB Protein Data Bank. For Solvent files we started with standard available water models which we
+                later modified by editing the raw “.pdb” files, e.g. to add and remove ions or solvent molecules for simulation and representation. For our lipid membrane models we used available standard coarse-grain models and modified the lipids
+                to our needs. More information about the phospholipid models can be found below. Please have a look at some simple models we generated of our two main proteins ATP Synthase and Bacteriorhodopsin. Visualization was achieved with
+                different representations in Chimera.
               </div>
             </div>
-            <div class="col-md-5">
-              <div class="row">
-                <div class="col-md-6">
-                  <span style="font-size: 48px; color: #feca40; text-align: center;">ATP</span>
-                </div>
-                <div class="col-md-6">
-                  <span style="font-size: 48px; color: #feca40; text-align: center;">BR</span>
-                </div>
-              </div>
-              <div class="row">
-                <span style="font-size: 48px; color: #feca40; text-align: center;">ATP and BR</span>
+            <div class="col-md-3">
+              <img src="https://2020.igem.org/wiki/images/0/01/T--Aachen--modeling-atp.png" class="imgframe_yellow" style="width:100%;" alt="">
+            </div>
+            <div class="col-md-3">
+              <img src="https://2020.igem.org/wiki/images/a/ae/T--Aachen--modeling-br.png" class="imgframe_yellow" style="width:100%" alt="">
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="textframe_yellow container" style="width:100%">
+
+                However, we did not stop at visualizing our components by simulating preexisting models with light changes from the Protein Data Bank. When we first started the modeling process, we had a clear path in mind. We wanted to simulate our
+                system from the bottom up, by first starting with simple models, which we could then integrate into lipid membranes ourselves, adding more and more complexity in every step. The path we envisioned, did not stay as clear at every stage
+                of progress, the main reason for this was a combination of inexperience in the beginning and sensitivity of the used software. By tirelessly trying to find our own errors and misconceptions of the modeling process, we managed to stay
+                on track, although it meant taking several interesting detours. <br><br>
+                <img src="https://2020.igem.org/wiki/images/5/53/T--Aachen--modeling-both.png" alt="" id="atp_br" style="float:left; width:40%; margin-left: 0; shape-outside: circle(50%);">
+                The lipids we simulated were generated by us individually to emulate the lipid batches of the wet lab team. We relied on preexisting coarse-grain models and used Lipid Wrapper to generate lipid models of arbitrary geometry. To achieve
+                the best model possible, we decided to feed the better lipid models with slightly changed parameters back into the lipid wrapper python script. This worked surprisingly well, even though it is not part of the standard workflow. Here
+                we present our two protagonists integrated in a self-generated lipid membrane as described. Visualization was once again achieved with Chimera, which also enabled us to change the dissection of the model in the side view, to enable a
+                better look at ATP Synthase and Bacteriorhodopsin by fading half of the lipid membrane. <img src="https://2020.igem.org/wiki/images/6/69/T--Aachen--modeling-membrane.png" class="imgframe_yellow interactive_img" style="width: 20%; float: right; margin-left: 20px;" alt=""> <br> <br>
+                To support our wet lab team in a less conceptual way, we also simulated the integration of LCI, one of the most promising binding peptides for the lipid membrane. We could predict in silico, that integration into our lipid
+                batch is possible, at least in principle. This could later be proven by our wet lab team, which actually showed the integration into our chassis in vitro.
               </div>
             </div>
             <div class="col-md-1"></div>
           </div>
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-2 movie">
-              <iframe style="margin: 20px; width:100%;" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="col-md-2 movie">
-              <iframe style="margin: 20px; width:100%;" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="col-md-2 movie">
-              <iframe style="margin: 20px; width:100%;" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="col-md-2 movie">
-              <iframe style="margin: 20px; width:100%;" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="col-md-2 movie">
-              <iframe style="margin: 20px; width:100%;" src="https://www.youtube.com/embed/G1IbRujko-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-md-10">
+              <div class="textframe_yellow container" style="width: 100%;">
+                Following the input of an expert of the Max-Planck Institute in the field of synthetic cells, our lab team decided to change the lipid batch for the generation of our liposomes. We showed that the change of the lipid batch results in
+                different hydrophobicity and ultimately electron density of the membrane of the liposomes, which assists the integration of Bacteriorhodopsin into the membrane. The more positive charges of the lipid membrane seem to benefit the
+                integration of the slightly negatively net-charged Bacteriorhodopsin. Molecular analysis of our generated models with Chimera showed fewer clashes and steric hindrances for the Bacteriorhodopsin in the new lipid batch. Although this
+                is not definitive proof for the expected effect, it assured us that there is a high possibility for observing better integration in the wet lab experiments.
+                <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-5">
+                    <img src="https://2020.igem.org/wiki/images/0/0d/T--Aachen--MD_letzte_1.png" class="imgframe_yellow" style="width: 100%;" alt="">
+                  </div>
+                  <div class="col-md-5">
+                    <img src="https://2020.igem.org/wiki/images/0/02/T--Aachen--MD_letzte_2.png " class="imgframe_yellow" style="width: 100%;" alt="">
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </div>
             </div>
             <div class="col-md-1"></div>
           </div>
+
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="textframe_blue container" style="width:100%;">
+                As mentioned before, molecular dynamics is not only a beneficial process, which granted us a lot of insight into the workings of our project, it also serves as a tool for a beautiful and more exact representation of the components and
+                processes we use. Since synthetic biology happens at the very smallest scale, it is sometimes hard to grasp what is actually going on inside the system we use in the laboratory. On top of that, seeing the smallest parts and molecular
+                machines reminds us to admire the beautiful and intricate complexity of life. In our first molecular movie, we want to visualize the basic principle of our system and chassis, by showing Bacteriorhodopsin and ATP Synthase in action.
+                The movie is generated from our own models in Chimera. The flow of Protons and the light effect was added with movie editing software during the creation of our project presentation video. Enjoy and take a look, on what’s going on at
+                the surface of our chassis!
+                <br> <br> In our second movie we visualize the linker protein complex, which couples our chassis to the magnetic particles. Watch how we will bring M.A.R.S. closer to completion.
+                <div class="row" style="width:100%; margin-top:20px;">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-5">
+                    <video class="imgframe_blue" style="width: 100%; shape-outside:" controls poster="https://2020.igem.org/wiki/images/c/c9/T--Aachen--poster1.png">
+                      <source src="https://2020.igem.org/wiki/images/f/f2/T--Aachen--MD_Movie1.mp4" type="video/mp4">
+                      <span style="color: #eaeaea; font-size: 16px">Your browser does not support the video tag.</span>
+                    </video>
+                  </div>
+                  <div class="col-md-5">
+                    <video class="imgframe_blue" style="width: 100%;" controls poster="https://2020.igem.org/wiki/images/c/c1/T--Aachen--poster2.png">
+                      <source src="https://2020.igem.org/wiki/images/f/f2/T--Aachen--MD_Movie2.mp4 " type="video/mp4">
+                      <span style="color: #eaeaea; font-size: 16px">Your browser does not support the video tag.</span>
+                    </video>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-1"></div>
           </div>
         </div>
       </div>
-      <script type="text/javascript">
-        var button = document.getElementById("myonoffswitch");
-
-        var model = document.getElementById("model");
-
-        var sims = document.getElementById("simulation");
-
-        button.onclick = function() {
-          if (model.style.display == "none") {
-            model.style.display = "block";
-            sims.style.display = "none";
-          } else {
-            model.style.display = "none";
-            sims.style.display = "block";
-          }
-        }
-      </script>
       <div class="col-md-1"></div>
     </div>
   </div>
-  <div class="container" style="width: 100%;">
+  <div class="container" style="width:100%;">
     <div class="container-fluid" style="margin-top:20px;">
-      <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 0;">
+      <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 100px;">
         <div class="col-md-1"></div>
-        <div class="col-md-5 col-sm-6">
-          <div class="textframe_blue">
-            <p>
-              Recent developments have hit hard on various people, organisations and projects. Scientists and Universities
-              all around the world are subject to said same struggle. Though many questions remain unanswered and problems unsolved,
-              it is astounding how quick several rising stars have brought hope to students and staff alike. In times of contact
-              restriction our view for the technological augmentations of our professional as well as private lifes has yet been widened.
-              Especially, various "Group Meeting Services" hardly want to be missed in the future.</p>
-          </div>
+        <div class="col-md-9">
+          <h3 id="ref" style="color:#eaeaea">References</h3><br>
+          <span style="color:#eaeaea; font-size:16"><b>[1] Selective Enzymatic Transformation to Aldehydes in vivo by Fungal Carboxylate Reductase from Neurospora crassa - <br>
+              Daniel Schwendenwein, Giuseppe Fiume, Hansjörg Weber, Florian Rudroff and Margit Winklera DOI:10.1002/adsc.201600914
+            </b></span><br>
         </div>
-        <div class="col-md-5 col-sm-6">
-          <div class="textframe_blue">
-            <p>For the synthetic biology and information science community, one of these technological rising stars has been a tool of
-              widespread use for long but was also reserved to highly trained experts, due to its complexity.</p>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
-      <div class="row" style="padding-top: 20px; padding-bottom: 0;">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
-          <h1>Molecular Dynamics Simulation</h1> <br>
-        </div>
-        <div class="col-md-6"></div>
-      </div>
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
-          <div class="textframe_blue">
-            <p>We are proud to say, that iGEM Aachen has taken on the challenge!</p>
-            <p>Harnessing the power of various software like <span style="color: #fe336d">CytoScape</span>,
-              <span style="color: #2bd792">Chimera</span>, <span style="color: #4f70de">Gromacs</span> and
-              <span style="color: #feca40">VMD</span>, we are able to do work fromeverywhere and assist our laboratory team by
-              making up for the time they had to hold back!
-            </p>
-            <p>Thanks to the months of ongoing training, trial and sweat and tears and error, of our Simulation Subgroup,
-              we are in for mastering the molecular dynamics and using its potential to promote and further our research.</p>
-            <p><span style="color: #fe336d">M.A.R.S</span> by <span style="color: #2bd792">iGEM Aachen</span> is coming up in big leaps.</p>
-            <p>We are proud to share results and experience with you soon! Stay tuned!</p>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
       </div>
     </div>
   </div>
   <!-- Scroll-Up dingsbums -->
   <div id="footer"></div>
+  <script type="text/javascript">
+    var button = document.getElementById("myonoffswitch");
+
+    var model = document.getElementById("model");
+
+    var sims = document.getElementById("simulation");
+
+    button.onclick = function() {
+      if (model.style.display == "none") {
+        model.style.display = "block";
+        sims.style.display = "none";
+      } else {
+        model.style.display = "none";
+        sims.style.display = "block";
+      }
+    }
+  </script>
 </body>
 
 </html>
