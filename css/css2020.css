@@ -170,6 +170,24 @@ a:active {
   transform: scale(2);
 }
 
+#download_button {
+  border-radius: 50%;
+  border: 2px #eaeaea solid;
+  font-size: 14px;
+  outline: none;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  cursor: pointer;
+  color: #eaeaea !important;
+}
+
+#download_button:hover {
+  border: 2px #2bd792 solid;
+  color: #2bd792 !important;
+  font-weight: bold;
+}
+
+
 .abs_head {
     align-content: flex-start;
     text-align: left;
