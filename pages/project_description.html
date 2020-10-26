@@ -43,7 +43,7 @@
           </div>
         </div>
         <!-- Interview -->
-        <div class=row>
+        <div id="question1" class=row>
           <div class="abs_head" style="color: #fe336d; padding-left: 8.5%; margin-top: 100px">"So, you want to create ATP. But what is ATP and why is it so important?"</div>
         </div>
         <div class="row" style="margin-top:20px; padding-top: 0; padding-bottom: 0px;">
@@ -60,7 +60,7 @@
             </div>
             <div class="col-md-1"></div>
         </div>
-        <div class=row>
+        <div id="question2" class=row>
           <div class="abs_head" style="color: #2bd792; padding-left: 8.5%; margin-top:100px;">"Great! So, we want to have as much ATP as we can get. But there is a
             problem, right?"</div>
         </div>
@@ -77,7 +77,7 @@
             </div>
             <div class="col-md-1"></div>
         </div>
-        <div class=row>
+        <div id="question3" class=row>
           <div class="abs_head" style="color: #4f70de; padding-left: 8.5%; margin-top: 100px">"And what can be done to improve the current situation?"</div>
         </div>
         <div class="row" style="margin-top:20px; padding-top: 0; padding-bottom: 20px;">
@@ -221,17 +221,18 @@
           <div class="col-md-1"></div>
           <div class="col-md-10">
             <div class="textframe_red container" style="width: 100%">
-              <img src="https://2020.igem.org/wiki/images/4/46/T--Aachen--filler_pic.png" style="float: right; margin-left:20px" width="20%">
+              <img src="https://2020.igem.org/wiki/images/8/8c/T--Aachen--atp.png" style="float: right; margin-left:20px; background: white; border-radius:40px 10px" class="interactive_img" width="20%">
               To understand what our project is about and why it is so relevant, let us first take a look at the molecule that our work has been about:<br><br>
               Adenosine triphosphate (ATP) is a nucleotide and complex organic molecule, consisting of the nucleic base adenine, the sugar ribose, and a triphosphate unit <a style="color:#FFFFFF !important" href="#ref"><b>[1]</b></a>.<br><br>
               It serves as a universal transport and storage material for energy in the cells of all living things and therefore is produced and consumed in large
               quantities every day. Due to the hydrolytic cleavage of the high-energy anhydride bonds that connect the triphosphate units, it supplies the necessary energy
               for the work of many enzymes. Either only one of the phosphates can be split off, or both, releasing an energy amount of up to 50 kJ/mol <a style="color:#FFFFFF !important" href="#ref"><b>[1]</b></a>.<br><br>
-              <img src="https://2020.igem.org/wiki/images/4/46/T--Aachen--filler_pic.png" style="float: left; margin-right:20px" width="20%">
+              <img src="https://2020.igem.org/wiki/images/c/c2/T--Aachen--amp_adp.png" style="float: left; margin-right:20px; background: white; border-radius:40px 10px" width="20%">
               As a result, however, ATP is converted into one of two less potent energy sources, namely adenosine diphosphate (ADP) or adenosine monophosphate (AMP),
               and must be regenerated to make it available again <a style="color:#FFFFFF !important" href="#ref"><b>[1]</b></a>.<br><br>
               The ATP-ADP cycle, in particular, is a fundamental mechanism of energy exchange in cells <a style="color:#FFFFFF !important" href="#ref"><b>[1]</b></a>.
-              Because of this, the ATP/ADP ratio is strictly regulated and maintained through a rapid conversion of ADP to ATP. The ATP concentration in a regular cell is about ten times greater than that of ADP <a style="color:#FFFFFF !important" href="#ref"><b>[2]</b></a>.
+              Because of this, the ATP/ADP ratio is strictly regulated and maintained through a rapid conversion of ADP to ATP. The ATP concentration in a regular cell is about ten times greater than that of ADP <a style="color:#FFFFFF !important" href="#ref"><b>[2]</b></a>.<br>
+              <p style="text-align: center; padding-top:15px;"><a href="#question1" style="color:#eaeaea; font-size:12px; font-weight:700;">go to overview Q&A</a></p>
             </div>
           </div>
         </div>
@@ -249,7 +250,8 @@
               Industrially, this is mostly achieved with genetically engineered yest cells <a style="color:#FFFFFF !important" href="#ref"><b>[4]</b></a>.
               Another popular method is the chemical catalysis utilizing polyphosphate to couple phosphate groups to ADP or AMP.<br><br>
               Both methods, especially the polyphosphate approach are significantly less sustainable because they can’t be efficiently integrated directly
-              into the systems in need of ATP recycling and often depend on external resources.
+              into the systems in need of ATP recycling and often depend on external resources.<br>
+              <p style="text-align: center; padding-top:15px;"><a href="#question2" style="color:#eaeaea; font-size:12px; font-weight:700;">go to overview Q&A</a></p>
             </div>
           </div>
         </div>
@@ -272,13 +274,14 @@
               can maintain its metabolism with the help of light energy in the event of a lack of oxygen. For that purpose, it produces the purple pigment bacteriorhodopsin (BR) and embeds it in newly synthesized
               membrane segments, the so-called purple membrane (PM). While absorbing a photon of light, the retinal chromophore of BR is isomerized, which leads to a proton shift by pumping protons from the cytoplasmic
               to the extracellular side of the protein pore. In this way, it builds up the proton gradient necessary for ATP synthesis across its cell membrane <a style="color:#FFFFFF !important" href="#ref"><b>[7]</b></a>.<br><br>
-              <img src="https://2020.igem.org/wiki/images/4/46/T--Aachen--filler_pic.png" style="float: left; margin-right:20px" width="20%">
+              <img src="https://2020.igem.org/wiki/images/c/ce/T--Aachen--Design2.jpg" style="float: left; margin-right:20px; border-radius:10px" width="20%">
               For M.A.R.S. we use these two energy regeneration mechanisms, which are ingenious by nature, and combine them into one. This allows us to use only two proteins that are built into the protocells, our so-called chassis.
               The minimalistic configuration of the chassis avoids unwanted interactions with enzymes in the environment and thus enables enzyme cascades to be fed directly into the bioreactor. As in <i>H. salinarum</i>, BR generates the
               necessary proton gradient with the help of light energy across the membrane of the liposomes or polymersomes, so that the ATP synthase extracted from <i>S. cerevisiae</i> can recycle ATP from ADP and P<sub>i</sub>. The big advantage here
               is the reverse orientation of the BR, which means that the protons are pumped from the environment into the interior of the protocell. This enables ATP to be recycled directly outside the chassis and avoids an additional
               purification process. As a result, this cell-free system can be produced inexpensively and created more easily than a whole electron transport chain. The connection with magnet particles via anchor peptides also enables
-              purification using magnetism. These properties make M.A.R.S. a reusable and innovative method of ATP regeneration.
+              purification using magnetism. These properties make M.A.R.S. a reusable and innovative method of ATP regeneration.<br>
+              <p style="text-align: center; padding-top:15px;"><a href="#question3" style="color:#eaeaea; font-size:12px; font-weight:700;">go to overview Q&A</a></p>
             </div>
           </div>
         </div>
