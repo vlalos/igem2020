@@ -970,9 +970,9 @@ a:active {
 .result_point {
   font-size: 32px;
   font-weight: bold;
-  color: #eaeaea;
-  margin-top: auto;
-  margin-bottom: auto;
+  color: #fe336d;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* ------------------------- Header --------------------------- */
