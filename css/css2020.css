@@ -313,7 +313,7 @@ a:active {
 
 .speechbubble_left {
   position: relative;
-	text-align: center;
+	text-align: justify;
 	margin-top: -20px;
 	background-color: rgba(17, 14, 33, 0.5);
   color: #eaeaea;
@@ -353,7 +353,7 @@ a:active {
 
 .speechbubble_right {
   position: relative;
-	text-align: center;
+	text-align: justify;
 	margin-top: -20px;
 	background-color: rgba(17, 14, 33, 0.5);
   color: #eaeaea;
