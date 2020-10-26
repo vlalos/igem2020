@@ -42,14 +42,14 @@
         setTimeout(() => {document.getElementById("enzymesys").style.visibility = "visible";
                           document.getElementById("free").style.visibility = "visible";
                           document.getElementById("imm").style.visibility = "visible";}, 1500);
-        setTimeout(() => {document.getElementById("food").style.visibility = "visible";
-                          document.getElementById("food arrow").style.visibility = "visible";}, 2000);
+        setTimeout(() => {document.getElementById("med").style.visibility = "visible";
+                          document.getElementById("med arrow").style.visibility = "visible";}, 2000);
         setTimeout(() => {document.getElementById("fine").style.visibility = "visible";
                           document.getElementById("fine arrow").style.visibility = "visible";}, 2500);
         setTimeout(() => {document.getElementById("found").style.visibility = "visible";
                           document.getElementById("found arrow").style.visibility = "visible";}, 3000);
-        setTimeout(() => {document.getElementById("med").style.visibility = "visible";
-                          document.getElementById("med arrow").style.visibility = "visible";}, 3500);
+        setTimeout(() => {document.getElementById("food").style.visibility = "visible";
+                          document.getElementById("food arrow").style.visibility = "visible";}, 3500);
         setTimeout(() => {document.getElementById("bulk").style.visibility = "visible";
                           document.getElementById("bulk arrow").style.visibility = "visible";}, 4000);
       }
@@ -158,42 +158,41 @@
             <div class=textframe_yellow id="enzymesys" style="width:500px; height: 150px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:350px; top: 80px; ">Enzymesystems</div>
             <div class=textframe_yellow id="free" style="width:200px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left:370px; top: -20px; margin-bottom:-55px">free</div>
             <div class=textframe_yellow id="imm" style="width:200px; font-size: 20px; text-align: center; visibility: hidden; position: relative; left :620px; top: -35px;">immobilized</div>
-            <div id="food arrow" style="width:200px; color:#eaeaea; font-size: 100px; text-align: center; visibility: hidden; position: relative; left:180px; top: -220px">&#8592;</div>
-            <div class=application_blue id="food" style="width:170px; font-size: 18px; text-align: center; visibility: hidden; position: relative; left:20px; top: -300px">Food production
-              <button onclick="changeTextState('food_descr')" style="text-align: center; border: None; background: transparent; transform: rotate(90deg); font-size: 20px">&#10148;</button>
-              <span id="food_descr" class="description" style="visibility: hidden;">The promising CARs enzyme family has brought application in the synthesis of aldehyde components <a  href="#ref5"><b>[5]</b></a>. In the food industry, many aldehydes are
-                relevant as flavor and fragrance compounds like vanillin. The annual production of synthetic vanillin was estimated to be as high as 16,000 metric tons in 2019 <a  href="#ref6"><b>[6]</b></a>. </span>
+            <div id="med arrow" style="width:200px; color:#eaeaea; font-size: 100px; text-align: center; visibility: hidden; position: relative; left:180px; top: -220px">&#8592;</div>
+            <div class=application_blue id="med" style="width:170px; font-size: 18px; text-align: center; visibility: hidden; position: relative; left:20px; top: -300px">Pharmaceuticals
+              <button onclick="changeTextState('med_descr')" style="text-align: center; border: None; background: transparent; transform: rotate(90deg); font-size: 20px">&#10148;</button>
+              <span id="med_descr" class="description" style="visibility: hidden; width: 200%; left: -80px">One of the many ATP-dependent enzyme families is Carboxylic Acid Reductases (CARs). Their broad spectrum of catalyzed reactions as well as their high stereoselectivity makes them
+                an ideal tool for the production of complicated pharmaceuticals or precursors that could not be synthesized easily before <a style="color:#000000 !important" href="#ref"><b>[5]</b></a>. CARs can be used to catalyze reactions by themselves, yet they are often
+                part of more sophisticated enzyme cascades. An example for an important precursor for the production of pharmaceuticals is cinnamyl alcohol, which can be produced from glucose by the combination of CARs with other reductases <a style="color:#000000 !important" href="#ref"><b>[10]</b></a>.<br><br>
+                A more recent proposal is the usage of CARs to synthesize (S)-2-aminobutanol, an important chiral precursor for the pharmaceutical compound Ethambutol, an antibiotic to treat tuberculosis <a style="color:#000000 !important" href="#ref"><b>[11]</b></a> <a style="color:#000000 !important" href="#ref"><b>[12]</b></a>. <br><br>
+                Another example for the relevance of ATP recycling systems in the industry is the use of ATP itself as a treatment for Mitochondriopathy <a style="color:#000000 !important" href="#ref"><b>[13]</b></a>. This shows that ATP’s potential as a vital compound in the production of pharmaceuticals is not purely secondary,
+                as a cofactor of reaction. There is much more to it. </span>
             </div>
             <div id="fine arrow" style="width:200px; color:#eaeaea; font-size: 100px; text-align: center; visibility: hidden; position: relative; left:290px; top: -230px">&#8595;</div>
             <div class=application_blue id="fine" style="width:170px; font-size: 18px; text-align: center; visibility: hidden; position: relative; left:260px; top: -170px;">Fine Chemicals
               <button onclick="changeTextState('fine_descr')" style="text-align: center; border: None; background: transparent; transform: rotate(90deg); font-size: 20px">&#10148;</button>
-              <span id="fine_descr" class="description" style="visibility: hidden;">An example for the heavy dependence on fine chemicals apart from pharmaceutical production is the agrochemical sector. CARs find application in simple two
-                step reaction cascade to synthesize arbitrary secondary amines <a style="color:#FFFFFF !important" href="#ref"><b>[7]</b></a><a style="color:#FFFFFF !important" href="#ref"><b>[8]</b></a>. </span>
+              <span id="fine_descr" class="description" style="visibility: hidden;">An example of the heavy dependence on fine chemicals apart from pharmaceutical production is the agrochemical sector.
+                CARs find application in simple two-step reaction cascades to synthesize arbitrary secondary amines <a style="color:#000000 !important" href="#ref"><b>[7]</b></a><a style="color:#000000 !important" href="#ref"><b>[8]</b></a>. </span>
             </div>
             <div id="found arrow" style="width:200px; color:#eaeaea; font-size: 100px; text-align: center; visibility: hidden; position: relative; left:490px; top: -400px">&#8595;</div>
             <div class=application_blue id="found" style="width:170px; font-size: 18px; text-align: center; visibility: hidden; position: relative; left:500px; top: -340px">Fundamental research <br>
               <button onclick="changeTextState('found_descr')" style="text-align: center; border: None; background: transparent; transform: rotate(90deg); font-size: 20px">&#10148;</button>
-              <span id="found_descr" class="description" style="visibility: hidden;"> In fundamental research M.A.R.S. can be used to provide the ATP for tests on ATP-dependent channels. Here comes more text describing all the good things MARS enables in this
-              fascinating application area. We put so much work in this project so it is good to see that it is worth it. Get energized and support future iGEM teams so that they get the opportunity to create
-              the future of humanity with the help of synthetic biology!</span>
+              <span id="found_descr" class="description" style="visibility: hidden;"> ATP is crucial in every part of the body from muscle to brain. That means to discover secrets oft the body itself, we need to understand the role of
+                ATP in every part of the body. In the brain it plays an important role as messenger and activator for pain receptors like rP2X2 <a style="color:#000000 !important" href="#ref"><b>[9]</b></a>. In electrophysiological experiments these
+                receptors get expressed in <i>xenopus laevis</i> oocytes
+                and there behavior is studied. Supplying new ATP for every experiment is very expensive and cannot be regenerated after experiments yet.  </span>
             </div>
-            <div id="med arrow" style="width:200px; color:#eaeaea; font-size: 100px; text-align: center; visibility: hidden; position: relative; left:690px; top: -590px">&#8595;</div>
-            <div class=application_blue id="med" style="width:170px; font-size: 18px; text-align: center; visibility: hidden; position: relative; left:740px; top: -530px">Pharmaceuticals
-              <button onclick="changeTextState('med_descr')" style="text-align: center; border: None; background: transparent; transform: rotate(90deg); font-size: 20px">&#10148;</button>
-              <span id="med_descr" class="description" style="visibility: hidden; width: 200%;">One of the many ATP-dependent enzyme families are Carboxylic Acid Reductases (CARs). Their broad spectrum of catalysed reactions as well as their high stereoselectivity makes
-                them ideal tool for the production of complicated pharmaceuticals or precursors that could not be synthesized easily before <a style="color:#FFFFFF !important" href="#ref"><b>[5]</b></a>. CARs can be used to catalyse reaction by
-                themselves, yet they are often part of more sophisticated enzyme cascades. An example for an important precursor for the production of pharmaceuticals is cinnamyl alcohol, which can be produced from
-                glucose by the combination of CARs with other reductases <a style="color:#FFFFFF !important" href="#ref"><b>[9]</b></a>.<br><br>
-                A more recent proposal is the usage of CARs to synthesize (S)-2-aminobutanol, an important chiral precursor for the pharmaceutical compound Ethambutol, an antibiotic to treat
-                tuberculosis <a style="color:#FFFFFF !important" href="#ref"><b>[10]</b></a> <a style="color:#FFFFFF !important" href="#ref"><b>[11]</b></a>. <br><br>
-                Another example for the relevance of ATP recycling systems in the industry is the use of ATP itself as a treatment for Mitochondriopathy <a style="color:#FFFFFF !important" href="#ref"><b>[12]</b></a>. This shows that ATPs potential as a vital
-                compound in the production of pharmaceuticals is not purely secondary, as a cofactor of reaction. There is much more to it.</span>
+            <div id="food arrow" style="width:200px; color:#eaeaea; font-size: 100px; text-align: center; visibility: hidden; position: relative; left:690px; top: -590px">&#8595;</div>
+            <div class=application_blue id="food" style="width:170px; font-size: 18px; text-align: center; visibility: hidden; position: relative; left:740px; top: -530px">Food production
+              <button onclick="changeTextState('food_descr')" style="text-align: center; border: None; background: transparent; transform: rotate(90deg); font-size: 20px">&#10148;</button>
+              <span id="food_descr" class="description" style="visibility: hidden;">The promising CARs enzyme family has broad application in the synthesis of aldehyde components. <a style="color:#000000 !important" href="#ref5"><b>[5]</b></a>. In the food industry,
+                many aldehydes are relevant as flavor and fragrance compounds like vanillin. The annual production of synthetic vanillin was estimated to be as high as 16,000 metric tons in 2019 <a style="color:#000000 !important" href="#ref6"><b>[6]</b></a>. </span>
             </div>
             <div id="bulk arrow" style="width:200px; color:#eaeaea; font-size: 100px; text-align: center; visibility: hidden; position: relative; left:820px; top: -910px">&#8594;</div>
             <div class=application_blue id="bulk" style="width:170px; font-size: 18px; text-align: center; visibility: hidden; position: relative; left:1000px; top: -990px">Bulk Chemicals
               <button onclick="changeTextState('bulk_descr')" style="text-align: center; border: None; background: transparent; transform: rotate(90deg); font-size: 20px">&#10148;</button>
-              <span id="bulk_descr" class="description" style="visibility: hidden;">CARs can be applied in various ways to produce classic bulk chemicals like alkanes or aliphatic alcohols. Many application pathways were proposed, especially for a chain length from
-                six to 16 carbons for alcohols and seven to 15 carbons for alkanes <a style="color:#FFFFFF !important" href="#ref"><b>[13]</b></a>. These include the most popular and important aliphatic compounds in the whole chemical industry. </span>
+              <span id="bulk_descr" class="description" style="visibility: hidden;">CARs can be applied in various ways to produce classic bulk chemicals like alkanes or aliphatic alcohols. Many application pathways were proposed, especially for a
+                chain length from six to 16 carbons for alcohols and seven to 15 carbons for alkanes <a style="color:#000000 !important" href="#ref"><b>[14]</b></a>. These include the most popular and important aliphatic compounds in the whole chemical industry. </span>
             </div>
           </div>
         </div>
@@ -203,21 +202,22 @@
       <div class="container-fluid" style="margin-top:20px;">
         <div class="row" style="margin-top:20px; padding-top: 20px; padding-bottom: 100px;">
           <div class="col-md-1"></div>
-          <div class="col-md-9">
+          <div class="col-md-10">
             <h3 id="ref" style="color:#eaeaea">References</h3><br>
-            <span style="color:#eaeaea; font-size:16"><b>[1] Alberts</b></span><br>
-            <span style="color:#eaeaea; font-size:16"><b>[2] Stryer </b></span><br>
-            <span style="color:#eaeaea; font-size:16"><b>[3] Quelle A </b></span><br>
-            <span style="color:#eaeaea; font-size:16"><b>[4] Strohmeier et al. (2019)</b></span><br>
-            <span style="color:#eaeaea; font-size:16"><b>[5] France et al. (2019)</b></span><br>
-            <span style="color:#eaeaea; font-size:16"><b>[6] Banerjee et al. (2019)</b></span><br>
-            <span style="color:#eaeaea; font-size:16"><b>[7] Ramsden et al. (2019)</b></span><br>
-            <span style="color:#eaeaea; font-size:16"><b>[8] Schaffer et al. (2017)</b></span><br>
-            <span style="color:#eaeaea; font-size:16"><b>[9] Sirinivasan et al. (2008)</b></span><br>
-            <span style="color:#eaeaea; font-size:16"><b>[10] Dibrikov et al. (2012)</b></span><br>
-            <span style="color:#eaeaea; font-size:16"><b>[11] Weber et al. (2017)</b></span><br>
-            <span style="color:#eaeaea; font-size:16"><b>[12] QUELLE paper (2017)</b></span><br>
-            <span style="color:#eaeaea; font-size:16"><b>[13] Akhtar et. al. </b></span><br>
+            <span style="color:#eaeaea; font-size:16"><b>[1] Alberts, B., Bray, D., Hopkin, K., Johnson, A., Lewis, J., Raff, M., Roberts, K., Walter, P. (2012). Lehrbuch der Molekularen Zellbiologie, Kapitel 14 – Energiegewinnung in Mitochondrien und Chloroplasten</b></span><br>
+            <span style="color:#eaeaea; font-size:16"><b>[2] Berg, J. M., Tymoczko, J. L., Stryer, L. (2014). Biochemie, Kapitel 15 – Der Stoffwechsel: Konzepte und Grundmuster</b></span><br>
+            <span style="color:#eaeaea; font-size:16"><b>[3] Swartz, J. Developing cell-free biology for industrial applications. J IND MICROBIOL BIOTECHNOL 33, 476–485 (2006). https://doi.org/10.1007/s10295-006-0127-y</b></span><br>
+            <span style="color:#eaeaea; font-size:16"><b>[4] G. A. Strohmeier, I. C. Eiteljörg, A. Schwarz, M. Winkler, Chem. Eur. J. 2019, 25, 6119</b></span><br>
+            <span style="color:#eaeaea; font-size:16"><b>[5] France, S.P., Hepworth, L.J., Turner, N.J., Flitsch, S.L., 2017. Constructing biocatalyticcascades: in vitro and in vivo approaches to de novo multi-enzyme pathways. ACSCatal. 7, 710–724.https://doi.org/10.1021/acscatal.6b02979.</b></span><br>
+            <span style="color:#eaeaea; font-size:16"><b>[6] Banerjee, G., Chattopadhyay, P., 2019. Vanillin biotechnology: the perspectives and fu-ture. J. Sci. Food Agric. 99, 499–506.https://doi.org/10.1002/jsfa.9303.</b></span><br>
+            <span style="color:#eaeaea; font-size:16"><b>[7] Ramsden, J.I., Heath, R.S., Derrington, S., Montgomery, S.L., Mangas-Sanchez, J.,Mulholland, K.R., Turner, N.J., 2019. Biocatalytic N-alkylation of amines using eitherprimary alcohols or carboxylic acids via reductive aminase cascades. J. Am. Chem.Soc. 141, 1201–1206.https://doi.org/10.1021/jacs.8b11561.</b></span><br>
+            <span style="color:#eaeaea; font-size:16"><b>[8] Schaffer, S., Corthals, J., Wessel, M., Hennemann, H.-G., Haeger, H., Volland, M., Roos,M., 2017. Producing amines and diamines from a carboxylic acid or dicarboxylic acidor a monoester thereof. US Patent USO09725746 B2</b></span><br>
+            <span style="color:#eaeaea; font-size:16"><b>[9] Eva-Verena Bongartz, Jürgen Rettinger & Ralf Hausmann:   Aminoglycoside block of P2X2 receptors heterologously expressed in Xenopus laevis oocytes; Purinergic Signalling (2010) 6:393–403 DOI 10.1007/s11302-010-9204-9</b></span><br>
+            <span style="color:#eaeaea; font-size:16"><b>[10] Stereoselective synthesis of (S)-dapoxetine starting from trans-cinnamyl alcohol (08-3482EP), K. Venkatesan and K.V. Srinivasan, DOI: https://doi.org/10.3998/ark.5550190.0009.g28 </b></span><br>
+            <span style="color:#eaeaea; font-size:16"><b>[11] Dobrikov, G.M., Valcheva, V., Stoilova-Disheva, M., Momekov, G., Tzvetkova, P., Chimov,A., Dimitrov, V., 2012. Synthesis and in vitro antimycobacterial activity of com-pounds derived from (R)- and (S)-2-amino-1-butanol – the crucial role of the con-figuration. Eur. J. Med. Chem. 48, 45–56.https://doi.org/10.1016/j.ejmech.2011.11.035.</b></span><br>
+            <span style="color:#eaeaea; font-size:16"><b>[12] Schwendenwein, D., Fiume, G., Weber, H., Rudroff, F., Winkler, M., 2016. Selective en-zymatic transformation to aldehydes in vivo by fungal carboxylate reductase from Neurospora crassa. Adv. Synth. Catal. 358, 3414–3421.https://doi.org/10.1002/adsc.201600914 </b></span><br>
+            <span style="color:#eaeaea; font-size:16"><b>[13] Kims paper</b></span><br>
+            <span style="color:#eaeaea; font-size:16"><b>[14] Akhtar, M.K., Dandapani, H., Thiel, K., Jones, P.R., 2015. Microbial production of 1-octanol: a naturally excreted biofuel with diesel-like properties. Metab. Eng.Commun. 2, 1–5.https://doi.org/10.1016/j.meteno.2014.11.001 </b></span><br>
           </div>
         </div>
       </div>
