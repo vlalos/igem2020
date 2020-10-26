@@ -118,13 +118,21 @@
                       <li>The concentration of ATP produced inside the reactor liquid</li>
                     </ul>
                   </li>
+                  <li>3-OH Benzoic acid
+                    <ul class="unterlist">
+                      <li>The substrate of the reaction cascade at FZ Jülich</li>
+                    </ul>
+                  </li>
+                  <li>3-OH Benzaldehyde
+                    <ul>
+                      <li>The substrate of the reaction cascade at FZ Jülich</li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="imgframe_green" style="margin-top: 0;">
-                <img src="../docs/misc/filler.png" style="width: 50%;" alt="">
-              </div>
+                <img src="https://2020.igem.org/wiki/images/3/36/T--Aachen--MMOverview.jpg" class="imgframe_green" style="width: 100%;" alt="">
             </div>
             <div class="col-md-1"></div>
           </div>
@@ -138,35 +146,62 @@
                   spherical chassis is a simple function of the average diameter. Other than the chassis diameter, the total number of chassis in the system is a degree of freedom for the model.</span> <br> <br>
                 <span style="font-size: 24px; margin-top:20px;">Reactions:</span> <br>
                 <span style="margin-left: 20px; margin-top: 20px !important;">We created differential equations for each reaction in the system. The proteins are modeled with a Michaelis-Menten (BR) and a Ping-Pong-Bi-Bi kinetic approach, while the
-                  buffer equilibrium is modeled by mass action laws.</span>
+                  buffer equilibrium is modeled by mass action laws.</span> <br> <br>
+                <span style="margin-left: 20px; margin-top: 20px !important;"> With our mathematical model, we could simulate thousands of different parameter-sets and combinations. Please take a look at some examples of our analysis. If you would like more insight into our modelling approach, feel free to download our MatLab project.</span>
               </div>
             </div>
             <div class="col-md-1"></div>
           </div>
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-4">
-              <div class="textframe_red">
-
-
-                PARAMETER PLOT
+            <div class="col-md-10">
+              <div class="container textframe_red" style="width:100%;">
+                We created a complete model of M.A.R.S. directly <img src="https://2020.igem.org/wiki/images/1/19/T--Aachen--MM1.png" class="imgframe_red interactive_img" style="width:30%; float: right; margin-left: 20px;" alt=""> <img src="https://2020.igem.org/wiki/images/a/ac/T--Aachen--MM2.png" class="imgframe_red interactive_img" style="width:30%; float: right; margin-left: 20px;"  alt="">implemented into a CAR enzyme cascade. M.A.R.S. is directly providing and recycling the ATP needed for the production of the important pharmaceutical precursor 3-OH Benzaldehyde. In our first two exemplary graphs, we demonstrate the steady state equilibrium of our system for the given reaction. With a 10 mM substrate concentration, the system reaches equilibrium after 2 hours. From this point on, ATP is completely recycled by our system until all of the substrate has been converted to 3-OH benzaldehyde. With an enzyme concentration of 100 µg/mL the substrate is completely converted after 4.8 hours. All relative pools are equivalent to the proof of concept experiments at FZ Jülich to ensure comparabilty. It is important to say, that all simulated processes start unequilibrated with no ATP in the system. While in the laboratory experiments ATP is initially supplied. This lowers the product conversion rate of the simulated process during the onset stage of the process.
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+              <img src="https://2020.igem.org/wiki/images/5/58/T--Aachen--MM3.png" class="imgframe_red" style="width: 100%;" alt="">
+            </div>
+            <div class="col-md-5">
               <div class="textframe_red">
-
-
-                TEXT PROOF
+                We conducted variant analysis for our mathematical model, to identify the optimal set of parameters and conditions for the set-up of M.A.R.S. in the context of a real industrial application. Our three most valuable insights from the variant analysis simulations are discussed below.
+                <br> <br>
+                <span style="margin-left: 20px;">We ran a parameter analysis on the impact of the CAR concertation on the steady state and product conversion of our system. The higher the CAR concentration, the lower will be the equilibrium concentration of ATP in the system, since more enzymes require a higher ADP-ATP recycling Flux. Analyzing the product conversion showed us, that the CAR concentration has a logarithmic correlation to the product conversion rate. When trying to implement M.A.R.S. in a real industrial process, this effect is outstandingly important. The higher the initial CAR concentration, the lower the difference to the prior effect of CAR concentration change. In a process optimization context, this allows us to choose a concentration of enzymes, that is both high enough to have a relevant effect on the product conversion rate and yet low enough to be a worthy investment for the process.
+                <br> <br></span>
+                <span style="margin-left: 20px;">On the basis of this analysis, we can determine the sweet spot of enzyme concentration which minimizes to overall production cost with respect to expanses generated by the running process (time-factor) as well as costs produced by the preparation or procurement of expansive enzymes.
+                  </span>
               </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="container textframe_red" style="width:100%;">
+                <img src="https://2020.igem.org/wiki/images/8/82/T--Aachen--MM4.png" class="imgframe_red interactive_img" style="width:30%; float: left; margin-right: 20px;" alt=""> <img src="https://2020.igem.org/wiki/images/a/a0/T--Aachen--MM5.png" class="imgframe_red interactive_img" style="width:30%; float: left; margin-right: 20px;"  alt="">Another parameter analysis was conducted for the mean diameter of the chassis (shown in micrometers). We found an exponential correlation between the equilibrium concentration of ATP and the product conversion rate. Our findings are presented in a linear as well as a semi-log fashion, for better visualization. The higher the mean diameter of the chassis, the exceedingly higher the product conversion rate. This led us to choose the highest achievable diameter for our chassis. The mean diameter is determined by the exact methodology of liposome formation and is limited by their stability. In our system, the liposomes need to be as big as possible while being able to tolerate the shear stress in the bioreactor. Taking all necessary effects as well as calculations of the energy dissipation rate for our shaking system into account, we opted for a mean diameter of 10 micrometers.
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+              <div class="textframe_red">
+                We performed a cartesian double parameter analysis with the SimBiology Model Analyzer, to gain insight into the interplay of initial ADP, Pi and substrate concentrations of the process. The shown effects have important implications for the implementation of our system. We demonstrate, that neither ADP, Pi nor initial substrate concentration has an influence on the product conversion rate for this process. This shows, that the only limiting factor of the process set-up is the ATP equilibrium concentration. Effects on the product conversion rate can therefore only be expected, if the ATP equilibrium concentration is altered as well or if the substrate supply is severely limited. Furthermore, we can infer a characteristic for every possible M.A.R.S. process application, that is unique to each process. The minimal ATP equilibrium concentration (1.1 mM in this set-up) is equivalent to the minimal ADP and Pi supply needed to achieve the maximal product conversion rate for the given set-up. This characteristic number could possibly quantify the efficiency of every M.A.R.S. implementation. This is supported by the fact that the ATP recycling flux is only determined by the parameters of M.A.R.S. itself as well as the parameters of the ATP-dependent enzymes. This means, that the only necessary prerequisite is the consistent constitution of the chassis itself to justify the relevance of the minimal ADP and Pi supply.
+              </div>
+            </div>
+            <div class="col-md-5">
+              <img src="https://2020.igem.org/wiki/images/f/fa/T--Aachen--MM6.png" class="imgframe_red" style="width: 100%;" alt="">
             </div>
             <div class="col-md-1"></div>
           </div>
         </div>
 
         <div class="container" id="simulation" style="display:none; width:100%;">
-
-
-
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
