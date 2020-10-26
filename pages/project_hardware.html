@@ -63,22 +63,22 @@
           <div class="col-md-10">
             <div class="textframe_green container" style="width: 100%">
               <img class="imgframe_green" src="https://2020.igem.org/wiki/images/1/14/T--Aachen--hardware_orbital_shaker.png" style="width: 40%; vertical-align: center; float:left; margin: 10px; shape-outside: margin-box;">
-              We believe the bioeconomy will be decentralized. While big (bio)chemical plants and reactors will continue to exist in the future, the gap between laboratory scale and large-scale production will widen the most. 
-              It will give a lot of people access to the bioeconomy. Therefore, we wanted to use a method that’s between the both extremes. At the scale we focused on, shaking is a perfect fit. 
-              While it fits perfect to our scale it also comes with a number of other advantages. It’s a commonly used lab technique therefore we reduce the number of variables in the scale up process. 
-              While orbital shakers that are commonly used in a laboratory are <a href="https://www.fishersci.com/us/en/browse/90179110/orbital-shakers">prohibitively expensive, costing up to several thousand dollars, 
-              our shaker is extremely cheap in comparison. It consists of very few parts, which are widely available. The shaking motion of the orbital shaker is induced by a 12V stepper motor. 
-              This motor connects with an eccentric shaft via a clutch. The shaft connects to 3 other eccentric shafts via a timing belt. This timing belt can be found in many other applications, most notably in 3d printers. 
-              Therefore, the timing belt and the pulley are widely available and quite inexpensive. The use of a timing belt allows for seamless translation of torque to all 4 shafts. The eccentric shafts connect via bearings to the panel. 
-              The panel houses four electro magnets. When activated the magnets accelerate the sedimentation of our protocells, which are connected to magnetic particles. Here we would like to thank Prof. Büchs again. 
+              We believe the bioeconomy will be decentralized. While big (bio)chemical plants and reactors will continue to exist in the future, the gap between laboratory scale and large-scale production will widen the most.
+              It will give a lot of people access to the bioeconomy. Therefore, we wanted to use a method that’s between the both extremes. At the scale we focused on, shaking is a perfect fit.
+              While it fits perfect to our scale it also comes with a number of other advantages. It’s a commonly used lab technique therefore we reduce the number of variables in the scale up process.
+              While orbital shakers that are commonly used in a laboratory are <a href="https://www.fishersci.com/us/en/browse/90179110/orbital-shakers">prohibitively expensive</a>, costing up to several thousand dollars,
+              our shaker is extremely cheap in comparison. It consists of very few parts, which are widely available. The shaking motion of the orbital shaker is induced by a 12V stepper motor.
+              This motor connects with an eccentric shaft via a clutch. The shaft connects to 3 other eccentric shafts via a timing belt. This timing belt can be found in many other applications, most notably in 3d printers.
+              Therefore, the timing belt and the pulley are widely available and quite inexpensive. The use of a timing belt allows for seamless translation of torque to all 4 shafts. The eccentric shafts connect via bearings to the panel.
+              The panel houses four electro magnets. When activated the magnets accelerate the sedimentation of our protocells, which are connected to magnetic particles. Here we would like to thank Prof. Büchs again.
               He mentioned that our protocell, which is also connected to magnetic particles is the heaviest object in the bioreactor. Right on top of the magnets sits the Erlenmeyer flask in a bracket.<br><br>
-              Therefore, we found a mixing method as well as a method for keeping the magnetic particles in the Erlenmeyer flask. The only thing missing is a light source. 
-              While we prefer the sun as the most natural source of light to power our process, it often is not really practical to do so. It was heavily debated in the team, 
-              if an artificial light source should be integrated into the bioreactor, we ultimately decided against it. It would unnecessarily complicate the construction of the bioreactor. 
-              We think the tradeoff between accessibility and completeness of the bioreactor is well made. Never the less the reactor allows for easy modification. For example, even the number of electric motors is variable, 
-              depending on the load of the shaker. In the parts sections you find the structure for sockets and its connection. While most of the parts are 3D printable, 
+              Therefore, we found a mixing method as well as a method for keeping the magnetic particles in the Erlenmeyer flask. The only thing missing is a light source.
+              While we prefer the sun as the most natural source of light to power our process, it often is not really practical to do so. It was heavily debated in the team,
+              if an artificial light source should be integrated into the bioreactor, we ultimately decided against it. It would unnecessarily complicate the construction of the bioreactor.
+              We think the tradeoff between accessibility and completeness of the bioreactor is well made. Never the less the reactor allows for easy modification. For example, even the number of electric motors is variable,
+              depending on the load of the shaker. In the parts sections you find the structure for sockets and its connection. While most of the parts are 3D printable,
               it’s also possible to make some parts (e.g. foundation & plate) from wood, using only a screwdriver. This again reduces the cost and time to build the orbital shaker.<br><br>
-              Electronics: The Arduino connects to the driver board which in turn connects to the stepper motor, the ESP module and the a mosfet which controls the magnets. 
+              Electronics: The Arduino connects to the driver board which in turn connects to the stepper motor, the ESP module and the a mosfet which controls the magnets.
               [Schaltbild]<br><br>
 
               Parts and Code: [Link?]<br><br>
@@ -153,9 +153,9 @@
               Neither the orbital shaker nor automatization systems are particular revolutionary, the combination with a IOT system has the chance to change the way people interact with synthetic biology.
               It allows for scientist to produce at scale without having to manually monitor and calibrate the system. A webserver sends the protocol to the respective Arduino, which in turn control the electronic
               devices. Here the user can just define the parameters of the system and then send it with the push of a button. Therefore, every lab can become an autonomous biochemistry factory.<br><br>
-              The realization of the wireless communication prooved extremely difficult. Because of the changing conditions and the time constraint, we only managed to program the backend json communication to distribute the protocols. 
-              The microcontrollers will then continuously request if a new protocol is created. Therefore, in the parts and code section of the shaker and the actuator you will find code to run the devices, 
-              controlled by infrared. In the code section below, you will find the code for the main server and some testing applications. We are committed to continue to work to connect every lab device, 
+              The realization of the wireless communication prooved extremely difficult. Because of the changing conditions and the time constraint, we only managed to program the backend json communication to distribute the protocols.
+              The microcontrollers will then continuously request if a new protocol is created. Therefore, in the parts and code section of the shaker and the actuator you will find code to run the devices,
+              controlled by infrared. In the code section below, you will find the code for the main server and some testing applications. We are committed to continue to work to connect every lab device,
               as we believe it is an integral part of the future of synthetic biology.
             </div>
           </div>
@@ -173,7 +173,7 @@
               <img class="imgframe_red" src="https://2020.igem.org/wiki/images/0/0c/T--Aachen--hardware_cyclo_drive.png" style="width: 40%; vertical-align: center; float:left; margin: 10px; shape-outside: margin-box;">
               The corona pandemic had a major impact on the hardware group. We were excluded from basically all workshops, because they have a ventilation system, that increase the risk of spreading the corona virus.
               We managed to get into the fablab Aachen by September of 2020, but also on a very restrictive time schedule. Never the less we are extremely thankful for the opportunity, else we wouldn’t have any option to
-              3d print at the RWTH. We first started with a cycloid drive to generate the shaking motion. This was quite time consuming as the mathematical modeling of the cycloid is quite advanced [1]. To fit our scale up
+              3d print at the RWTH. We first started with a cycloid drive to generate the shaking motion. This was quite time consuming as the mathematical modeling of the cycloid is quite advanced <a style="color: #eaeaea" href="#ref"><b>[1]</b></a>. To fit our scale up
               parameters, the cycloid would exceed the printing dimensions of all our available 3D printers. After slicing the cycloid drive, we encountered the problem that the rotation around its own axis will lead to
               the tie off of tubes and cables in our reactor. Therefore, the whole shaking mechanism had to be replaced.
             </div>
@@ -190,9 +190,9 @@
           <div class="col-md-10">
             <div class="textframe_green container" style="width: 100%">
               <img class="imgframe_green" src="https://2020.igem.org/wiki/images/4/46/T--Aachen--filler_pic.png" style="width: 40%; vertical-align: center; float:left; margin: 10px; shape-outside: margin-box;">
-              Our bioreactor can be modified in many regards. We can only hope we have made it modular enough to serve as a platform for other iGEM teams or interested people. 
-              One could change the magnets in favor of a light source or a heating element. The sockets are big enough to fit most devices. Eventually one has to 3d print custom bracket. 
-              We also think about different ways to improve the bioreactor. For example the linear actuator for the height adjustment can be replaced by a cheaper model. 
+              Our bioreactor can be modified in many regards. We can only hope we have made it modular enough to serve as a platform for other iGEM teams or interested people.
+              One could change the magnets in favor of a light source or a heating element. The sockets are big enough to fit most devices. Eventually one has to 3d print custom bracket.
+              We also think about different ways to improve the bioreactor. For example the linear actuator for the height adjustment can be replaced by a cheaper model.
               The linear actuator can be expanded by a stepper motor that a pump can fill multiple Erlenmeyer flasks. The IOT Platform is expandable to host different kind of devices and parameters.
             </div>
           </div>
