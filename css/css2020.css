@@ -109,6 +109,40 @@ a:active {
   background-size: auto 100%;
 }
 
+/* lab experiments */
+
+.topic {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.protocol_button {
+  width:80%;
+  /* opacity: 0.7; */
+  padding-top: 50px;
+  padding: auto;
+  margin: auto;
+}
+
+.protocol_button:hover{
+  opacity: 1;
+}
+
+.protocols_container {
+  display: none;
+  margin-top: 80px;
+}
+
+.protocol {
+  font-size: 24px !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  color: #eaeaea !important ;
+}
+
+
 /* attributions seite */
 .attributions{
   display: block;
