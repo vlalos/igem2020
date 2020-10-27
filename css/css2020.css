@@ -187,6 +187,40 @@ a:active {
   font-weight: bold;
 }
 
+#download_button_blue {
+  border-radius: 50%;
+  border: 2px #eaeaea solid;
+  font-size: 14px;
+  outline: none;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  cursor: pointer;
+  color: #eaeaea !important;
+}
+
+#download_button_blue:hover {
+  border: 2px #4f70de solid;
+  color: #4f70de !important;
+  font-weight: bold;
+}
+
+#download_button_yellow {
+  border-radius: 50%;
+  border: 2px #eaeaea solid;
+  font-size: 14px;
+  outline: none;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  cursor: pointer;
+  color: #eaeaea !important;
+}
+
+#download_button_yellow:hover {
+  border: 2px #feca40 solid;
+  color: #feca40 !important;
+  font-weight: bold;
+}
+
 
 .abs_head {
     align-content: flex-start;
