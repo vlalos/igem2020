@@ -325,6 +325,29 @@ a:active {
     right: 0px;
 }
 
+.lab_results {
+    list-style: none;
+}
+
+.lab_results li{
+    counter-increment: li;
+}
+
+.lab_results li::before {
+  color: #fe336d;
+  font-weight: bold;
+  content: counter(li);
+  width: 1em;
+  margin-left: -1em;
+  margin-right: 1em;
+}
+
+.results_numbers {
+    color: #fe336d;
+    font-size: 300%;
+    font-weight: bold;
+}
+
 #pools {
   list-style: none;
 }
