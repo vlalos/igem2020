@@ -17,45 +17,43 @@
     });
   </script>
   <script type="text/javascript">
-  function toggle_protocols(id_sender, id_target, src_off, src_on) {
-    var target = document.getElementById(id_target);
-    var sender = document.getElementById(id_sender);
+    function toggle_protocols(id_sender, id_target, src_off, src_on) {
+      var target = document.getElementById(id_target);
+      var sender = document.getElementById(id_sender);
 
-    var protocols_containers = document.getElementsByClassName("protocols_container");
-    var b_red = document.getElementById("button_red");
-    var b_green = document.getElementById("button_green");
-    var b_blue = document.getElementById("button_blue");
-    var b_yellow = document.getElementById("button_yellow");
+      var protocols_containers = document.getElementsByClassName("protocols_container");
+      var b_red = document.getElementById("button_red");
+      var b_green = document.getElementById("button_green");
+      var b_blue = document.getElementById("button_blue");
+      var b_yellow = document.getElementById("button_yellow");
 
-    for (var i = 0; i < protocols_containers.length; i++) {
-      protocols_containers[i].style.display = "none";
-    };
+      for (var i = 0; i < protocols_containers.length; i++) {
+        protocols_containers[i].style.display = "none";
+      };
 
-    if (sender.src.match(src_off))
-    {
-      target.style.display = "block";
+      if (sender.src.match(src_off)) {
+        target.style.display = "block";
 
-      b_red.src = "../docs/protocols/RU.png";
-      b_green.src = "../docs/protocols/GU.png";
-      b_blue.src = "../docs/protocols/BU.png";
-      b_yellow.src = "../docs/protocols/YU.png";
+        b_red.src = "../docs/protocols/RU.png";
+        b_green.src = "../docs/protocols/GU.png";
+        b_blue.src = "../docs/protocols/BU.png";
+        b_yellow.src = "../docs/protocols/YU.png";
 
-      // b_red.style.opacity = 0.7;
-      // b_green.style.opacity = 0.7;
-      // b_blue.style.opacity = 0.7;
-      // b_yellow.style.opacity = 0.7;
+        // b_red.style.opacity = 0.7;
+        // b_green.style.opacity = 0.7;
+        // b_blue.style.opacity = 0.7;
+        // b_yellow.style.opacity = 0.7;
 
-      sender.src = src_on;
+        sender.src = src_on;
 
-      sender.style.opacity = 1;
+        sender.style.opacity = 1;
 
-    } else
-    {
-      sender.src = src_off;
-      // sender.style.opacity = 0.7;
-      target.style.display = "none";
+      } else {
+        sender.src = src_off;
+        // sender.style.opacity = 0.7;
+        target.style.display = "none";
+      }
     }
-  }
   </script>
 </head>
 
@@ -72,10 +70,13 @@
             <a href="#FZJueLab" class="myYell" style="font-size: 24px">FZ Jülich</a>
           </h3><br><br>
           <div class="textframe_green">
-            During the lockdown in 2020, we researched and planned our experiments bit by bit. Entering the laboratory in June, we were able to present well-developed and -organized plans for the upcoming weeks. It enabled us to carry out most of our planned experiments, despite the restriction to only one permitted person at a time.
+            During the lockdown in 2020, we researched and planned our experiments bit by bit. Entering the laboratory in June, we were able to present well-developed and -organized plans for the upcoming weeks. It enabled us to carry out most of our
+            planned experiments, despite the restriction to only one permitted person at a time.
             <br><br>
-            Due to the possibility of working at two different locations, namely the <a href="#Schwanelab" class="myBlue" style="font-size: 18px">Institute of Biotechnology</a> and <a href="#FZJueLab" class="myYell" style="font-size: 18px">FZ Jülich</a>, we could gain a lot of experiences and results, both for each of us personally, as well as specifically as part of our project.
-            As the result of the fruitful work in the lab we collected quite a <a href="#Library" class="myRed" style="font-size: 18px">Library of Protocols</a> of all experiments we conducted in the scope of the project M.A.R.S. On this page you have access to all our lab protocols.
+            Due to the possibility of working at two different locations, namely the <a href="#Schwanelab" class="myBlue" style="font-size: 18px">Institute of Biotechnology</a> and <a href="#FZJueLab" class="myYell" style="font-size: 18px">FZ
+              Jülich</a>, we could gain a lot of experiences and results, both for each of us personally, as well as specifically as part of our project.
+            As the result of the fruitful work in the lab we collected quite a <a href="#Library" class="myRed" style="font-size: 18px">Library of Protocols</a> of all experiments we conducted in the scope of the project M.A.R.S. On this page you
+            have access to all our lab protocols.
           </div>
         </div>
         <div class="col-md-2">
@@ -90,15 +91,28 @@
         <div class="col-md-1"></div>
         <div class="col-md-9">
           <div class="textframe_blue">
-            Our experiments in the laboratory of Prof. Dr. Schwaneberg can be divided into four different categories. The binding tests of our anchor peptides on various surfaces to construct and express an optimal binding complex, the liposome formation and the protein expression and lastly the protein integration of our needed proteins.
+            Our experiments in the laboratory of Prof. Dr. Schwaneberg can be divided into four different categories. The binding tests of our anchor peptides on various surfaces to construct and express an optimal binding complex, the liposome
+            formation and the protein expression and lastly the protein integration of our needed proteins.
             <br><br>
-            Concerning the binding tests, we want use different antimicrobial peptides and test their binding abilities on our polystyrene coated magnetic particles to determine the best one.  We would then use this one as the magnet-binding domain in our binding complex. To evaluate the binding abilities of the different binding domains, we first express different anchor peptides with an eGFP label. We then check the remaining fluorescence under a confocal microscope after several washing steps. To determine the polymersome or liposome binding domain we proceed analogously. After finding the best binding peptides, we can express a biadhesive binding complex using both domains and a stiff linker domain to connect our ATP factories to our magnetic particles.
+            Concerning the binding tests, we want use different antimicrobial peptides and test their binding abilities on our polystyrene coated magnetic particles to determine the best one. We would then use this one as the magnet-binding domain in
+            our binding complex. To evaluate the binding abilities of the different binding domains, we first express different anchor peptides with an eGFP label. We then check the remaining fluorescence under a confocal microscope after several
+            washing steps. To determine the polymersome or liposome binding domain we proceed analogously. After finding the best binding peptides, we can express a biadhesive binding complex using both domains and a stiff linker domain to connect
+            our ATP factories to our magnetic particles.
             <br><br>
-            We have searched for purification methods for bacteriorhodopsin from <i>Halobacterium salinarium</i> and ATP synthase from <i>Saccharomyces cerevisiae</i>. For the ATP synthase we want to design a plasmid with the sequence of the first 60 amino acids of an ATP synthase inhibitor protein. With this protein an affinity purification of the ATP synthase from the isolated mitochondria can be performed.
+            We have searched for purification methods for bacteriorhodopsin from <i>Halobacterium salinarium</i> and ATP synthase from <i>Saccharomyces cerevisiae</i>. For the ATP synthase we want to design a plasmid with the sequence of the first 60
+            amino acids of an ATP synthase inhibitor protein. With this protein an affinity purification of the ATP synthase from the isolated mitochondria can be performed.
             <br> <br>
-            For the lipid formation we decided to use the film rehydration technique to rehydrate a dried lipid film and create small unilamellar vesicles. To make the liposomes easier to detect under the microscope we want to form giant unilamellar vesicles. This was achieved by creating an oil-surfactant mix where an aqueous solution, which contains the lipid batch, is added <a style="color:#FFFFFF !important" href="#ref"><b>[1]</b></a>. The spontaneous formation of surfactant-stabilized water-in-oil droplets with a spherical supported lipid bilayer at their periphery is then induced by manual shaking and the average diameter is determined by the shaking duration and intensity. A small amount of ATTO-labelled lipids where included in the lipid batch to confirm the liposome formation using fluorescence microscopy.
+            For the lipid formation we decided to use the film rehydration technique to rehydrate a dried lipid film and create small unilamellar vesicles. To make the liposomes easier to detect under the microscope we want to form giant unilamellar
+            vesicles. This was achieved by creating an oil-surfactant mix where an aqueous solution, which contains the lipid batch, is added <a style="color:#FFFFFF !important" href="#ref"><b>[1]</b></a>. The spontaneous formation of
+            surfactant-stabilized water-in-oil droplets with a spherical supported lipid bilayer at their periphery is then induced by manual shaking and the average diameter is determined by the shaking duration and intensity. A small amount of
+            ATTO-labelled lipids where included in the lipid batch to confirm the liposome formation using fluorescence microscopy.
             <br> <br>
-            To finally integrate our chosen proteins, we want to start with integration of bacteriorhodopsin into the giant unilamellar vesicles. Therefore, we first solubilize the purple membrane. In order to integrate the membrane proteins, it is necessary to destabilize the liposome membrane using the detergence Triton-X 100. We plan to add Triton-X-100 together with our bacteriorhodopsin to the solution and to incubate the mixture to perform the integration. For detergence removal we plan to perform multiple washing steps using bio beads. For a confirmation of the correct integration we intended to use pyranine which is a pH indicating fluorescent dye. Through the acidification of the inner phase of the vesicles by bacteriorhodopsin the pyranine inside the vesicles would appear darker than their background. Thus, we would be able to visibly proof the correct integration using fluorescent microscopy. The destabilisation method could also work to integrate the ATP synthase and therefore create our final chassis. To proof the successful integration of bacteriorhodopsin and the ATP synthase together we would test our system in the context of a real industrial application at the FZ Jülich and model it to generate theoretical data.
+            To finally integrate our chosen proteins, we want to start with integration of bacteriorhodopsin into the giant unilamellar vesicles. Therefore, we first solubilize the purple membrane. In order to integrate the membrane proteins, it is
+            necessary to destabilize the liposome membrane using the detergence Triton-X 100. We plan to add Triton-X-100 together with our bacteriorhodopsin to the solution and to incubate the mixture to perform the integration. For detergence
+            removal we plan to perform multiple washing steps using bio beads. For a confirmation of the correct integration we intended to use pyranine which is a pH indicating fluorescent dye. Through the acidification of the inner phase of the
+            vesicles by bacteriorhodopsin the pyranine inside the vesicles would appear darker than their background. Thus, we would be able to visibly proof the correct integration using fluorescent microscopy. The destabilisation method could also
+            work to integrate the ATP synthase and therefore create our final chassis. To proof the successful integration of bacteriorhodopsin and the ATP synthase together we would test our system in the context of a real industrial application at
+            the FZ Jülich and model it to generate theoretical data.
           </div>
         </div>
         <div class="col-md-1"></div>
@@ -111,14 +125,21 @@
         <div class="col-md-1"></div>
         <div class="col-md-8">
           <div class="textframe_yellow">
-            At the FZ Jülich we perform multiple tests on a carboxylate reductase from the organism <i>Nocardia otitidiscaviarum</i>. This enzyme is capable of converting 3-hydroxybenzoic acid to 3-hydroxybenzaldehyde. Therefore, we prepare triplets of reaction vials where we add the carboxylate reductase, 3-hydroxybenzoic acid as the substrate, ATP, NADH, polyphosphate, the needed enzyme to perform the conventional ATP regeneration and a 4x concentrated MOPS buffer containing glucose and MgCl2. With this method kinases are used to fuse phosphate groups from polyphosphates to ADP. This performs the ATP regeneration<a style="color:#FFFFFF !important" href="#ref"><b>[2]</b></a>. After getting comfortable with the procedures, we want to show using negative controls without ATP, that the lack of ATP leads to no substrate conversion at all, which means that ATP is crucial for that enzyme. Another negative control without the enzymes which normally performs the ATP regeneration will be put to test, to show the importance of a cofactor regeneration system.
+            At the FZ Jülich we perform multiple tests on a carboxylate reductase from the organism <i>Nocardia otitidiscaviarum</i>. This enzyme is capable of converting 3-hydroxybenzoic acid to 3-hydroxybenzaldehyde. Therefore, we prepare triplets
+            of reaction vials where we add the carboxylate reductase, 3-hydroxybenzoic acid as the substrate, ATP, NADH, polyphosphate, the needed enzyme to perform the conventional ATP regeneration and a 4x concentrated MOPS buffer containing
+            glucose and MgCl2. With this method kinases are used to fuse phosphate groups from polyphosphates to ADP. This performs the ATP regeneration<a style="color:#FFFFFF !important" href="#ref"><b>[2]</b></a>. After getting comfortable with the
+            procedures, we want to show using negative controls without ATP, that the lack of ATP leads to no substrate conversion at all, which means that ATP is crucial for that enzyme. Another negative control without the enzymes which normally
+            performs the ATP regeneration will be put to test, to show the importance of a cofactor regeneration system.
             <br><br>
-            To get more insight into the functionality of that enzyme, we also want to monitor the product conversion of a whole cell approach where the carboxylate reductase is expressed in <i>E. coli</i> K12 cells which tolerate the aldehyde product. Using these different attempts, we can collect valuable data which helps us to compare our system to the ATP regeneration approaches above. Therefore, our last testing study is supposed to focus on using our ATP-factories as the needed cofactor regeneration system. Furthermore, we simulated how M.A.R.S. would act in this reaction setup to additionally generate data from a bioinformatic point of view. This can be seen on our modeling page. A successful integration of the bacteriorhodopsin and ATP synthase would result in a detectable amount of product conversion.
+            To get more insight into the functionality of that enzyme, we also want to monitor the product conversion of a whole cell approach where the carboxylate reductase is expressed in <i>E. coli</i> K12 cells which tolerate the aldehyde
+            product. Using these different attempts, we can collect valuable data which helps us to compare our system to the ATP regeneration approaches above. Therefore, our last testing study is supposed to focus on using our ATP-factories as the
+            needed cofactor regeneration system. Furthermore, we simulated how M.A.R.S. would act in this reaction setup to additionally generate data from a bioinformatic point of view. This can be seen on our modeling page. A successful integration
+            of the bacteriorhodopsin and ATP synthase would result in a detectable amount of product conversion.
           </div>
         </div>
         <div class="col-md-1"></div>
       </div>
-      <div class="row"  id="Library">
+      <div class="row" id="Library">
         <div class="col-md-1"></div>
         <span style="color: #eaeaea; font-size: 20px; margin-top:20px; padding-top: 60px;"><i>Push the buttons to view the protocols from each category</i> <br> </span>
       </div>
@@ -149,7 +170,7 @@
       <div class="row" style="width:100%; margin-bottom: 50px;">
         <div class="col-md-2"></div>
         <div class="col-md-2" style="padding:auto; text-align: center;">
-          <img src="../docs/protocols/RU.png" onclick="toggle_protocols('button_red', 'protocols_container_red', '../docs/protocols/RU.png', '../docs/protocols/RD.png')"  id="button_red" class="protocol_button" alt="">
+          <img src="../docs/protocols/RU.png" onclick="toggle_protocols('button_red', 'protocols_container_red', '../docs/protocols/RU.png', '../docs/protocols/RD.png')" id="button_red" class="protocol_button" alt="">
         </div>
         <div class="col-md-2" style="padding:auto; text-align: center;">
           <img src="../docs/protocols/GU.png" onclick="toggle_protocols('button_green', 'protocols_container_green', '../docs/protocols/GU.png', '../docs/protocols/GD.png')" id="button_green" class="protocol_button" alt="">
@@ -175,9 +196,9 @@
           </div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/6/62/T--Aachen--400mM_KPi.pdf ">
-            <div class="protocol textframe_red">
-              KPi buffer
-            </div>
+              <div class="protocol textframe_red">
+                KPi buffer
+              </div>
             </a>
           </div>
           <div class="col-md-2"></div>
@@ -186,17 +207,17 @@
           <div class="col-md-1"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/0/01/T--Aachen--TB_Media.pdf ">
-            <div class="protocol textframe_red">
-              TB media
-            </div>
+              <div class="protocol textframe_red">
+                TB media
+              </div>
             </a>
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/4/4a/T--Aachen--Mito_storage.pdf ">
-            <div class="protocol textframe_red">
-              Mitochondria storage buffer
-            </div>
+              <div class="protocol textframe_red">
+                Mitochondria storage buffer
+              </div>
             </a>
           </div>
           <div class="col-md-1"></div>
@@ -204,9 +225,9 @@
         <div class="row" style="margin-top: 70px; width:100%">
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/1/11/T--Aachen--20mM_Sodium_bicine_buffer.pdf ">
-            <div class="protocol textframe_red">
-              Sodium-bicine buffer
-            </div>
+              <div class="protocol textframe_red">
+                Sodium-bicine buffer
+              </div>
             </a>
           </div>
           <div class="col-md-4">
@@ -218,9 +239,9 @@
           </div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/9/9e/T--Aachen--Mito_washing.pdf ">
-            <div class="protocol textframe_red">
-              Mitochondria washing buffer
-            </div>
+              <div class="protocol textframe_red">
+                Mitochondria washing buffer
+              </div>
             </a>
           </div>
         </div>
@@ -228,17 +249,17 @@
           <div class="col-md-1"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/9/95/T--Aachen--YPG_Medium_with_adenine_and_antifoam.pdf">
-            <div class="protocol textframe_red">
-              YPG medium with adenine and antifoam
-            </div>
+              <div class="protocol textframe_red">
+                YPG medium with adenine and antifoam
+              </div>
             </a>
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/5/55/T--Aachen--Solubilisation_buffer.pdf ">
-            <div class="protocol textframe_red">
-              Solubilisation buffer
-            </div>
+              <div class="protocol textframe_red">
+                Solubilisation buffer
+              </div>
             </a>
           </div>
           <div class="col-md-1"></div>
@@ -246,30 +267,30 @@
         <div class="row" style="margin-top: 50px; width:100%">
           <div class="col-md-3">
             <a href="https://2020.igem.org/wiki/images/f/f6/T--Aachen--YPG_Medium.pdf">
-            <div class="protocol textframe_red">
-              YPG Medium
-            </div>
+              <div class="protocol textframe_red">
+                YPG Medium
+              </div>
             </a>
           </div>
           <div class="col-md-3">
             <a href="https://2020.igem.org/wiki/images/4/46/T--Aachen--TE_buffer.pdf ">
-            <div class="protocol textframe_red">
-              TE buffer
-            </div>
+              <div class="protocol textframe_red">
+                TE buffer
+              </div>
             </a>
           </div>
           <div class="col-md-3">
             <a href="https://2020.igem.org/wiki/images/d/d7/T--Aachen--Tris_buffer_20mM.pdf ">
-            <div class="protocol textframe_red">
-              Tris-HCl buffer 20mM
-            </div>
+              <div class="protocol textframe_red">
+                Tris-HCl buffer 20mM
+              </div>
             </a>
           </div>
           <div class="col-md-3">
             <a href="https://2020.igem.org/wiki/images/7/76/T--Aachen--Tris_buffer_30mM.pdf ">
-            <div class="protocol textframe_red">
-              Tris-HCl buffer 30mM
-            </div>
+              <div class="protocol textframe_red">
+                Tris-HCl buffer 30mM
+              </div>
             </a>
           </div>
         </div>
@@ -330,17 +351,17 @@
           <div class="col-md-1"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/9/9e/T--Aachen--Desalting_10mM.pdf  ">
-            <div class="protocol textframe_red">
-              Desalting 10mM
-            </div>
+              <div class="protocol textframe_red">
+                Desalting 10mM
+              </div>
             </a>
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/4/42/T--Aachen--Equilibration_50mM_Tris.pdf ">
-            <div class="protocol textframe_red">
-              Equilibration 50mM Tris
-            </div>
+              <div class="protocol textframe_red">
+                Equilibration 50mM Tris
+              </div>
             </a>
           </div>
           <div class="col-md-1"></div>
@@ -349,17 +370,17 @@
           <div class="col-md-1"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/e/eb/T--Aachen--LB.pdf  ">
-            <div class="protocol textframe_red">
-              LB medium
-            </div>
+              <div class="protocol textframe_red">
+                LB medium
+              </div>
             </a>
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/7/72/T--Aachen--Elutionbuffer_50mM_Tris.pdf  ">
-            <div class="protocol textframe_red">
-              Elutio 50mM Tris
-            </div>
+              <div class="protocol textframe_red">
+                Elutio 50mM Tris
+              </div>
             </a>
           </div>
           <div class="col-md-1"></div>
@@ -401,17 +422,17 @@
           <div class="col-md-1"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/d/dd/T--Aachen--Immuno-Detection.pdf   ">
-            <div class="protocol textframe_green">
-              Immuno-Detection
-            </div>
+              <div class="protocol textframe_green">
+                Immuno-Detection
+              </div>
             </a>
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/e/e2/T--Aachen--Insert_digest.pdf  ">
-            <div class="protocol textframe_green">
-              Insert digest
-            </div>
+              <div class="protocol textframe_green">
+                Insert digest
+              </div>
             </a>
           </div>
           <div class="col-md-1"></div>
@@ -420,17 +441,17 @@
           <div class="col-md-1"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/5/5a/T--Aachen--Plasmid_digest.pdf  ">
-            <div class="protocol textframe_green">
-              Plasmid digest
-            </div>
+              <div class="protocol textframe_green">
+                Plasmid digest
+              </div>
             </a>
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/e/e3/T--Aachen--Plasmid_ligation.pdf ">
-            <div class="protocol textframe_green">
-              Plasmid ligation
-            </div>
+              <div class="protocol textframe_green">
+                Plasmid ligation
+              </div>
             </a>
           </div>
           <div class="col-md-1"></div>
@@ -518,17 +539,17 @@
           <div class="col-md-1"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/c/c3/T--Aachen--SUV.pdf  ">
-            <div class="protocol textframe_blue">
-              SUV/normal liposome formation
-            </div>
+              <div class="protocol textframe_blue">
+                SUV/normal liposome formation
+              </div>
             </a>
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/0/09/T--Aachen--GUV.pdf ">
-            <div class="protocol textframe_blue">
-              GUVs
-            </div>
+              <div class="protocol textframe_blue">
+                GUVs
+              </div>
             </a>
           </div>
           <div class="col-md-1"></div>
@@ -537,17 +558,17 @@
           <div class="col-md-1"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/e/ee/T--Aachen--Magnet_Bindingtests.pdf  ">
-            <div class="protocol textframe_blue">
-              Magnet binding tests
-            </div>
+              <div class="protocol textframe_blue">
+                Magnet binding tests
+              </div>
             </a>
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/2/22/T--Aachen--Liposome_Bindingtests.pdf ">
-            <div class="protocol textframe_blue">
-              Liposome Binding tests
-            </div>
+              <div class="protocol textframe_blue">
+                Liposome Binding tests
+              </div>
             </a>
           </div>
           <div class="col-md-1"></div>
@@ -559,17 +580,17 @@
           <div class="col-md-1"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/d/d7/T--Aachen--In_vitro_approach_carboxylate_reductase_j%C3%BClich.pdf  ">
-            <div class="protocol textframe_yellow">
-              In vitro approach carboxylate reductase
-            </div>
+              <div class="protocol textframe_yellow">
+                In vitro approach carboxylate reductase
+              </div>
             </a>
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-4">
             <a href="https://2020.igem.org/wiki/images/6/6b/T--Aachen--Whole_Cell_Approach_Proof_Juelich.pdf ">
-            <div class="protocol textframe_yellow">
-              Whole cell approach
-            </div>
+              <div class="protocol textframe_yellow">
+                Whole cell approach
+              </div>
             </a>
           </div>
           <div class="col-md-1"></div>
@@ -584,8 +605,10 @@
         <div class="col-md-1"></div>
         <div class="col-md-9">
           <h3 id="ref" style="color:#eaeaea">References</h3><br>
-          <span style="color:#eaeaea; font-size:16"><b>[1] One-Pot Assembly of Complex Giant Unilamellar Vesicle-Based Synthetic Cell, Kerstin Göpfrich, Barbara Haller, Oskar Staufer, Yannik Dreher, Ulrike Mersdorf, Ilia Platzman, and Joachim P. Spatz, ACS Synthetic Biology 2019 8 (5), 937-947 DOI: 10.1021/acssynbio.9b00034</b></span><br>
-          <span style="color:#eaeaea; font-size:16"><b>[2] Strohmeier GA, Eiteljörg IC, Schwarz A, Winkler M. Enzymatic One-Step Reduction of Carboxylates to Aldehydes with Cell-Free Regeneration of ATP and NADPH. Chemistry. 2019 Apr 26;25(24):6119-6123. doi: 10.1002/chem.201901147. Epub 2019 Apr 5. PMID: 30866114; PMCID: PMC6563805</b></span><br>
+          <span style="color:#eaeaea; font-size:16"><b>[1] One-Pot Assembly of Complex Giant Unilamellar Vesicle-Based Synthetic Cell, Kerstin Göpfrich, Barbara Haller, Oskar Staufer, Yannik Dreher, Ulrike Mersdorf, Ilia Platzman, and Joachim P.
+              Spatz, ACS Synthetic Biology 2019 8 (5), 937-947 DOI: 10.1021/acssynbio.9b00034</b></span><br>
+          <span style="color:#eaeaea; font-size:16"><b>[2] Strohmeier GA, Eiteljörg IC, Schwarz A, Winkler M. Enzymatic One-Step Reduction of Carboxylates to Aldehydes with Cell-Free Regeneration of ATP and NADPH. Chemistry. 2019 Apr
+              26;25(24):6119-6123. doi: 10.1002/chem.201901147. Epub 2019 Apr 5. PMID: 30866114; PMCID: PMC6563805</b></span><br>
         </div>
       </div>
     </div>
