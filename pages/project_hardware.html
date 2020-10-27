@@ -31,18 +31,22 @@
                Let's accelerate growth
             </h3><br><br>
             <div class="textframe_red">
-              Our <a class="myRed" href="https://2020.igem.org/Team:Aachen/Description">project this year</a> is a reusable light-powered mitochondrion-like protocell. Its purpose is to radically reduce the cost of biochemical processes, by recycling ATP more cost-efficient and environmentally friendly than previously used methods.
-              This recycling is made possible by a magnetic particle to which the protocell is coupled. With this reduction in cost many processes, which previously were not feasible due to cost, now are. This enables not only high value products like pharmaceuticals
-              to be produced with biological processes, but also low-value-high-volume products. This immensely accelerates the transition towards a green and sustainable chemical industry and ultimately a greener and more sustainable future.
-              For our process to work we need light to power our protocell, magnets to immobilize the protocell and a mixing mechanism. On top of that, to achieve the full potential our protocell has for biological processes,
-              we wanted to scale up the process. Lastly the process should work as autonomously as possible.<br><br>
+              <a class="myRed" href="https://2020.igem.org/Team:Aachen/Description">This year's project</a> is a light-powered mitochondrion like protocell. 
+              Its purpose is to radically reduce the cost of biochemical processes, by recycling ATP. This recycling is made possible by a magnetic particle to which the protocell is coupled. 
+              This poses extra challenges for the design of the process device, as the magnetization introduces another step into the workflow. Additionally, 
+              it constrains the types of materials used as ferromagnetic materials are not suitable in this context. Nevertheless with this reduction in cost many processes, 
+              which previously were not cost feasible, now are. This makes it possible not only for high value products like pharmaceuticals to be produced with biological processes, 
+              but also low-value-high-volume products. This immensely accelerates the transition towards a green and sustainable chemical industry and ultimately a greener and more sustainable future. 
+              Therefore, the challenges are set. For our process to work we need light to power our protocell, magnets to immobilize the protocell and mixing. On top of that, 
+              to achieve the full potential our protocell has for biological processes, we wanted to scale up the process. Lastly the process should work as autonomously as possible.
+              <br><br>
               Information you can find on this page about our hardware:
               <ul style="padding-left: 15%">
-                <li><a class="myGreen" href="#orbital">the orbital shaker</a></li>
-                <li><a class="myBlue" href="#automization">the automization arm</a></li>
-                <li><a class="myYell" href="#iot">the IoT platform</a></li>
-                <li><a class="myRed" href="#development">the project development</a></li>
-                <li><a class="myGreen" href="#outlook">the project outlook</a></li>
+                <li><a class="myGreen" href="#orbital">Orbital shaker</a></li>
+                <li><a class="myBlue" href="#automization">Automatization arm</a></li>
+                <li><a class="myYell" href="#iot">IoT platform</a></li>
+                <li><a class="myRed" href="#development">Project development</a></li>
+                <li><a class="myGreen" href="#outlook">Project outlook</a></li>
               </ul>
             </div>
           </div>
@@ -62,7 +66,7 @@
           <div class="col-md-1"></div>
           <div class="col-md-10">
             <div class="textframe_green container" style="width: 100%">
-              <img class="imgframe_green" src="https://2020.igem.org/wiki/images/b/b2/T--Aachen--shaker2.gif" style="width: 40%; float:left; margin: 10px; shape-outside: margin-box;">
+              <img class="imgframe_green" src="https://2020.igem.org/File:T--Aachen--orbitalShakerMotor.gif" style="width: 40%; float:left; margin: 10px; shape-outside: margin-box;">
               We believe the bioeconomy will be decentralized. While big (bio)chemical plants and reactors will continue to exist in the future, the gap between laboratory scale and large-scale production will widen the most.
               It will give a lot of people access to the bioeconomy. Therefore, we wanted to use a method that’s between the both extremes. At the scale we focused on, shaking is a perfect fit.
               While it fits perfect to our scale it also comes with a number of other advantages. It’s a commonly used lab technique therefore we reduce the number of variables in the scale up process.
@@ -76,11 +80,12 @@
               While we prefer the sun as the most natural source of light to power our process, it often is not really practical to do so. It was heavily debated in the team,
               if an artificial light source should be integrated into the bioreactor, we ultimately decided against it. It would unnecessarily complicate the construction of the bioreactor.
               We think the tradeoff between accessibility and completeness of the bioreactor is well made. Never the less the reactor allows for easy modification. For example, even  the number of electric motors is variable, depending on
-              the load of the shaker. In the parts sections you find the structure for sockets and its connection. <br><br>
+              the load of the shaker. In the parts sections you find the structure for sockets and its connection. While most of the parts are 3D printable, it’s also possible to make some parts (e.g. foundation & plate) from wood, 
+              using only a cordless screwdriver. This again reduces the cost and time to build the orbital shaker. <br><br>
               <img class="imgframe_green" src="https://2020.igem.org/wiki/images/9/9f/T--Aachen--shakerelectronics.png" style="width: 40%; float: right; margin-left: 30px; shape-outside: margin-box;"><br>
-              Electronics: The Arduino connects to the driver board which in turn connects to the stepper motor, the ESP module and the a mosfet which controls the magnets.<br><br>
+              Electronics: The Arduino connects to the driver board which in turn connects to the stepper motor and the MOSFET which controls the magnets.<br><br>
 
-              Parts and Code: <a href="https://2020.igem.org/wiki/images/8/82/T--Aachen--orbital_shaker_parts_and_code.zip"><button class="btn" id="download_button">Download</button></a><br><br>
+              Parts and Code: <a href="https://2020.igem.org/File:T--Aachen--orbital_shaker_7.zip"><button class="btn" id="download_button">Download</button></a><br><br>
 
               <h3 style="color: #eaeaea">Assemby instructions for the orbital shaker</h3>
               <ol style="padding-left:15%">
@@ -101,7 +106,6 @@
                   <li>Make sure to stick the cables through the provided openings.</li>
                 </ul>
                 <li value="7">Put the Erlenmeyer Flask into the bracket.</li>
-                <li value="8">Put the bracket into the provided pins</li>
               </ol>
             </div>
           </div>
@@ -123,7 +127,10 @@
               magnets. Therefore, we propose a system, that can move the tubes in and out of the Erlenmeyer flask. Analyzing the system, it needs two degrees of freedom. The first is changing its height and the second
               is the rotation around the height axis. All the other degrees of freedom are given by the dimensions of our bioreactor. With the rotation, we ensure that every pump can reach each Erlenmeyer flask. It
               allows our system to carry out enzyme cascades. For the pumps we propose the use of the peristaltic pump, the iGEM Aachen 2017 team designed. The tubing can be attached to the linear actuator and the
-              horizontal shaft by zip ties. Be careful not to apply to much force, that the tubing deforms.<br><br>
+              horizontal shaft by the guide. Be careful not to apply to much force, which would deform the tubing. 
+              <br><br>
+              Unfortunately, while the mechanical parts necessary for the rotation are included, we didn’t manage to program the rotation in time.
+              <br><br>
               <img class="imgframe_blue" src="https://2020.igem.org/wiki/images/1/1d/T--Aachen--linear_actuator_electronics.png" style="width: 40%; float: left; margin-right: 30px; shape-outside: margin-box;"><br>
               Electronics: The Arduino is connected to the LS driver and the a49 driver. The LS driver is connected to the Linear actuator and the a49 driver is connected to a stepper motor.<br><br>
 
@@ -194,7 +201,8 @@
               Our bioreactor can be modified in many regards. We can only hope we have made it modular enough to serve as a platform for other iGEM teams or interested people.
               One could change the magnets in favor of a light source or a heating element. The sockets are big enough to fit most devices. Eventually one has to 3d print custom bracket.
               We also think about different ways to improve the bioreactor. For example the linear actuator for the height adjustment can be replaced by a cheaper model.
-              The linear actuator can be expanded by a stepper motor that a pump can fill multiple Erlenmeyer flasks. The IOT Platform is expandable to host different kinds of devices and parameters.
+              The linear actuator can be expanded by a stepper motor that a pump can fill multiple Erlenmeyer flasks. 
+              The IOT Platform is first to be finished and then expandable to host different kinds of devices and parameters.
             </div>
           </div>
           <div class="col-md-1"></div>
